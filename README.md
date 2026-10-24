@@ -1,0 +1,1 @@
+dotnet heroes-data-parser online -e hero:i -g 4 -o hdp
