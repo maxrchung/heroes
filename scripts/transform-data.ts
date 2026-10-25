@@ -2,13 +2,10 @@ import fs from 'node:fs';
 import path from 'node:path';
 import sharp from 'sharp';
 import type {
-  HeroSummary,
-  HeroDetail,
+  Hero,
   Ability,
   Talent,
   ModernRole,
-  LegacyRole,
-  Franchise,
 } from '../src/types/hero';
 
 const ROOT_DIR = process.cwd();
@@ -17,7 +14,6 @@ const HDP_PORTRAITS_DIR = path.join(ROOT_DIR, 'hdp', 'images', 'heroportraits');
 const HDP_ICONS_DIR = path.join(ROOT_DIR, 'hdp', 'images', 'abilitytalents');
 
 const OUT_DATA_DIR = path.join(ROOT_DIR, 'src', 'data');
-const OUT_HEROES_DIR = path.join(OUT_DATA_DIR, 'heroes');
 const OUT_PUBLIC_PORTRAITS = path.join(ROOT_DIR, 'public', 'images', 'portraits');
 const OUT_PUBLIC_ICONS = path.join(ROOT_DIR, 'public', 'images', 'icons');
 
@@ -68,59 +64,33 @@ interface ImageTask {
   destPath: string;
 }
 
-async function convertImagesWithPool(tasks: ImageTask[], concurrency = 16): Promise<{ converted: number; skipped: number }> {
+async function convertImages(tasks: ImageTask[]): Promise<{ converted: number; skipped: number }> {
   let converted = 0;
   let skipped = 0;
-  let running = 0;
-  let index = 0;
 
-  return new Promise((resolve, reject) => {
-    function dispatchNext() {
-      if (index >= tasks.length && running === 0) {
-        return resolve({ converted, skipped });
-      }
+  for (let i = 0; i < tasks.length; i++) {
+    const task = tasks[i];
 
-      while (running < concurrency && index < tasks.length) {
-        const task = tasks[index++];
-        running++;
-
-        // Cache check: skip if destination exists and is up to date
-        if (fs.existsSync(task.destPath)) {
-          try {
-            const srcStat = fs.statSync(task.srcPath);
-            const destStat = fs.statSync(task.destPath);
-            if (destStat.size > 0 && destStat.mtimeMs >= srcStat.mtimeMs) {
-              skipped++;
-              running--;
-              dispatchNext();
-              continue;
-            }
-          } catch {
-            // Re-convert on stat error
-          }
-        }
-
-        sharp(task.srcPath)
-          .avif({ quality: 80, effort: 4 })
-          .toFile(task.destPath)
-          .then(() => {
-            converted++;
-            running--;
-            if ((converted + skipped) % 100 === 0 || converted + skipped === tasks.length) {
-              process.stdout.write(`\r[Images] Processed ${converted + skipped}/${tasks.length} (${converted} converted, ${skipped} cached)`);
-            }
-            dispatchNext();
-          })
-          .catch((err) => {
-            running--;
-            console.error(`\nFailed to convert ${task.srcPath} -> ${task.destPath}:`, err);
-            dispatchNext();
-          });
-      }
+    // If image already exists in output folder, don't bother trying to convert avif for it and just skip
+    if (fs.existsSync(task.destPath)) {
+      skipped++;
+      continue;
     }
 
-    dispatchNext();
-  });
+    try {
+      await sharp(task.srcPath)
+        .avif({ quality: 80, effort: 4 })
+        .toFile(task.destPath);
+      converted++;
+      if (converted % 50 === 0 || i === tasks.length - 1) {
+        process.stdout.write(`\r[Images] Processed ${i + 1}/${tasks.length} (${converted} converted, ${skipped} skipped)`);
+      }
+    } catch (err) {
+      console.error(`\nFailed to convert ${task.srcPath} -> ${task.destPath}:`, err);
+    }
+  }
+
+  return { converted, skipped };
 }
 
 function mapSubAbilities(subObj?: Record<string, any[]>): Ability[] {
@@ -159,31 +129,33 @@ export async function runTransformation() {
   console.log(`Found ${totalHeroesCount} heroes to transform.`);
 
   ensureDir(OUT_DATA_DIR);
-  ensureDir(OUT_HEROES_DIR);
   ensureDir(OUT_PUBLIC_PORTRAITS);
   ensureDir(OUT_PUBLIC_ICONS);
 
   const imageTasks: ImageTask[] = [];
-  const queuedImagePaths = new Set<string>();
+  const queuedDestPaths = new Set<string>();
 
   function queueImage(srcDir: string, destDir: string, filename?: string) {
     if (!filename) return;
     const src = path.join(srcDir, filename);
     const dest = path.join(destDir, avifFilename(filename));
-    if (queuedImagePaths.has(dest)) return;
+    if (queuedDestPaths.has(dest)) return;
     if (fs.existsSync(src)) {
-      queuedImagePaths.add(dest);
+      queuedDestPaths.add(dest);
       imageTasks.push({ srcPath: src, destPath: dest });
     }
   }
 
-  const heroSummaries: HeroSummary[] = [];
+  const heroes: Record<string, Hero> = {};
 
-  for (const [internalKey, h] of Object.entries(rawHeroes)) {
+  // Sort heroes alphabetically by name for consistent key order
+  const sortedHeroEntries = Object.entries(rawHeroes).sort(([, a], [, b]) =>
+    (a.name || '').localeCompare(b.name || '')
+  );
+
+  for (const [internalKey, h] of sortedHeroEntries) {
     const slug = slugify(h.name);
     const modernRole = (h.expandedRole || 'Ranged Assassin') as ModernRole;
-    const legacyRole = (h.roles?.[0] || 'Assassin') as LegacyRole;
-    const rolePlaystyles = (h.playstyles || []).filter((p: string) => p.startsWith('Role'));
 
     // Portrait target
     const targetPortrait = h.portraits?.target;
@@ -193,27 +165,8 @@ export async function runTransformation() {
       portraitPath = `/images/portraits/${avifFilename(targetPortrait)}`;
     }
 
-    const summary: HeroSummary = {
-      id: h.name,
-      name: h.name,
-      slug,
-      title: h.title || '',
-      role: modernRole,
-      legacyRole,
-      rolePlaystyles,
-      franchise: (h.franchise || 'Nexus') as Franchise,
-      releaseDate: h.releaseDate || '2014-03-13',
-      difficulty: h.difficulty || 'Medium',
-      isMelee: !!h.isMelee,
-      gender: h.gender || 'Neutral',
-      portrait: portraitPath,
-      description: cleanText(h.description || h.infoText),
-    };
-
-    heroSummaries.push(summary);
-
     // Abilities transformation
-    const transformedAbilities: HeroDetail['abilities'] = {
+    const transformedAbilities: Hero['abilities'] = {
       basic: [],
       heroic: [],
       trait: [],
@@ -222,16 +175,7 @@ export async function runTransformation() {
       hearth: [],
     };
 
-    const abilityCategories: Array<keyof HeroDetail['abilities']> = [
-      'basic',
-      'heroic',
-      'trait',
-      'mount',
-      'activable',
-      'hearth',
-    ];
-
-    const categoryMap: Record<string, keyof HeroDetail['abilities']> = {
+    const categoryMap: Record<string, keyof Hero['abilities']> = {
       Basic: 'basic',
       Heroic: 'heroic',
       Trait: 'trait',
@@ -290,7 +234,7 @@ export async function runTransformation() {
       Level20: 20,
     };
 
-    const transformedTalents: HeroDetail['talents'] = {
+    const transformedTalents: Hero['talents'] = {
       1: [],
       4: [],
       7: [],
@@ -335,49 +279,45 @@ export async function runTransformation() {
       }
     }
 
-    const heroDetail: HeroDetail = {
-      ...summary,
+    const hero: Hero = {
+      id: h.name,
+      name: h.name,
+      slug,
+      title: h.title || '',
+      role: modernRole,
+      releaseDate: h.releaseDate || '2014-03-13',
+      portrait: portraitPath,
+      description: cleanText(h.description),
       abilities: transformedAbilities,
       talents: transformedTalents,
     };
 
-    // Save individual hero detail JSON
-    const heroFilePath = path.join(OUT_HEROES_DIR, `${slug}.json`);
-    fs.writeFileSync(heroFilePath, JSON.stringify(heroDetail, null, 2), 'utf-8');
+    heroes[slug] = hero;
   }
 
-  // Sort summaries alphabetically by default
-  heroSummaries.sort((a, b) => a.name.localeCompare(b.name));
-
-  // Save heroes summary list
-  const summaryFilePath = path.join(OUT_DATA_DIR, 'heroes-summary.json');
-  fs.writeFileSync(summaryFilePath, JSON.stringify(heroSummaries, null, 2), 'utf-8');
+  // Save all heroes to single JSON file
+  const heroesFilePath = path.join(OUT_DATA_DIR, 'heroes.json');
+  fs.writeFileSync(heroesFilePath, JSON.stringify(heroes, null, 2), 'utf-8');
 
   // Generate TypeScript index helper for imports
-  const indexTsContent = `import summaryData from './heroes-summary.json';
-import type { HeroSummary, HeroDetail } from '../types/hero';
+  const indexTsContent = `import heroesData from './heroes.json';
+import type { Hero } from '../types/hero';
 
-export const heroesSummary: HeroSummary[] = summaryData as HeroSummary[];
+export const heroes: Record<string, Hero> = heroesData as Record<string, Hero>;
+export const heroesList: Hero[] = Object.values(heroes);
 
-export async function getHeroDetail(slug: string): Promise<HeroDetail | null> {
-  try {
-    const module = await import(\`./heroes/\${slug}.json\`);
-    return module.default as HeroDetail;
-  } catch (error) {
-    console.error(\`Hero not found for slug: \${slug}\`, error);
-    return null;
-  }
+export function getHero(slug: string): Hero | undefined {
+  return heroes[slug];
 }
 `;
   fs.writeFileSync(path.join(OUT_DATA_DIR, 'index.ts'), indexTsContent, 'utf-8');
 
-  console.log(`\nWritten ${heroSummaries.length} hero detail files to: ${path.relative(ROOT_DIR, OUT_HEROES_DIR)}`);
-  console.log(`Written hero summaries list to: ${path.relative(ROOT_DIR, summaryFilePath)}`);
+  console.log(`\nWritten ${Object.keys(heroes).length} heroes to: ${path.relative(ROOT_DIR, heroesFilePath)}`);
   console.log(`Queued ${imageTasks.length} images for AVIF conversion.`);
 
-  console.log('\nConverting images to AVIF (concurrency: 16)...');
-  const imgStats = await convertImagesWithPool(imageTasks, 16);
-  console.log(`\nImage conversion complete: ${imgStats.converted} converted, ${imgStats.skipped} skipped (up-to-date).`);
+  console.log('\nConverting images to AVIF sequentially (one at a time)...');
+  const imgStats = await convertImages(imageTasks);
+  console.log(`\nImage conversion complete: ${imgStats.converted} converted, ${imgStats.skipped} skipped (already exists).`);
 
   const elapsed = ((Date.now() - startTime) / 1000).toFixed(1);
   console.log(`\nDone in ${elapsed}s! All hero data and AVIF images are ready.`);

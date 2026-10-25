@@ -6,21 +6,6 @@ export type ModernRole =
   | 'Healer'
   | 'Support';
 
-export type LegacyRole =
-  | 'Warrior'
-  | 'Assassin'
-  | 'Support'
-  | 'Specialist'
-  | 'Multiclass';
-
-export type Franchise =
-  | 'Starcraft'
-  | 'Warcraft'
-  | 'Diablo'
-  | 'Overwatch'
-  | 'Nexus'
-  | 'Retro';
-
 export interface AbilityCharges {
   countMax: number;
   countStart?: number;
@@ -57,24 +42,15 @@ export interface Talent {
   activeAbility?: Ability;
 }
 
-export interface HeroSummary {
+export interface Hero {
   id: string;
   name: string;
   slug: string;
   title: string;
   role: ModernRole;
-  legacyRole?: LegacyRole;
-  rolePlaystyles: string[];
-  franchise: Franchise;
   releaseDate: string;
-  difficulty?: string;
-  isMelee: boolean;
-  gender?: string;
   portrait: string;
   description: string;
-}
-
-export interface HeroDetail extends HeroSummary {
   abilities: {
     basic: Ability[];
     heroic: Ability[];
@@ -85,3 +61,7 @@ export interface HeroDetail extends HeroSummary {
   };
   talents: Record<1 | 4 | 7 | 10 | 13 | 16 | 20, Talent[]>;
 }
+
+export type HeroSummary = Omit<Hero, 'abilities' | 'talents'>;
+export type HeroDetail = Hero;
+
