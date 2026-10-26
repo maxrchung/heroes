@@ -25,6 +25,7 @@ export interface Talent {
 }
 
 export interface Hero {
+  slug: string;
   name: string;
   role: Role;
   releaseDate: string;

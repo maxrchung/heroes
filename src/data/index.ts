@@ -1,7 +1,7 @@
 import heroesData from "./heroes.json";
-import type { Hero } from "../types/hero";
+import type { Hero } from "./types";
 
-export const HeroesData: Record<string, Hero> = heroesData as Record<
+export const HEROES_DATA: Record<string, Hero> = heroesData as Record<
   string,
   Hero
 >;

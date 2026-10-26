@@ -1,4 +1,4 @@
-import type { Role } from "../src/types/hero";
+import type { Role } from "../src/data/types";
 
 export interface ImageTask {
   srcPath: string;

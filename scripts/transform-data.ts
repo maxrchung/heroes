@@ -1,8 +1,8 @@
 import fs from "node:fs";
 import path from "node:path";
 import sharp from "sharp";
-import type { Hero, Ability, Talent } from "../src/types/hero";
-import { Role } from "../src/types/hero";
+import type { Hero, Ability, Talent } from "../src/data/types";
+import { Role } from "../src/data/types";
 import type { HdpData, ImageTask } from "./types";
 
 const ROOT_DIR = process.cwd();
@@ -21,6 +21,13 @@ function cleanText(text?: string): string {
 function avifFileName(originalName: string): string {
   const parsed = path.parse(originalName);
   return `${parsed.name}.avif`;
+}
+
+function slugify(value: string): string {
+  return value
+    .toLowerCase()
+    .trim()
+    .replace(/[^a-z0-9]+/g, "");
 }
 
 const imageTasks: ImageTask[] = [];
@@ -58,6 +65,7 @@ export async function runTransformation() {
 
   for (const hero of Object.values(rawItems)) {
     const role = hero.expandedRole ?? Role.RangedAssassin;
+    const slug = slugify(hero.name);
 
     const targetPortrait = hero.portraits?.target;
     let portrait = "";
@@ -105,7 +113,13 @@ export async function runTransformation() {
       }
     }
 
-    heroes[hero.name] = {
+    const heroSlug = slug || slugify(hero.name);
+    if (heroes[heroSlug]) {
+      throw new Error(`Duplicate hero slug generated for: ${hero.name} -> ${heroSlug}`);
+    }
+
+    heroes[heroSlug] = {
+      slug: heroSlug,
       name: hero.name,
       role,
       releaseDate: hero.releaseDate || "2014-03-13",

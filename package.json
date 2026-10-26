@@ -8,8 +8,8 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "preview": "vite preview",
+    "fetch-data": "dotnet heroes-data-parser online -e hero:i -g 4 -o hdp",
     "transform-data": "tsx scripts/transform-data.ts",
-    "fetch": "dotnet heroes-data-parser online -e hero:i -g 4 -o hdp",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "lint": "eslint ."
