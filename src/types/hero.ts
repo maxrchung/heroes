@@ -1,10 +1,11 @@
-export type ModernRole =
-  | 'Tank'
-  | 'Bruiser'
-  | 'Melee Assassin'
-  | 'Ranged Assassin'
-  | 'Healer'
-  | 'Support';
+export enum Role {
+  Tank = "Tank",
+  Bruiser = "Bruiser",
+  MeleeAssassin = "Melee Assassin",
+  RangedAssassin = "Ranged Assassin",
+  Healer = "Healer",
+  Support = "Support",
+}
 
 export interface Ability {
   name: string;
@@ -25,8 +26,7 @@ export interface Talent {
 
 export interface Hero {
   name: string;
-  title: string;
-  role: ModernRole;
+  role: Role;
   releaseDate: string;
   portrait: string;
   description: string;
