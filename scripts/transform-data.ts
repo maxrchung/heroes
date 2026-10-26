@@ -3,6 +3,7 @@ import path from "node:path";
 import sharp from "sharp";
 import type { Hero, Ability, Talent } from "../src/types/hero";
 import { Role } from "../src/types/hero";
+import type { HdpData, ImageTask } from "./types";
 
 const ROOT_DIR = process.cwd();
 const HDP_DATA_DIR = path.join(ROOT_DIR, "hdp", "data");
@@ -12,100 +13,26 @@ const HDP_ICONS_DIR = path.join(ROOT_DIR, "hdp", "images", "abilitytalents");
 const OUT_DATA_DIR = path.join(ROOT_DIR, "src", "data");
 const OUT_PUBLIC_IMAGES = path.join(ROOT_DIR, "public", "images");
 
-function findLatestHeroDataFile(): string {
-  if (!fs.existsSync(HDP_DATA_DIR)) {
-    throw new Error(
-      `HDP data directory not found at: ${HDP_DATA_DIR}\n` +
-        `Please run: dotnet heroes-data-parser online -e hero:i -g 4 -o hdp`,
-    );
-  }
-
-  const files = fs
-    .readdirSync(HDP_DATA_DIR)
-    .filter((f) => f.startsWith("herodata_") && f.endsWith(".json"));
-  if (files.length === 0) {
-    throw new Error(`No herodata_*.json files found in ${HDP_DATA_DIR}`);
-  }
-
-  files.sort().reverse();
-  return path.join(HDP_DATA_DIR, files[0]);
-}
-
 function cleanText(text?: string): string {
   if (!text) return "";
   return text.replace(/<n\/>/g, "\n").trim();
 }
 
-function avifFilename(originalName: string): string {
+function avifFileName(originalName: string): string {
   const parsed = path.parse(originalName);
   return `${parsed.name}.avif`;
-}
-
-interface ImageTask {
-  srcPath: string;
-  destPath: string;
-}
-
-interface AbilityData {
-  name?: string;
-  icon?: string;
-  abilityType?: string;
-  cooldownText?: string;
-  energyText?: string;
-  fullText?: string;
-}
-
-interface TalentData {
-  name?: string;
-  icon?: string;
-  cooldownText?: string;
-  energyText?: string;
-  fullText?: string;
-}
-
-interface HeroData {
-  name: string;
-  expandedRole?: Role;
-  releaseDate?: string;
-  portraits?: { target?: string };
-  description?: string;
-  abilities?: Record<string, AbilityData[]>;
-  talents?: Record<string, TalentData[]>;
-}
-
-interface HeroDataFile {
-  items: Record<string, HeroData>;
 }
 
 const imageTasks: ImageTask[] = [];
 const queued = new Set<string>();
 
-function queueImage(srcDir: string, filename: string) {
-  const dest = path.join(OUT_PUBLIC_IMAGES, avifFilename(filename));
+function queueImage(srcDir: string, fileName: string) {
+  const dest = path.join(OUT_PUBLIC_IMAGES, avifFileName(fileName));
   if (fs.existsSync(dest) || queued.has(dest)) return;
-  const src = path.join(srcDir, filename);
+  const src = path.join(srcDir, fileName);
   if (fs.existsSync(src)) {
     queued.add(dest);
     imageTasks.push({ srcPath: src, destPath: dest });
-  }
-}
-
-async function convertImages(tasks: ImageTask[]) {
-  for (let i = 0; i < tasks.length; i++) {
-    const task = tasks[i];
-    try {
-      await sharp(task.srcPath)
-        .avif({ quality: 80, effort: 4 })
-        .toFile(task.destPath);
-      if ((i + 1) % 50 === 0 || i === tasks.length - 1) {
-        process.stdout.write(`\r[Images] Converted ${i + 1}/${tasks.length}`);
-      }
-    } catch (err) {
-      console.error(
-        `\nFailed to convert ${task.srcPath} -> ${task.destPath}:`,
-        err,
-      );
-    }
   }
 }
 
@@ -113,12 +40,17 @@ export async function runTransformation() {
   const startTime = Date.now();
   console.log("--- Heroes of the Storm Data Transformation ---");
 
-  const dataFilePath = findLatestHeroDataFile();
+  const dataFileName = fs
+    .readdirSync(HDP_DATA_DIR)
+    .find((file) => file.startsWith("herodata_") && file.endsWith(".json"));
+  if (!dataFileName) {
+    throw new Error(`No herodata_*.json file found in ${HDP_DATA_DIR}`);
+  }
+
+  const dataFilePath = path.join(HDP_DATA_DIR, dataFileName);
   console.log(`Using data file: ${path.relative(ROOT_DIR, dataFilePath)}`);
 
-  const rawJson = JSON.parse(
-    fs.readFileSync(dataFilePath, "utf-8"),
-  ) as HeroDataFile;
+  const rawJson = JSON.parse(fs.readFileSync(dataFilePath, "utf-8")) as HdpData;
   const rawItems = rawJson.items;
   console.log(`Found ${Object.keys(rawItems).length} heroes to transform.`);
 
@@ -131,7 +63,7 @@ export async function runTransformation() {
     let portrait = "";
     if (targetPortrait) {
       queueImage(HDP_PORTRAITS_DIR, targetPortrait);
-      portrait = `/images/${avifFilename(targetPortrait)}`;
+      portrait = `/images/${avifFileName(targetPortrait)}`;
     }
 
     const abilities: Record<string, Ability[]> = {};
@@ -145,7 +77,7 @@ export async function runTransformation() {
           return {
             name: ability.name || "Ability",
             type: ability.abilityType || undefined,
-            icon: ability.icon ? `/images/${avifFilename(ability.icon)}` : "",
+            icon: ability.icon ? `/images/${avifFileName(ability.icon)}` : "",
             cooldown: ability.cooldownText || undefined,
             cost: ability.energyText || undefined,
             description: cleanText(ability.fullText),
@@ -164,7 +96,7 @@ export async function runTransformation() {
           if (talent.icon) queueImage(HDP_ICONS_DIR, talent.icon);
           return {
             name: talent.name || "Talent",
-            icon: talent.icon ? `/images/${avifFilename(talent.icon)}` : "",
+            icon: talent.icon ? `/images/${avifFileName(talent.icon)}` : "",
             cooldown: talent.cooldownText || undefined,
             cost: talent.energyText || undefined,
             description: cleanText(talent.fullText),
@@ -193,7 +125,24 @@ export async function runTransformation() {
 
   if (imageTasks.length > 0) {
     console.log(`Converting ${imageTasks.length} new images to AVIF...`);
-    await convertImages(imageTasks);
+    for (let i = 0; i < imageTasks.length; i++) {
+      const task = imageTasks[i];
+      try {
+        await sharp(task.srcPath)
+          .avif({ quality: 80, effort: 4 })
+          .toFile(task.destPath);
+        if ((i + 1) % 50 === 0 || i === imageTasks.length - 1) {
+          process.stdout.write(
+            `\r[Images] Converted ${i + 1}/${imageTasks.length}`,
+          );
+        }
+      } catch (err) {
+        console.error(
+          `\nFailed to convert ${task.srcPath} -> ${task.destPath}:`,
+          err,
+        );
+      }
+    }
     console.log("\nImage conversion complete.");
   } else {
     console.log(
