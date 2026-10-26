@@ -8,7 +8,7 @@ export type ModernRole =
 
 export interface Ability {
   name: string;
-  hotkey?: string;
+  type?: string;
   icon: string;
   cooldown?: string;
   cost?: string;
@@ -18,7 +18,6 @@ export interface Ability {
 export interface Talent {
   name: string;
   icon: string;
-  type?: string;
   cooldown?: string;
   cost?: string;
   description: string;

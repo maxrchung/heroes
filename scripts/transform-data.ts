@@ -104,7 +104,7 @@ export async function runTransformation() {
           if (ability.icon) queueImage(HDP_ICONS_DIR, ability.icon);
           return {
             name: ability.name || 'Ability',
-            hotkey: ability.abilityType || undefined,
+            type: ability.abilityType || undefined,
             icon: ability.icon ? `/images/${avifFilename(ability.icon)}` : '',
             cooldown: ability.cooldownText || undefined,
             cost: ability.energyText || undefined,
@@ -125,7 +125,6 @@ export async function runTransformation() {
           return {
             name: talent.name || 'Talent',
             icon: talent.icon ? `/images/${avifFilename(talent.icon)}` : '',
-            abilityType: talent.abilityType || undefined,
             cooldown: talent.cooldownText || undefined,
             cost: talent.energyText || undefined,
             description: cleanText(talent.fullText),
