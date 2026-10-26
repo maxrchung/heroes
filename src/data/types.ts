@@ -9,7 +9,7 @@ export enum Role {
 
 export interface Ability {
   name: string;
-  type?: string;
+  hotkey?: string;
   icon: string;
   cooldown?: string;
   cost?: string;
@@ -31,6 +31,6 @@ export interface Hero {
   releaseDate: string;
   portrait: string;
   description: string;
-  abilities: Record<string, Ability[]>;
+  abilities: Ability[];
   talents: Record<string, Talent[]>;
 }

@@ -59,7 +59,7 @@ export async function runTransformation() {
 
   const rawJson = JSON.parse(fs.readFileSync(dataFilePath, "utf-8")) as HdpData;
   const rawItems = rawJson.items;
-  console.log(`Found ${Object.keys(rawItems).length} heroes to transform.`);
+  console.log(`Found ${Object.keys(rawItems).length} heroes to transform`);
 
   const heroes: Record<string, Hero> = {};
 
@@ -74,23 +74,42 @@ export async function runTransformation() {
       portrait = `/images/${avifFileName(targetPortrait)}`;
     }
 
-    const abilities: Record<string, Ability[]> = {};
+    const abilities: Ability[] = [];
     if (hero.abilities) {
       for (const [category, list] of Object.entries(hero.abilities)) {
         if (category === "Hearth" || !Array.isArray(list) || list.length === 0)
           continue;
-        const catKey = category.toLowerCase();
-        abilities[catKey] = list.map((ability) => {
+
+        if (
+          category === "Mount" &&
+          list.some((ability) => ability.name === "Summon Mount")
+        )
+          continue;
+
+        let activeCounter = 1;
+
+        for (const ability of list) {
           if (ability.icon) queueImage(HDP_ICONS_DIR, ability.icon);
-          return {
+
+          let hotkey = ability.abilityType;
+          if (ability.abilityType === "Trait") {
+            hotkey = "D";
+          } else if (ability.abilityType === "Heroic") {
+            hotkey = "R";
+          } else if (ability.abilityType === "Active") {
+            hotkey = activeCounter.toString();
+            activeCounter++;
+          }
+
+          abilities.push({
             name: ability.name || "Ability",
-            type: ability.abilityType || undefined,
+            hotkey,
             icon: ability.icon ? `/images/${avifFileName(ability.icon)}` : "",
             cooldown: ability.cooldownText || undefined,
             cost: ability.energyText || undefined,
             description: cleanText(ability.fullText),
-          };
-        });
+          });
+        }
       }
     }
 
@@ -113,13 +132,14 @@ export async function runTransformation() {
       }
     }
 
-    const heroSlug = slug || slugify(hero.name);
-    if (heroes[heroSlug]) {
-      throw new Error(`Duplicate hero slug generated for: ${hero.name} -> ${heroSlug}`);
+    if (heroes[slug]) {
+      throw new Error(
+        `Duplicate hero slug generated for: ${hero.name} -> ${slug}`,
+      );
     }
 
-    heroes[heroSlug] = {
-      slug: heroSlug,
+    heroes[slug] = {
+      slug,
       name: hero.name,
       role,
       releaseDate: hero.releaseDate || "2014-03-13",
@@ -134,7 +154,7 @@ export async function runTransformation() {
   fs.writeFileSync(heroesFilePath, JSON.stringify(heroes, null, 2), "utf-8");
 
   console.log(
-    `\nWritten ${Object.keys(heroes).length} heroes to: ${path.relative(ROOT_DIR, heroesFilePath)}`,
+    `\nWrote ${Object.keys(heroes).length} heroes to: ${path.relative(ROOT_DIR, heroesFilePath)}`,
   );
 
   if (imageTasks.length > 0) {
