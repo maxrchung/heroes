@@ -18,7 +18,7 @@ export interface Ability {
 export interface Talent {
   name: string;
   icon: string;
-  abilityType?: string;
+  type?: string;
   cooldown?: string;
   cost?: string;
   description: string;

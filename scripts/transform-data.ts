@@ -80,15 +80,15 @@ export async function runTransformation() {
   console.log(`Using data file: ${path.relative(ROOT_DIR, dataFilePath)}`);
 
   const rawJson = JSON.parse(fs.readFileSync(dataFilePath, 'utf-8'));
-  const rawHeroes = rawJson.items as Record<string, any>;
-  console.log(`Found ${Object.keys(rawHeroes).length} heroes to transform.`);
+  const rawItems = rawJson.items as Record<string, any>;
+  console.log(`Found ${Object.keys(rawItems).length} heroes to transform.`);
 
   const heroes: Record<string, Hero> = {};
 
-  for (const raw of Object.values(rawHeroes)) {
-    const modernRole = (raw.expandedRole || 'Ranged Assassin') as ModernRole;
+  for (const hero of Object.values(rawItems)) {
+    const modernRole = (hero.expandedRole || 'Ranged Assassin') as ModernRole;
 
-    const targetPortrait = raw.portraits?.target;
+    const targetPortrait = hero.portraits?.target;
     let portrait = '';
     if (targetPortrait) {
       queueImage(HDP_PORTRAITS_DIR, targetPortrait);
@@ -96,8 +96,8 @@ export async function runTransformation() {
     }
 
     const abilities: Record<string, Ability[]> = {};
-    if (raw.abilities) {
-      for (const [category, list] of Object.entries(raw.abilities)) {
+    if (hero.abilities) {
+      for (const [category, list] of Object.entries(hero.abilities)) {
         if (category === 'Hearth' || !Array.isArray(list) || list.length === 0) continue;
         const catKey = category.toLowerCase();
         abilities[catKey] = list.map((ability: any) => {
@@ -115,8 +115,8 @@ export async function runTransformation() {
     }
 
     const talents: Record<string, Talent[]> = {};
-    if (raw.talents) {
-      for (const [tier, tierTalents] of Object.entries(raw.talents)) {
+    if (hero.talents) {
+      for (const [tier, tierTalents] of Object.entries(hero.talents)) {
         if (!Array.isArray(tierTalents) || tierTalents.length === 0) continue;
 
         const tierNum = tier.replace('Level', '');
@@ -134,13 +134,13 @@ export async function runTransformation() {
       }
     }
 
-    heroes[raw.name] = {
-      name: raw.name,
-      title: raw.title || '',
+    heroes[hero.name] = {
+      name: hero.name,
+      title: hero.title || '',
       role: modernRole,
-      releaseDate: raw.releaseDate || '2014-03-13',
+      releaseDate: hero.releaseDate || '2014-03-13',
       portrait,
-      description: cleanText(raw.description),
+      description: cleanText(hero.description),
       abilities,
       talents,
     };
