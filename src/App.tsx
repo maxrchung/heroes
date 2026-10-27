@@ -41,11 +41,11 @@ const styles = stylex.create({
 
 function App() {
   return (
-    <main {...stylex.props(styles.page)}>
-      <h1 {...stylex.props(styles.title)}>Heroes</h1>
-      <ul {...stylex.props(styles.heroList)}>
+    <main sx={styles.page}>
+      <h1 sx={styles.title}>Heroes</h1>
+      <ul sx={styles.heroList}>
         <For each={heroes}>
-          {(hero) => <li {...stylex.props(styles.heroName)}>{hero.name}</li>}
+          {(hero) => <li sx={styles.heroName}>{hero.name}</li>}
         </For>
       </ul>
     </main>
