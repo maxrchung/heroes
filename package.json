@@ -16,9 +16,11 @@
   },
   "dependencies": {
     "@solidjs/router": "^0.15.3",
+    "@stylexjs/stylex": "^0.19.1",
     "solid-js": "^1.9.17"
   },
   "devDependencies": {
+    "@stylexjs/unplugin": "^0.19.1",
     "@types/node": "^24.19.2",
     "eslint": "^10.13.0",
     "prettier": "^3.9.10",
