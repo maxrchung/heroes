@@ -1,10 +1,35 @@
-import { For } from "solid-js";
+import { createMemo, createSignal, For } from "solid-js";
 import * as stylex from "@stylexjs/stylex";
 import { HEROES_DATA } from "./data";
+import { Role, type Hero } from "./data/types";
 
-const heroes = Object.values(HEROES_DATA).sort((a, b) =>
-  a.name.localeCompare(b.name),
-);
+type SortMode = "name" | "releaseDate" | "role";
+type HeroGroup = { label: string; heroes: Hero[] };
+
+const heroes = Object.values(HEROES_DATA);
+const roleOrder = Object.values(Role);
+
+function groupHeroes(sortedHeroes: Hero[], mode: SortMode): HeroGroup[] {
+  const groups = new Map<string, Hero[]>();
+
+  for (const hero of sortedHeroes) {
+    const label =
+      mode === "releaseDate"
+        ? hero.releaseDate.slice(0, 4)
+        : mode === "role"
+          ? hero.role
+          : hero.name.charAt(0).toLocaleUpperCase();
+    const group = groups.get(label);
+
+    if (group) {
+      group.push(hero);
+    } else {
+      groups.set(label, [hero]);
+    }
+  }
+
+  return [...groups].map(([label, heroes]) => ({ label, heroes }));
+}
 
 const styles = stylex.create({
   page: {
@@ -12,42 +37,154 @@ const styles = stylex.create({
     padding: "32px",
     backgroundColor: "#0d0e16",
     color: "#eeefff",
-    fontFamily: "system-ui, sans-serif",
+    fontFamily: "sans-serif",
   },
-  title: {
-    maxWidth: "960px",
-    margin: "0 auto 24px",
-    fontFamily: "serif",
-    fontSize: "32px",
-    fontWeight: 500,
-  },
-  heroList: {
+  container: {
+    width: "100%",
     maxWidth: "960px",
     marginInline: "auto",
-    padding: 0,
+  },
+  title: {
+    fontFamily: "serif",
+    fontSize: "32px",
+    fontWeight: 400,
+  },
+  headingRow: {
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "space-between",
+    gap: "16px",
+    marginBottom: "24px",
+  },
+  sortSelect: {
+    padding: "8px 12px",
+    border: "1px solid #252738",
+    borderRadius: "4px",
+    backgroundColor: "#151722",
+    color: "#eeefff",
+    fontSize: "14px",
+  },
+  heroGroup: {
+    marginBottom: "24px",
+  },
+  letterHeading: {
+    marginBottom: "16px",
+    fontFamily: "serif",
+    fontSize: "24px",
+    fontWeight: 400,
+  },
+  heroList: {
     display: "grid",
     gridTemplateColumns: "repeat(auto-fill, minmax(180px, 1fr))",
     listStyle: "none",
     gap: "8px",
   },
-  heroName: {
-    padding: "10px 12px",
-    border: "1px solid #252738",
+  heroLink: {
+    display: "flex",
+    alignItems: "center",
+    gap: "12px",
+    padding: "8px 16px",
     borderRadius: "4px",
     backgroundColor: "#151722",
-    fontSize: "14px",
+    color: "inherit",
+    textDecoration: "none",
+    fontSize: "16px",
+    ":hover": {
+      backgroundColor: "#1d2030",
+    },
+    ":focus-visible": {
+      outline: "2px solid #8e83ff",
+      outlineOffset: "2px",
+    },
+  },
+  heroPortrait: {
+    width: "40px",
+    height: "40px",
+    flex: "none",
+    objectFit: "cover",
+    borderRadius: "4px",
   },
 });
 
 function App() {
+  const [sortMode, setSortMode] = createSignal<SortMode>("name");
+  const heroGroups = createMemo(() => {
+    const sortedHeroes = [...heroes];
+
+    switch (sortMode()) {
+      case "releaseDate":
+        sortedHeroes.sort(
+          (a, b) =>
+            b.releaseDate.localeCompare(a.releaseDate) ||
+            a.name.localeCompare(b.name),
+        );
+        break;
+      case "role":
+        sortedHeroes.sort(
+          (a, b) =>
+            roleOrder.indexOf(a.role) - roleOrder.indexOf(b.role) ||
+            a.name.localeCompare(b.name),
+        );
+        break;
+      case "name":
+        sortedHeroes.sort((a, b) => a.name.localeCompare(b.name));
+        break;
+    }
+
+    return groupHeroes(sortedHeroes, sortMode());
+  });
+
   return (
     <main sx={styles.page}>
-      <h1 sx={styles.title}>Heroes</h1>
-      <ul sx={styles.heroList}>
-        <For each={heroes}>
-          {(hero) => <li sx={styles.heroName}>{hero.name}</li>}
+      <div sx={styles.container}>
+        <div sx={styles.headingRow}>
+          <h1 sx={styles.title}>Heroes</h1>
+          <select
+            sx={styles.sortSelect}
+            aria-label="Sort heroes"
+            value={sortMode()}
+            onChange={(event) =>
+              setSortMode(event.currentTarget.value as SortMode)
+            }
+          >
+            <option value="name">Name</option>
+            <option value="releaseDate">Release date</option>
+            <option value="role">Role</option>
+          </select>
+        </div>
+
+        <For each={heroGroups()}>
+          {(group) => {
+            const headingId = `group-${group.label.replaceAll(" ", "-")}`;
+
+            return (
+              <section sx={styles.heroGroup} aria-labelledby={headingId}>
+                <h2 sx={styles.letterHeading} id={headingId}>
+                  {group.label}
+                </h2>
+                <ul sx={styles.heroList}>
+                  <For each={group.heroes}>
+                    {(hero) => (
+                      <li>
+                        <a sx={styles.heroLink} href={`/${hero.slug}`}>
+                          <img
+                            sx={styles.heroPortrait}
+                            src={hero.portrait}
+                            alt=""
+                            loading="lazy"
+                            decoding="async"
+                          />
+                          {hero.name}
+                        </a>
+                      </li>
+                    )}
+                  </For>
+                </ul>
+              </section>
+            );
+          }}
         </For>
-      </ul>
+      </div>
     </main>
   );
 }
