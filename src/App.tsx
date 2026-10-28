@@ -68,7 +68,7 @@ const styles = stylex.create({
     color: color.textPrimary,
     pointerEvents: "none",
   },
-  heroGroup: {
+  sortGroup: {
     display: "flex",
     flexDirection: "column",
     gap: space[16],
@@ -79,7 +79,7 @@ const styles = stylex.create({
     listStyle: "none",
     gap: space[8],
   },
-  heroLink: {
+  heroTile: {
     display: "flex",
     alignItems: "center",
     gap: space[12],
@@ -198,7 +198,7 @@ function App() {
             const headingId = `group-${group.label.replaceAll(" ", "-")}`;
 
             return (
-              <section sx={styles.heroGroup} aria-labelledby={headingId}>
+              <section sx={styles.sortGroup} aria-labelledby={headingId}>
                 <Heading level={2} id={headingId}>
                   {group.label}
                 </Heading>
@@ -207,7 +207,7 @@ function App() {
                   <For each={group.heroes}>
                     {(hero) => (
                       <li>
-                        <a sx={styles.heroLink} href={`/${hero.slug}`}>
+                        <a sx={styles.heroTile} href={`/${hero.slug}`}>
                           <img
                             sx={styles.heroPortrait}
                             src={hero.portrait}
