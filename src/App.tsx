@@ -35,11 +35,6 @@ const styles = stylex.create({
     alignItems: "center",
     gap: "8px",
   },
-  sortLabel: {
-    display: {
-      "@media (max-width: 600px)": "none",
-    },
-  },
   sortSelect: {
     padding: "8px 12px",
     border: "1px solid #252738",
@@ -138,9 +133,7 @@ function App() {
           <Heading level={1}>Heroes</Heading>
 
           <div sx={styles.sortControl}>
-            <label {...stylex.props(styles.sortLabel)} for="sort">
-              Sort
-            </label>
+            <label for="sort">Sort</label>
 
             <select
               id="sort"
