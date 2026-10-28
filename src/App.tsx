@@ -7,6 +7,7 @@ import { colors } from "./styles/colors.stylex";
 import { borderRadius } from "./styles/borderRadius.stylex";
 import { spacing } from "./styles/spacing.stylex";
 import { sizing } from "./styles/sizing.stylex";
+import { fontFamily, fontSize } from "./styles/typography.stylex";
 
 const SORT_MODE_STORAGE_KEY = "heroes.sortMode";
 const heroes = Object.values(HEROES_DATA);
@@ -18,7 +19,7 @@ const styles = stylex.create({
     padding: spacing[24],
     backgroundColor: colors.pageBg,
     color: colors.textPrimary,
-    fontFamily: "sans-serif",
+    fontFamily: fontFamily.body,
   },
   container: {
     display: "flex",
@@ -48,6 +49,7 @@ const styles = stylex.create({
     borderRadius: borderRadius[4],
     backgroundColor: colors.controlBg,
     color: colors.textPrimary,
+    fontSize: fontSize[16],
     cursor: "pointer",
     ":hover": {
       backgroundColor: colors.controlHoverBg,

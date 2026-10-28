@@ -1,5 +1,6 @@
 import type { JSX } from "solid-js";
 import * as stylex from "@stylexjs/stylex";
+import { fontFamily, fontSize, fontWeight } from "../styles/typography.stylex";
 
 type HeadingProps = Omit<JSX.HTMLAttributes<HTMLHeadingElement>, "sx"> & {
   level: 1 | 2;
@@ -8,14 +9,14 @@ type HeadingProps = Omit<JSX.HTMLAttributes<HTMLHeadingElement>, "sx"> & {
 
 const styles = stylex.create({
   h1: {
-    fontFamily: "serif",
-    fontSize: "32px",
-    fontWeight: 400,
+    fontFamily: fontFamily.heading,
+    fontSize: fontSize[32],
+    fontWeight: fontWeight[400],
   },
   h2: {
-    fontFamily: "serif",
-    fontSize: "24px",
-    fontWeight: 400,
+    fontFamily: fontFamily.heading,
+    fontSize: fontSize[24],
+    fontWeight: fontWeight[400],
   },
 });
 
