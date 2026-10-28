@@ -2,6 +2,7 @@ import { createMemo, createSignal, For } from "solid-js";
 import * as stylex from "@stylexjs/stylex";
 import { HEROES_DATA } from "./data";
 import { Role, type Hero } from "./data/types";
+import { Heading } from "./components/Heading";
 
 type SortMode = "name" | "releaseDate" | "role";
 type HeroGroup = { label: string; heroes: Hero[] };
@@ -34,27 +35,24 @@ function groupHeroes(sortedHeroes: Hero[], mode: SortMode): HeroGroup[] {
 const styles = stylex.create({
   page: {
     minHeight: "100vh",
-    padding: "32px",
+    padding: "24px",
     backgroundColor: "#0d0e16",
     color: "#eeefff",
     fontFamily: "sans-serif",
   },
   container: {
+    display: "flex",
+    flexDirection: "column",
+    gap: "24px",
     width: "100%",
     maxWidth: "960px",
     marginInline: "auto",
-  },
-  title: {
-    fontFamily: "serif",
-    fontSize: "32px",
-    fontWeight: 400,
   },
   headingRow: {
     display: "flex",
     alignItems: "center",
     justifyContent: "space-between",
     gap: "16px",
-    marginBottom: "24px",
   },
   sortSelect: {
     padding: "8px 12px",
@@ -65,13 +63,9 @@ const styles = stylex.create({
     fontSize: "14px",
   },
   heroGroup: {
-    marginBottom: "24px",
-  },
-  letterHeading: {
-    marginBottom: "16px",
-    fontFamily: "serif",
-    fontSize: "24px",
-    fontWeight: 400,
+    display: "flex",
+    flexDirection: "column",
+    gap: "16px",
   },
   heroList: {
     display: "grid",
@@ -138,7 +132,8 @@ function App() {
     <main sx={styles.page}>
       <div sx={styles.container}>
         <div sx={styles.headingRow}>
-          <h1 sx={styles.title}>Heroes</h1>
+          <Heading level={1}>Heroes</Heading>
+
           <select
             sx={styles.sortSelect}
             aria-label="Sort heroes"
@@ -148,7 +143,9 @@ function App() {
             }
           >
             <option value="name">Name</option>
+
             <option value="releaseDate">Release Date</option>
+
             <option value="role">Role</option>
           </select>
         </div>
@@ -159,9 +156,10 @@ function App() {
 
             return (
               <section sx={styles.heroGroup} aria-labelledby={headingId}>
-                <h2 sx={styles.letterHeading} id={headingId}>
+                <Heading level={2} id={headingId}>
                   {group.label}
-                </h2>
+                </Heading>
+
                 <ul sx={styles.heroList}>
                   <For each={group.heroes}>
                     {(hero) => (
