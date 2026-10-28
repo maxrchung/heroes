@@ -148,7 +148,7 @@ function App() {
             }
           >
             <option value="name">Name</option>
-            <option value="releaseDate">Release date</option>
+            <option value="releaseDate">Release Date</option>
             <option value="role">Role</option>
           </select>
         </div>
