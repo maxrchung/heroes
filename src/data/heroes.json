@@ -9,42 +9,42 @@
     "abilities": [
       {
         "name": "Symbiote",
-        "type": "Q",
+        "hotkey": "Q",
         "icon": "/images/storm_ui_icon_abathur_symbiote.avif",
         "cooldown": "Cooldown: 4 seconds",
         "description": "Spawn and attach a Symbiote to a target ally or Structure. While active, Abathur controls the Symbiote, gaining access to new Abilities. The Symbiote is able to gain XP from nearby enemy deaths."
       },
       {
         "name": "Toxic Nest",
-        "type": "W",
+        "hotkey": "W",
         "icon": "/images/storm_ui_icon_abathur_toxicnest.avif",
         "cooldown": "Charge Cooldown: 10 seconds",
         "description": "Spawn a mine that becomes active after a short time. Deals 153 (+4% per level) damage and reveals the enemy for 4 seconds. Lasts 90 seconds.\n\nStores up to 3 charges."
       },
       {
         "name": "Evolve Monstrosity",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_abathur_evolvemonstrosity.avif",
         "cooldown": "Cooldown: 90 seconds",
         "description": "Turn an allied Minion or Locust into a Monstrosity. When enemy Minions near the Monstrosity die, it gains 2% Health and 2% Basic Attack damage, stacking up to 40 times. The Monstrosity can be healed by Carapace and has the ability to Burrow to a visible location every 80 seconds.\n\nUsing Symbiote on the Monstrosity allows Abathur to control it, in addition to Symbiote's normal benefits. This Ability can be reactivated to automatically cast Symbiote on his Monstrosity."
       },
       {
         "name": "Ultimate Evolution",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_abathur_ultimateevolution.avif",
         "cooldown": "Cooldown: 70 seconds",
         "description": "Clone target allied Hero and control it for 20 seconds. Abathur has perfected the clone, granting it 20% Spell Power, 20% bonus Attack Damage, and 10% bonus Movement Speed. Cannot use their Heroic Ability."
       },
       {
         "name": "Locust Strain",
-        "type": "D",
+        "hotkey": "D",
         "icon": "/images/storm_ui_icon_abathur_spawnlocust.avif",
         "cooldown": "Cooldown: 15 seconds",
         "description": "Spawns a Locust to attack down the nearest lane every 15 seconds.  Locusts heal for 20% of the damage they deal, and regain 20% of their Maximum health when a nearby minion dies.\n\nLocusts lose health over 17 seconds, have 225 (+4% per level) health and deal 36 (+4% per level) damage with each Basic Attack, dealing 100% bonus damage to enemy non-Heroes."
       },
       {
         "name": "Deep Tunnel",
-        "type": "Z",
+        "hotkey": "Z",
         "icon": "/images/storm_ui_icon_abathur_mount.avif",
         "cooldown": "Cooldown: 30 seconds",
         "description": "Quickly tunnel to a visible location."
@@ -202,7 +202,7 @@
     "abilities": [
       {
         "name": "Discord Strike",
-        "type": "Q",
+        "hotkey": "Q",
         "icon": "/images/storm_ui_icon_alarak_discordstrike.avif",
         "cooldown": "Cooldown: 8 seconds",
         "cost": "Mana: 55",
@@ -210,7 +210,7 @@
       },
       {
         "name": "Telekinesis",
-        "type": "W",
+        "hotkey": "W",
         "icon": "/images/storm_ui_icon_alarak_telekinesis.avif",
         "cooldown": "Cooldown: 12 seconds",
         "cost": "Mana: 30",
@@ -218,7 +218,7 @@
       },
       {
         "name": "Lightning Surge",
-        "type": "E",
+        "hotkey": "E",
         "icon": "/images/storm_ui_icon_alarak_lightningsurge.avif",
         "cooldown": "Cooldown: 6 seconds",
         "cost": "Mana: 25",
@@ -226,7 +226,7 @@
       },
       {
         "name": "Deadly Charge",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_alarak_recklesscharge.avif",
         "cooldown": "Cooldown: 45 seconds",
         "cost": "Mana: 60",
@@ -234,7 +234,7 @@
       },
       {
         "name": "Counter-Strike",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_alarak_counterstrike.avif",
         "cooldown": "Cooldown: 30 seconds",
         "cost": "Mana: 50",
@@ -242,7 +242,7 @@
       },
       {
         "name": "Sadism",
-        "type": "D",
+        "hotkey": "D",
         "icon": "/images/storm_ui_icon_alarak_sadism.avif",
         "description": "Alarak's Ability damage and self-healing are increased by 100% against enemy Heroes.\n\nRepeatable Quest: Takedowns increase Sadism by 3%, up to 30%. Sadism gained from Takedowns is lost on death."
       }
@@ -386,14 +386,14 @@
     "abilities": [
       {
         "name": "Gift of Life",
-        "type": "Q",
+        "hotkey": "Q",
         "icon": "/images/storm_ui_icon_alexstrasza_gift_of_life.avif",
         "cooldown": "Cooldown: 7 seconds",
         "description": "Sacrifice 15% of Alexstrasza's current Health, healing an allied Hero for 150% of that amount.\n\nPassive: Increase Alexstrasza's Health regeneration by 150%.\n\nDragonqueen: Breath of Life\nCooldown greatly reduced and does not cost Health."
       },
       {
         "name": "Abundance",
-        "type": "W",
+        "hotkey": "W",
         "icon": "/images/storm_ui_icon_alexstrasza_abundance.avif",
         "cooldown": "Cooldown: 14 seconds",
         "cost": "Mana: 75",
@@ -401,7 +401,7 @@
       },
       {
         "name": "Flame Buffet",
-        "type": "E",
+        "hotkey": "E",
         "icon": "/images/storm_ui_icon_alexstrasza_flame_buffet.avif",
         "cooldown": "Cooldown: 2 seconds",
         "cost": "Mana: 50",
@@ -409,7 +409,7 @@
       },
       {
         "name": "Life-Binder",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_alexstrasza_life_binder.avif",
         "cooldown": "Cooldown: 50 seconds",
         "cost": "Mana: 50",
@@ -417,7 +417,7 @@
       },
       {
         "name": "Cleansing Flame",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_alexstrasza_cleansing_flame.avif",
         "cooldown": "Cooldown: 100 seconds",
         "cost": "Mana: 100",
@@ -425,7 +425,7 @@
       },
       {
         "name": "Dragonqueen",
-        "type": "D",
+        "hotkey": "D",
         "icon": "/images/storm_ui_icon_alexstrasza_dragon_queen.avif",
         "cooldown": "Cooldown: 130 seconds",
         "description": "After 1.25 seconds, transform into a dragon and gain 500 (+4% per level) Health.\n\nWhile Dragonqueen is active, Alexstrasza's Abilities are empowered, and her Basic Attacks deal 143 (+4% per level) damage and heal allied Heroes for 43 (+4% per level) in an arc in front of her. Additionally, the duration of incoming Stuns, Roots, and Slows, is reduced by 50%.\n\nLasts 15 seconds."
@@ -570,7 +570,7 @@
     "abilities": [
       {
         "name": "Lightning Fury",
-        "type": "Q",
+        "hotkey": "Q",
         "icon": "/images/storm_ui_icon_cassia_lightningfury.avif",
         "cooldown": "Cooldown: 5 seconds",
         "cost": "Mana: 20",
@@ -578,7 +578,7 @@
       },
       {
         "name": "Blinding Light",
-        "type": "W",
+        "hotkey": "W",
         "icon": "/images/storm_ui_icon_cassia_blindinglight.avif",
         "cooldown": "Cooldown: 15 seconds",
         "cost": "Mana: 50",
@@ -586,7 +586,7 @@
       },
       {
         "name": "Fend",
-        "type": "E",
+        "hotkey": "E",
         "icon": "/images/storm_ui_icon_cassia_fend.avif",
         "cooldown": "Cooldown: 10 seconds",
         "cost": "Mana: 50",
@@ -594,7 +594,7 @@
       },
       {
         "name": "Ball Lightning",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_cassia_balllightning.avif",
         "cooldown": "Cooldown: 60 seconds",
         "cost": "Mana: 60",
@@ -602,7 +602,7 @@
       },
       {
         "name": "Valkyrie",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_cassia_valkrie.avif",
         "cooldown": "Cooldown: 60 seconds",
         "cost": "Mana: 60",
@@ -610,7 +610,7 @@
       },
       {
         "name": "Avoidance",
-        "type": "D",
+        "hotkey": "D",
         "icon": "/images/storm_ui_icon_cassia_avoidance_b.avif",
         "description": "While moving, Cassia gradually gains up to 30 Armor over 3 seconds. After being stationary for 0.75 seconds, the Armor is rapidly lost over .5 seconds. \n\nAvoidance remains charged while Fending."
       }
@@ -753,7 +753,7 @@
     "abilities": [
       {
         "name": "Healing Dart",
-        "type": "Q",
+        "hotkey": "Q",
         "icon": "/images/storm_ui_icon_ana_healing_dart.avif",
         "cooldown": "Cooldown: 2 seconds",
         "cost": "Mana: 10",
@@ -761,7 +761,7 @@
       },
       {
         "name": "Biotic Grenade",
-        "type": "W",
+        "hotkey": "W",
         "icon": "/images/storm_ui_icon_ana_biotic_grenade.avif",
         "cooldown": "Cooldown: 16 seconds",
         "cost": "Mana: 50",
@@ -769,7 +769,7 @@
       },
       {
         "name": "Sleep Dart",
-        "type": "E",
+        "hotkey": "E",
         "icon": "/images/storm_ui_icon_ana_sleep_dart.avif",
         "cooldown": "Cooldown: 14 seconds",
         "cost": "Mana: 50",
@@ -777,7 +777,7 @@
       },
       {
         "name": "Nano Boost",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_ana_nano_bost.avif",
         "cooldown": "Cooldown: 70 seconds",
         "cost": "Mana: 60",
@@ -785,7 +785,7 @@
       },
       {
         "name": "Eye of Horus",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_ana_overwatch.avif",
         "cooldown": "Cooldown: 60 seconds",
         "cost": "Mana: 45",
@@ -793,7 +793,7 @@
       },
       {
         "name": "Shrike",
-        "type": "D",
+        "hotkey": "D",
         "icon": "/images/storm_ui_icon_ana_aim_down_sights.avif",
         "cooldown": "Cooldown: 4 seconds",
         "description": "Basic Attacks apply a Dose to enemies, dealing 40 (+4% per level) damage over 5 seconds, plus additional damage equal to the current number of stacks on the target, stacking up to 5 times. Every 0.5 seconds, Ana is healed for 60% of the damage dealt by Shrike.\n\nAim Down Sights\n\nActivating Shrike reduces your Movement Speed by 25%, but increases the Range of Healing Dart and Sleep Dart by 25% while also allowing them to pierce one Hero. Lasts until canceled."
@@ -937,7 +937,7 @@
     "abilities": [
       {
         "name": "Flash Heal",
-        "type": "Q",
+        "hotkey": "Q",
         "icon": "/images/storm_ui_icon_anduin_flash_heal.avif",
         "cooldown": "Cooldown: 5 seconds",
         "cost": "Mana: 20",
@@ -945,7 +945,7 @@
       },
       {
         "name": "Divine Star",
-        "type": "W",
+        "hotkey": "W",
         "icon": "/images/storm_ui_icon_anduin_divine_star.avif",
         "cooldown": "Cooldown: 10 seconds",
         "cost": "Mana: 50",
@@ -953,7 +953,7 @@
       },
       {
         "name": "Chastise",
-        "type": "E",
+        "hotkey": "E",
         "icon": "/images/storm_ui_icon_anduin_chastise.avif",
         "cooldown": "Cooldown: 9 seconds",
         "cost": "Mana: 40",
@@ -961,7 +961,7 @@
       },
       {
         "name": "Holy Word: Salvation",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_anduin_holy_word_salvation.avif",
         "cooldown": "Cooldown: 80 seconds",
         "cost": "Mana: 70",
@@ -969,7 +969,7 @@
       },
       {
         "name": "Lightbomb",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_anduin_light_bomb.avif",
         "cooldown": "Cooldown: 60 seconds",
         "cost": "Mana: 70",
@@ -977,7 +977,7 @@
       },
       {
         "name": "Leap of Faith",
-        "type": "D",
+        "hotkey": "D",
         "icon": "/images/storm_ui_icon_anduin_leap_of_faith.avif",
         "cooldown": "Cooldown: 70 seconds",
         "description": "Faith instantly pulls an allied Hero to Anduin's location, granting them Unstoppable while they travel.\n\nPursued By Grace\n\nBasic Attacks against enemy Heroes heal the lowest Health allied Hero near Anduin for 32 (+4% per level)."
@@ -1127,7 +1127,7 @@
     "abilities": [
       {
         "name": "Impale",
-        "type": "Q",
+        "hotkey": "Q",
         "icon": "/images/storm_ui_icon_anubarak_impale.avif",
         "cooldown": "Cooldown: 12 seconds",
         "cost": "Mana: 65",
@@ -1135,7 +1135,7 @@
       },
       {
         "name": "Harden Carapace",
-        "type": "W",
+        "hotkey": "W",
         "icon": "/images/storm_ui_icon_anubarak_hardencarapace_var1.avif",
         "cooldown": "Cooldown: 7 seconds",
         "cost": "Mana: 25",
@@ -1143,7 +1143,7 @@
       },
       {
         "name": "Burrow Charge",
-        "type": "E",
+        "hotkey": "E",
         "icon": "/images/storm_ui_icon_anubarak_burrowcharge.avif",
         "cooldown": "Cooldown: 14 seconds",
         "cost": "Mana: 65",
@@ -1151,7 +1151,7 @@
       },
       {
         "name": "Locust Swarm",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_anubarak_locustswarm.avif",
         "cooldown": "Cooldown: 100 seconds",
         "cost": "Mana: 75",
@@ -1159,7 +1159,7 @@
       },
       {
         "name": "Cocoon",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_anubarak_webblast.avif",
         "cooldown": "Cooldown: 70 seconds",
         "cost": "Mana: 70",
@@ -1167,7 +1167,7 @@
       },
       {
         "name": "Scarab Host",
-        "type": "D",
+        "hotkey": "D",
         "icon": "/images/storm_ui_icon_anubarak_scarabhost.avif",
         "description": "Using an Ability spawns a Beetle which loses Health over 10 seconds, attacking nearby enemies for 20 (+4% per level) damage."
       }
@@ -1310,7 +1310,7 @@
     "abilities": [
       {
         "name": "Blade Dash",
-        "type": "Q",
+        "hotkey": "Q",
         "icon": "/images/storm_ui_icon_artanis_powerstrikes.avif",
         "cooldown": "Cooldown: 10 seconds",
         "cost": "Mana: 50",
@@ -1318,7 +1318,7 @@
       },
       {
         "name": "Twin Blades",
-        "type": "W",
+        "hotkey": "W",
         "icon": "/images/storm_ui_icon_artanis_doubleslash_on.avif",
         "cooldown": "Cooldown: 4 seconds",
         "cost": "Mana: 20",
@@ -1326,7 +1326,7 @@
       },
       {
         "name": "Phase Prism",
-        "type": "E",
+        "hotkey": "E",
         "icon": "/images/storm_ui_icon_artanis_repositionmatrix.avif",
         "cooldown": "Cooldown: 12 seconds",
         "cost": "Mana: 50",
@@ -1334,7 +1334,7 @@
       },
       {
         "name": "Purifier Beam",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_artanis_purifierbeam.avif",
         "cooldown": "Cooldown: 70 seconds",
         "cost": "Mana: 65",
@@ -1342,7 +1342,7 @@
       },
       {
         "name": "Suppression Pulse",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_artanis_disruptionweb.avif",
         "cooldown": "Cooldown: 50 seconds",
         "cost": "Mana: 40",
@@ -1350,7 +1350,7 @@
       },
       {
         "name": "Shield Overload",
-        "type": "D",
+        "hotkey": "D",
         "icon": "/images/storm_ui_icon_artanis_shieldoverload.avif",
         "cooldown": "Cooldown: 24 seconds",
         "description": "After taking damage while below 75% Health, Artanis gains a 365 (+4% per level) Shield for 5 seconds. Basic Attacks lower the cooldown of Shield Overload by 4 seconds."
@@ -1497,7 +1497,7 @@
     "abilities": [
       {
         "name": "Death Coil",
-        "type": "Q",
+        "hotkey": "Q",
         "icon": "/images/storm_ui_icon_arthas_deathcoil.avif",
         "cooldown": "Cooldown: 9 seconds",
         "cost": "Mana: 40",
@@ -1505,7 +1505,7 @@
       },
       {
         "name": "Howling Blast",
-        "type": "W",
+        "hotkey": "W",
         "icon": "/images/storm_ui_icon_arthas_howlingblast.avif",
         "cooldown": "Cooldown: 10 seconds",
         "cost": "Mana: 50",
@@ -1513,7 +1513,7 @@
       },
       {
         "name": "Frozen Tempest",
-        "type": "E",
+        "hotkey": "E",
         "icon": "/images/storm_ui_icon_arthas_frosentempest.avif",
         "cooldown": "Cooldown: 1 second",
         "cost": "Mana: 13 per second",
@@ -1521,14 +1521,14 @@
       },
       {
         "name": "Army of the Dead",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_arthas_armyofthedead.avif",
         "cooldown": "Cooldown: 18 seconds",
         "description": "Consume all charges to summon an equal number of Ghouls that lose Health over 20 seconds and attack for 20 (+4% per level) damage. Reactivate to sacrifice a ghoul, healing Arthas for 240 (+4% per level) Health. Stores up to 6 charges.\n\nWhenever a nearby enemy Minion dies, reduce the charge cooldown of this Ability by 1 second. Takedowns reduce the charge cooldown of this Ability by 6 seconds."
       },
       {
         "name": "Summon Sindragosa",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_arthas_summonsindragosa.avif",
         "cooldown": "Cooldown: 100 seconds",
         "cost": "Mana: 100",
@@ -1536,7 +1536,7 @@
       },
       {
         "name": "Frostmourne Hungers",
-        "type": "D",
+        "hotkey": "D",
         "icon": "/images/storm_ui_icon_arthas_frostmournehungers_off.avif",
         "cooldown": "Cooldown: 12 seconds",
         "description": "Activate to make Arthas's next Basic Attack strike immediately and deal 71 (+4% per level) bonus damage. Dealing damage restores 40 Mana.\n\nQuest: Killing a Minion or hitting a Hero with Frostmourne Hungers permanently increases its bonus damage by 3 and Arthas's Basic Attack damage by 0.75."
@@ -1680,42 +1680,42 @@
     "abilities": [
       {
         "name": "Sacred Sweep",
-        "type": "Q",
+        "hotkey": "Q",
         "icon": "/images/storm_ui_icon_auriel_angelicsweep.avif",
         "cooldown": "Cooldown: 8 seconds",
         "description": "Sweep the area with sacred power, dealing 40 (+4% per level) damage to enemies and an additional 160 (+4% per level) damage to enemies caught in the center."
       },
       {
         "name": "Ray of Heaven",
-        "type": "W",
+        "hotkey": "W",
         "icon": "/images/storm_ui_icon_auriel_rayofheaven.avif",
         "cooldown": "Cooldown: 4 seconds",
         "description": "Consume Auriel's stored energy and heal allied Heroes in the area for the amount of energy consumed."
       },
       {
         "name": "Detainment Strike",
-        "type": "E",
+        "hotkey": "E",
         "icon": "/images/storm_ui_icon_auriel_restrainingblow.avif",
         "cooldown": "Cooldown: 12 seconds",
         "description": "Deal 55 (+4% per level) damage to the first enemy Hero hit and knock them back. If they collide with terrain, they are also stunned for 1.25 seconds and take an additional 165 (+4% per level) damage."
       },
       {
         "name": "Resurrect",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_auriel_resurrect.avif",
         "cooldown": "Cooldown: 100 seconds",
         "description": "Channel on the spirit of a dead ally for 1 second. After a 3 second delay, they are brought back to life with 100% of their maximum Health at the location where they died.\n\nAuriel can use this ability while dead to resurrect herself."
       },
       {
         "name": "Crystal Aegis",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_auriel_ribboncocoon.avif",
         "cooldown": "Cooldown: 60 seconds",
         "description": "Place an allied Hero into Stasis for 2 seconds. Upon expiration, Crystal Aegis deals 255 (+4% per level) damage to all nearby enemies."
       },
       {
         "name": "Bestow Hope",
-        "type": "D",
+        "hotkey": "D",
         "icon": "/images/storm_ui_icon_auriel_bestowhope.avif",
         "cooldown": "Cooldown: 1.5 seconds",
         "description": "Passive: 70% of the damage Auriel deals to Heroes and 35% dealt to non-Heroes is stored as energy.\n\nBestow an allied Hero with Hope. While they remain near Auriel, 30% of their damage to Heroes and 10% of their damage to non-Heroes is converted to energy. Auriel can only have Bestow Hope on 1 ally at a time.\n\nAuriel can store up to 475 (+4% per level) energy."
@@ -1857,7 +1857,7 @@
     "abilities": [
       {
         "name": "Globe of Annihilation",
-        "type": "Q",
+        "hotkey": "Q",
         "icon": "/images/storm_ui_icon_azmodan_globeofannihilation.avif",
         "cooldown": "Cooldown: 10 seconds",
         "cost": "Mana: 70",
@@ -1865,7 +1865,7 @@
       },
       {
         "name": "Summon Demon Warrior",
-        "type": "W",
+        "hotkey": "W",
         "icon": "/images/storm_ui_icon_azmodan_summondemonwarrior.avif",
         "cooldown": "Charge Cooldown: 10 seconds",
         "cost": "Mana: 25",
@@ -1873,7 +1873,7 @@
       },
       {
         "name": "All Shall Burn",
-        "type": "E",
+        "hotkey": "E",
         "icon": "/images/storm_ui_icon_azmodan_allshallburn.avif",
         "cooldown": "Cooldown: 6 seconds",
         "cost": "Mana: 25",
@@ -1881,7 +1881,7 @@
       },
       {
         "name": "Demonic Invasion",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_azmodan_demonicinvasion.avif",
         "cooldown": "Cooldown: 100 seconds",
         "cost": "Mana: 60",
@@ -1889,7 +1889,7 @@
       },
       {
         "name": "Tide of Sin",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_azmodan_blackpool.avif",
         "cooldown": "Cooldown: 20 seconds",
         "cost": "Mana: 100",
@@ -1897,7 +1897,7 @@
       },
       {
         "name": "Demon Lieutenant",
-        "type": "D",
+        "hotkey": "D",
         "icon": "/images/storm_ui_icon_azmodan_generalofhell.avif",
         "cooldown": "Cooldown: 60 seconds",
         "description": "Summon a Demon Lieutenant at any allied Mercenary, Minion, or Azmodan Demon. The Lieutenant will cast Demonic Smite every 7 seconds, instantly killing an enemy Minion. Loses Health over 21 seconds.\n\nUsable while Channeling All Shall Burn."
@@ -2040,14 +2040,14 @@
     "abilities": [
       {
         "name": "Ancient Spear",
-        "type": "Q",
+        "hotkey": "Q",
         "icon": "/images/storm_ui_icon_sonya_ancientspear.avif",
         "cooldown": "Cooldown: 13 seconds",
         "description": "Throw out a spear that pulls Sonya to the first enemy hit, dealing 173 (+4% per level) damage and briefly stunning them. If this hits an enemy, generate 40 Fury."
       },
       {
         "name": "Seismic Slam",
-        "type": "W",
+        "hotkey": "W",
         "icon": "/images/storm_ui_icon_sonya_seismicslam.avif",
         "cooldown": "Cooldown: 1 second",
         "cost": "Fury: 25",
@@ -2055,7 +2055,7 @@
       },
       {
         "name": "Whirlwind",
-        "type": "E",
+        "hotkey": "E",
         "icon": "/images/storm_ui_icon_sonya_whirlwind.avif",
         "cooldown": "Cooldown: 5 seconds",
         "cost": "Fury: 40",
@@ -2063,21 +2063,21 @@
       },
       {
         "name": "Leap",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_sonya_leap.avif",
         "cooldown": "Cooldown: 60 seconds",
         "description": "Leap into the air, dealing 135 (+4% per level) damage to nearby enemies, and stunning them for 1.25 seconds."
       },
       {
         "name": "Wrath of the Berserker",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_sonya_wrathoftheberserker.avif",
         "cooldown": "Cooldown: 60 seconds",
         "description": "Increase damage dealt by 40%. Reduce the duration of Stuns, Roots, and Slows against Sonya by 50%. Lasts 15 seconds, and extends by 1 second for every 10 Fury gained."
       },
       {
         "name": "Fury",
-        "type": "D",
+        "hotkey": "D",
         "icon": "/images/storm_ui_icon_sonya_fury.avif",
         "description": "Use Fury instead of Mana, which is gained by taking damage or dealing Basic Attack damage. Using a Basic or Heroic Ability grants 10% Movement Speed for 4 seconds."
       }
@@ -2220,7 +2220,7 @@
     "abilities": [
       {
         "name": "Hamstring",
-        "type": "Q",
+        "hotkey": "Q",
         "icon": "/images/storm_ui_icon_butcher_hamstring.avif",
         "cooldown": "Cooldown: 4 seconds",
         "cost": "Mana: 40",
@@ -2228,7 +2228,7 @@
       },
       {
         "name": "Butcher's Brand",
-        "type": "W",
+        "hotkey": "W",
         "icon": "/images/storm_ui_icon_butcher_tenderize.avif",
         "cooldown": "Cooldown: 14 seconds",
         "cost": "Mana: 60",
@@ -2236,7 +2236,7 @@
       },
       {
         "name": "Ruthless Onslaught",
-        "type": "E",
+        "hotkey": "E",
         "icon": "/images/storm_ui_icon_butcher_fullboar.avif",
         "cooldown": "Cooldown: 15 seconds",
         "cost": "Mana: 50",
@@ -2244,7 +2244,7 @@
       },
       {
         "name": "Furnace Blast",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_butcher_furnaceblast.avif",
         "cooldown": "Cooldown: 60 seconds",
         "cost": "Mana: 75",
@@ -2252,7 +2252,7 @@
       },
       {
         "name": "Lamb to the Slaughter",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_butcher_lambtotheslaughter.avif",
         "cooldown": "Cooldown: 90 seconds",
         "cost": "Mana: 75",
@@ -2260,7 +2260,7 @@
       },
       {
         "name": "Fresh Meat",
-        "type": "D",
+        "hotkey": "D",
         "icon": "/images/storm_ui_icon_butcher_freshmeat.avif",
         "description": "Upon dying, nearby enemy Minions drop 1 Fresh Meat and enemy Heroes drop 20 Fresh Meat. Fresh Meat can be picked up to gain 0.5 Attack Damage per Meat. The Butcher loses 15 Fresh Meat upon dying.\n\nQuest: Collect 200 Fresh Meat.\n\nReward: Gain an additional 125 Attack Damage and 25% increased Attack Speed. Heroes continue to drop 10 Fresh Meat, Minions no longer drop Fresh Meat, and Fresh Meat is no longer lost on death."
       }
@@ -2402,7 +2402,7 @@
     "abilities": [
       {
         "name": "Flying Kick",
-        "type": "Q",
+        "hotkey": "Q",
         "icon": "/images/storm_ui_icon_chen_flyingkick.avif",
         "cooldown": "Cooldown: 5 seconds",
         "cost": "Brew: 10",
@@ -2410,7 +2410,7 @@
       },
       {
         "name": "Keg Smash",
-        "type": "W",
+        "hotkey": "W",
         "icon": "/images/storm_ui_icon_chen_kegsmash.avif",
         "cooldown": "Cooldown: 5 seconds",
         "cost": "Brew: 40",
@@ -2418,28 +2418,28 @@
       },
       {
         "name": "Stagger",
-        "type": "E",
+        "hotkey": "E",
         "icon": "/images/storm_ui_icon_chen_stagger.avif",
         "cooldown": "Cooldown: 18 seconds",
         "description": "Damage taken over the next 3 seconds is prevented.  Once this effect ends, Chen receives 75% of the damage taken over 5 seconds. This damage cannot be modified."
       },
       {
         "name": "Storm, Earth, Fire",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_chen_stormearthfire.avif",
         "cooldown": "Cooldown: 120 seconds",
         "description": "After 1 second, Chen splits into three elemental spirits for 12 seconds, each with 70% of Chen's maximum Health and a unique Ability.  The last spirit Ability that is cast is empowered. If all three spirits are killed, Chen will die as well.\n\nStorm can grant the spirits a Shield. \nEarth can leap to an area and Slow enemies. \nFire can grant the spirits Attack Speed, damage."
       },
       {
         "name": "Wandering Keg",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_chen_wanderingkeg.avif",
         "cooldown": "Cooldown: 60 seconds",
         "description": "Roll around inside an Unstoppable barrel with 70% increased Movement Speed and 25 Armor, dealing 59 (+4% per level) damage to enemies in the way and knocking them back. Lasts for 5 seconds."
       },
       {
         "name": "Fortifying Brew",
-        "type": "D",
+        "hotkey": "D",
         "icon": "/images/storm_ui_icon_chen_fortifyingbrew.avif",
         "cooldown": "Cooldown: 7 seconds",
         "description": "Chen drinks from his keg, gaining 50 Brew and 190 (+4% per level) temporary Shields per second, up to a maximum of 570 (+4% per level) while drinking. Shields persist for 4 seconds after he stops drinking."
@@ -2585,42 +2585,42 @@
     "abilities": [
       {
         "name": "Surging Fist",
-        "type": "Q",
+        "hotkey": "Q",
         "icon": "/images/storm_ui_icon_cho_moltensurge_a.avif",
         "cooldown": "Cooldown: 12 seconds",
         "description": "Activate to begin charging Surging Fist. Activate again to dash forward, knocking aside enemies and dealing 46 (+4% per level) damage. The dash range increases by up to 250%, depending on how long it is charged."
       },
       {
         "name": "Consuming Blaze",
-        "type": "W",
+        "hotkey": "W",
         "icon": "/images/storm_ui_icon_cho_consumingflame.avif",
         "cooldown": "Cooldown: 12 seconds",
         "description": "Ignite nearby enemies, dealing 150 (+4% per level) damage over 5 seconds. Basic Attacking burning enemies re-Ignites them. Cho is healed for 40 (+4% per level) when an enemy is Ignited."
       },
       {
         "name": "Rune Bomb",
-        "type": "E",
+        "hotkey": "E",
         "icon": "/images/storm_ui_icon_cho_runebomb.avif",
         "cooldown": "Cooldown: 8 seconds",
         "description": "Roll a bomb dealing 91 (+4% per level) damage to enemies in its path. Gall can use Runic Blast to detonate it to deal 210 (+4% per level) damage in an area."
       },
       {
         "name": "Upheaval",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_cho_upheaval.avif",
         "cooldown": "Cooldown: 40 seconds",
         "description": "After 1 second, pull enemies towards Cho'gall, Slowing them by 25% for 3 seconds and dealing 175 (+4% per level) damage."
       },
       {
         "name": "Hammer of Twilight",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_cho_hammeroftwilight.avif",
         "cooldown": "Cooldown: 15 seconds",
         "description": "Activate to swing the Hammer of Twilight, dealing 150 (+4.5% per level) damage, pushing enemies away, and Stunning them for 0.75 seconds.\n\nPassive: Cho's Basic Attacks deal 25% increased damage."
       },
       {
         "name": "Ogre Hide",
-        "type": "D",
+        "hotkey": "D",
         "icon": "/images/storm_ui_icon_cho_ogrehide.avif",
         "cooldown": "Cooldown: 5 seconds",
         "description": "Activate to gain 25 Armor, but reduce Gall's damage by 25%."
@@ -2762,7 +2762,7 @@
     "abilities": [
       {
         "name": "Sand Blast",
-        "type": "Q",
+        "hotkey": "Q",
         "icon": "/images/storm_ui_icon_chromie_aethercannon.avif",
         "cooldown": "Cooldown: 3 seconds",
         "cost": "Mana: 20",
@@ -2770,7 +2770,7 @@
       },
       {
         "name": "Dragon’s Breath",
-        "type": "W",
+        "hotkey": "W",
         "icon": "/images/storm_ui_icon_chromie_sandstrike.avif",
         "cooldown": "Cooldown: 14 seconds",
         "cost": "Mana: 65",
@@ -2778,7 +2778,7 @@
       },
       {
         "name": "Time Trap",
-        "type": "E",
+        "hotkey": "E",
         "icon": "/images/storm_ui_icon_chromie_timetrap.avif",
         "cooldown": "Cooldown: 15 seconds",
         "cost": "Mana: 20",
@@ -2786,7 +2786,7 @@
       },
       {
         "name": "Temporal Loop",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_chromie_looper.avif",
         "cooldown": "Cooldown: 50 seconds",
         "cost": "Mana: 60",
@@ -2794,7 +2794,7 @@
       },
       {
         "name": "Slowing Sands",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_chromie_timewarp.avif",
         "cooldown": "Cooldown: 5 seconds",
         "cost": "Mana: 5 per second",
@@ -2802,7 +2802,7 @@
       },
       {
         "name": "Timewalker",
-        "type": "D",
+        "hotkey": "D",
         "icon": "/images/storm_ui_icon_chromie_timetraveler.avif",
         "description": "Chromie has traveled to the future, and as such, will learn her Talents 2 levels earlier than her teammates!\n\nDetonate Time Trap\n\nDetonates active Time Traps."
       }
@@ -2948,7 +2948,7 @@
     "abilities": [
       {
         "name": "Punish",
-        "type": "Q",
+        "hotkey": "Q",
         "icon": "/images/storm_ui_icon_johanna_punish.avif",
         "cooldown": "Cooldown: 8 seconds",
         "cost": "Mana: 40",
@@ -2956,7 +2956,7 @@
       },
       {
         "name": "Condemn",
-        "type": "W",
+        "hotkey": "W",
         "icon": "/images/storm_ui_icon_johanna_condemn.avif",
         "cooldown": "Cooldown: 10 seconds",
         "cost": "Mana: 50",
@@ -2964,7 +2964,7 @@
       },
       {
         "name": "Shield Glare",
-        "type": "E",
+        "hotkey": "E",
         "icon": "/images/storm_ui_icon_johanna_shield_glare.avif",
         "cooldown": "Cooldown: 13 seconds",
         "cost": "Mana: 55",
@@ -2972,7 +2972,7 @@
       },
       {
         "name": "Falling Sword",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_johanna_falling_sword.avif",
         "cooldown": "Cooldown: 50 seconds",
         "cost": "Mana: 60",
@@ -2980,7 +2980,7 @@
       },
       {
         "name": "Blessed Shield",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_johanna_blessed_shield.avif",
         "cooldown": "Cooldown: 65 seconds",
         "cost": "Mana: 90",
@@ -2988,7 +2988,7 @@
       },
       {
         "name": "Iron Skin",
-        "type": "D",
+        "hotkey": "D",
         "icon": "/images/storm_ui_icon_johanna_iron_skin.avif",
         "cooldown": "Cooldown: 22 seconds",
         "description": "Activate to grant Johanna a Shield that absorbs 810 (+4% per level) damage for 4 seconds. While this Shield is active, Johanna is Unstoppable."
@@ -3134,7 +3134,7 @@
     "abilities": [
       {
         "name": "Molten Flame",
-        "type": "Q",
+        "hotkey": "Q",
         "icon": "/images/storm_ui_icon_deathwing_molten_flame.avif",
         "cooldown": "Cooldown: 3 seconds",
         "cost": "Energy: 10",
@@ -3142,7 +3142,7 @@
       },
       {
         "name": "Incinerate",
-        "type": "W",
+        "hotkey": "W",
         "icon": "/images/storm_ui_icon_deathwing_incinerate.avif",
         "cooldown": "Cooldown: 7 seconds",
         "cost": "Energy: 30",
@@ -3150,7 +3150,7 @@
       },
       {
         "name": "Onslaught",
-        "type": "E",
+        "hotkey": "E",
         "icon": "/images/storm_ui_icon_deathwing_onslaught.avif",
         "cooldown": "Cooldown: 6 seconds",
         "cost": "Energy: 20",
@@ -3158,20 +3158,20 @@
       },
       {
         "name": "Cataclysm",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_deathwing_cataclysm.avif",
         "cooldown": "Cooldown: 90 seconds",
         "description": "After 2 seconds, Deathwing flies in the targeted direction, dealing 90 (+4% per level) damage on impact and leaving scorched ground that deals 36 (+4% per level) damage a second. Lasts 6 seconds.\n\nQuest: Hit Heroes with Molten Flame to grant 1 stack.\nQuest: Score Takedowns to grant 50 stacks.\n\nMythic Reward: After reaching 2000 stacks, Deathwing brings on the Hour of Twilight. Cataclysm's periodic damage to Structures is increased by 2500%."
       },
       {
         "name": "Aspect of Death",
-        "type": "D",
+        "hotkey": "D",
         "icon": "/images/storm_ui_icon_deathwing_aspect_of_death.avif",
         "description": "Deathwing is fitted with 4 Armor Plates which grant 10 Armor each. Every 25% Health lost causes Deathwing to lose a plate. Plates are only restored when Dragonflight is used, based on the amount of Health Deathwing has when landing.\n\nDeathwing is also a mighty Dragon Aspect who is permanently Unstoppable and deals 100% additional Spell Damage to Heroes, but views his allies with contempt and ignores any of their friendly effects."
       },
       {
         "name": "Dragonflight",
-        "type": "Z",
+        "hotkey": "Z",
         "icon": "/images/storm_ui_icon_deathwing_mount.avif",
         "cooldown": "Cooldown: 20 seconds",
         "description": "After 3 seconds, fly into the sky, becoming Immune to all effects and gaining 2.5% Health per second. Once cast, this ability cannot be interrupted. Cannot be cast for 6 seconds after taking damage, Basic Attacking or casting an Ability."
@@ -3307,7 +3307,7 @@
     "abilities": [
       {
         "name": "Healing Potion",
-        "type": "Q",
+        "hotkey": "Q",
         "icon": "/images/storm_ui_icon_deckard_healing_potion.avif",
         "cooldown": "Cooldown: 4 seconds",
         "cost": "Mana: 25",
@@ -3315,7 +3315,7 @@
       },
       {
         "name": "Horadric Cube",
-        "type": "W",
+        "hotkey": "W",
         "icon": "/images/storm_ui_icon_deckard_horadric_cube.avif",
         "cooldown": "Cooldown: 12 seconds",
         "cost": "Mana: 35",
@@ -3323,7 +3323,7 @@
       },
       {
         "name": "Scroll Of Sealing",
-        "type": "E",
+        "hotkey": "E",
         "icon": "/images/storm_ui_icon_deckard_scroll_of_sealing.avif",
         "cooldown": "Cooldown: 16 seconds",
         "cost": "Mana: 40",
@@ -3331,7 +3331,7 @@
       },
       {
         "name": "Stay Awhile and Listen",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_deckard_stay_awhile_and_listen.avif",
         "cooldown": "Cooldown: 70 seconds",
         "cost": "Mana: 60",
@@ -3339,7 +3339,7 @@
       },
       {
         "name": "Lorenado",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_deckard_lorenado.avif",
         "cooldown": "Cooldown: 30 seconds",
         "cost": "Mana: 35",
@@ -3347,7 +3347,7 @@
       },
       {
         "name": "Fortitude of the Faithful",
-        "type": "D",
+        "hotkey": "D",
         "icon": "/images/storm_ui_icon_deckard_protectors_of_cain.avif",
         "description": "When at least 1 other allied Hero is nearby, Deckard gains 10 Armor and his Basic Abilities recharge 50% faster."
       }
@@ -3492,7 +3492,7 @@
     "abilities": [
       {
         "name": "Drag",
-        "type": "Q",
+        "hotkey": "Q",
         "icon": "/images/storm_ui_icon_dehaka_drag.avif",
         "cooldown": "Cooldown: 15 seconds",
         "cost": "Mana: 75",
@@ -3500,7 +3500,7 @@
       },
       {
         "name": "Dark Swarm",
-        "type": "W",
+        "hotkey": "W",
         "icon": "/images/storm_ui_icon_dehaka_trample.avif",
         "cooldown": "Cooldown: 10 seconds",
         "cost": "Mana: 50",
@@ -3508,7 +3508,7 @@
       },
       {
         "name": "Burrow",
-        "type": "E",
+        "hotkey": "E",
         "icon": "/images/storm_ui_icon_dehaka_burrow.avif",
         "cooldown": "Cooldown: 20 seconds",
         "cost": "Mana: 65",
@@ -3516,7 +3516,7 @@
       },
       {
         "name": "Isolation",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_dehaka_isolation.avif",
         "cooldown": "Cooldown: 60 seconds",
         "cost": "Mana: 70",
@@ -3524,7 +3524,7 @@
       },
       {
         "name": "Adaptation",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_dehaka_adaptation.avif",
         "cooldown": "Cooldown: 60 seconds",
         "cost": "Mana: 70",
@@ -3532,14 +3532,14 @@
       },
       {
         "name": "Essence Collection",
-        "type": "D",
+        "hotkey": "D",
         "icon": "/images/storm_ui_icon_dehaka_essencecollection.avif",
         "cooldown": "Cooldown: 5 seconds",
         "description": "Heal Dehaka for 29 (+4% per level) Health per stored Essence over 5 seconds. Can be cast during Drag and Burrow.\n\nPassive: Gain 10 Essence from Takedowns and 2 Essence from nearby Minions dying. Maximum of 50 Essence."
       },
       {
         "name": "Brushstalker",
-        "type": "Z",
+        "hotkey": "Z",
         "icon": "/images/storm_ui_icon_dehaka_mount.avif",
         "cooldown": "Cooldown: 240 seconds",
         "description": "Activate to burrow to a bush on the Battleground.\n\nPassive: Gain 20% movement speed while in a bush and for 2 seconds after leaving. \n\nPassive: Gathering a Regeneration Globe reduces the cooldown of Brushstalker by 40 seconds."
@@ -3681,7 +3681,7 @@
     "abilities": [
       {
         "name": "Hungering Arrow",
-        "type": "Q",
+        "hotkey": "Q",
         "icon": "/images/storm_ui_icon_valla_hungeringarrow.avif",
         "cooldown": "Cooldown: 10 seconds",
         "cost": "Mana: 60",
@@ -3689,7 +3689,7 @@
       },
       {
         "name": "Multishot",
-        "type": "W",
+        "hotkey": "W",
         "icon": "/images/storm_ui_icon_valla_multishot.avif",
         "cooldown": "Cooldown: 13 seconds",
         "cost": "Mana: 75",
@@ -3697,7 +3697,7 @@
       },
       {
         "name": "Vault",
-        "type": "E",
+        "hotkey": "E",
         "icon": "/images/storm_ui_icon_valla_vault.avif",
         "cooldown": "Cooldown: 10 seconds",
         "cost": "Mana: 50",
@@ -3705,7 +3705,7 @@
       },
       {
         "name": "Strafe",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_valla_strafe.avif",
         "cooldown": "Cooldown: 60 seconds",
         "cost": "Mana: 60",
@@ -3713,7 +3713,7 @@
       },
       {
         "name": "Rain of Vengeance",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_valla_rainofvengeance.avif",
         "cooldown": "Charge Cooldown: 50 seconds",
         "cost": "Mana: 50",
@@ -3721,7 +3721,7 @@
       },
       {
         "name": "Hatred",
-        "type": "D",
+        "hotkey": "D",
         "icon": "/images/storm_ui_icon_valla_hatred.avif",
         "description": "Basic Attacks grant a stack of Hatred, up to 10. Each Hatred stack increases Basic Attack damage by 8% and Movement Speed by 1%. Lasts 5 seconds."
       }
@@ -3863,7 +3863,7 @@
     "abilities": [
       {
         "name": "Shadow Charge",
-        "type": "Q",
+        "hotkey": "Q",
         "icon": "/images/storm_ui_icon_diablo_shadowcharge_var1.avif",
         "cooldown": "Cooldown: 12 seconds",
         "cost": "Mana: 65",
@@ -3871,7 +3871,7 @@
       },
       {
         "name": "Fire Stomp",
-        "type": "W",
+        "hotkey": "W",
         "icon": "/images/storm_ui_icon_diablo_firestomp.avif",
         "cooldown": "Cooldown: 8 seconds",
         "cost": "Mana: 35",
@@ -3879,7 +3879,7 @@
       },
       {
         "name": "Overpower",
-        "type": "E",
+        "hotkey": "E",
         "icon": "/images/storm_ui_icon_diablo_overpower_var1.avif",
         "cooldown": "Cooldown: 12 seconds",
         "cost": "Mana: 35",
@@ -3887,7 +3887,7 @@
       },
       {
         "name": "Apocalypse",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_diablo_apocalypse.avif",
         "cooldown": "Cooldown: 90 seconds",
         "cost": "Mana: 50",
@@ -3895,7 +3895,7 @@
       },
       {
         "name": "Lightning Breath",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_diablo_lightningbreath.avif",
         "cooldown": "Cooldown: 90 seconds",
         "cost": "Mana: 80",
@@ -3903,7 +3903,7 @@
       },
       {
         "name": "Black Soulstone",
-        "type": "D",
+        "hotkey": "D",
         "icon": "/images/storm_ui_icon_diablo_blacksoulstone_var1.avif",
         "description": "Repeatable Quest: Gain 10 Souls per Hero killed and 1 Soul per Minion, up to 100. For each Soul, gain 0.3% maximum Health. If Diablo has 100 Souls upon dying, he will resurrect in 5 seconds but lose 100 Souls.\n\nAfter reaching level 10, Diablo only consumes 75 Souls when resurrecting."
       }
@@ -4047,7 +4047,7 @@
     "abilities": [
       {
         "name": "Noxious Blossom",
-        "type": "Q",
+        "hotkey": "Q",
         "icon": "/images/storm_ui_icon_lunara_pollencloud.avif",
         "cooldown": "Cooldown: 8 seconds",
         "cost": "Mana: 60",
@@ -4055,7 +4055,7 @@
       },
       {
         "name": "Crippling Spores",
-        "type": "W",
+        "hotkey": "W",
         "icon": "/images/storm_ui_icon_lunara_fullbloom.avif",
         "cooldown": "Cooldown: 10 seconds",
         "cost": "Mana: 50",
@@ -4063,14 +4063,14 @@
       },
       {
         "name": "Wisp",
-        "type": "E",
+        "hotkey": "E",
         "icon": "/images/storm_ui_icon_lunara_wisp.avif",
         "cooldown": "Cooldown: 30 seconds",
         "description": "Spawn a Wisp to scout an area. Can be redirected once active. When the Wisp is in a bush for more 2 seconds, its vision radius is increased by 75%. Lasts 45 seconds."
       },
       {
         "name": "Thornwood Vine",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_lunara_wildspear.avif",
         "cooldown": "Charge Cooldown: 15 seconds",
         "cost": "Mana: 35",
@@ -4078,7 +4078,7 @@
       },
       {
         "name": "Leaping Strike",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_lunara_boundlessstride.avif",
         "cooldown": "Cooldown: 20 seconds",
         "cost": "Mana: 50",
@@ -4086,13 +4086,13 @@
       },
       {
         "name": "Nature's Toxin",
-        "type": "D",
+        "hotkey": "D",
         "icon": "/images/storm_ui_icon_lunara_stiflingblossom.avif",
         "description": "Lunara's Basic Attacks and damaging Abilities poison their target, dealing 33 (+4% per level) damage a second for 3 seconds. Every additional application increases the duration by 3 seconds, up to a maximum of 9 seconds."
       },
       {
         "name": "Dryad's Swiftness",
-        "type": "Z",
+        "hotkey": "Z",
         "icon": "/images/storm_ui_icon_lunara_mount.avif",
         "description": "Lunara moves 20% faster by leaping short distances."
       }
@@ -4250,47 +4250,47 @@
     "abilities": [
       {
         "name": "Boosters",
-        "type": "Q",
+        "hotkey": "Q",
         "icon": "/images/storm_ui_icon_dva_boosters.avif",
         "cooldown": "Cooldown: 10 seconds",
         "description": "Increase D.Va's Movement Speed by 115% for 1.75 seconds. Enemies that are hit take 135 (+4% per level) damage and are knocked away. \n\nD.Va cannot be Slowed while Boosters are active, and each enemy can only be hit once per use."
       },
       {
         "name": "Defense Matrix",
-        "type": "W",
+        "hotkey": "W",
         "icon": "/images/storm_ui_icon_dva_defensematrix.avif",
         "cooldown": "Cooldown: 12 seconds",
         "description": "Project a defensive field in the target direction for 3 seconds, reducing the damage dealt by enemy Heroes inside it by 60%.\n\nActivate again to change the angle of projection.\n\nDamage dealt to the Mech from enemies within Defense Matrix still grants the same amount of Self-Destruct Charge."
       },
       {
         "name": "Self-Destruct",
-        "type": "E",
+        "hotkey": "E",
         "icon": "/images/storm_ui_icon_dva_selfdestruct.avif",
         "description": "Eject from the Mech, setting it to self-destruct after 4 seconds. Deals 400 (+4% per level) to 1100 (+4% per level) damage in a large area, depending on distance from center. Deals 50% damage against Structures.\n\nGain 1% Charge for every 2 seconds spent Basic Attacking, and 25% Charge per 100% of Mech Health lost."
       },
       {
         "name": "Bunny Hop",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_dva_bunnyhop.avif",
         "cooldown": "Cooldown: 70 seconds",
         "description": "D.Va's Mech becomes Unstoppable and stomps every 0.5 seconds, dealing 78 (+4% per level) damage in a large area. Every 4th consecutive hit on a Hero deals 80% more damage and Stuns them for 0.5 seconds.\n\nLasts for 4 seconds.\n\nRequires Mech Mode."
       },
       {
         "name": "Micro Missiles",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_dva_micromissiles.avif",
         "cooldown": "Charge Cooldown: 19 seconds",
         "description": "After .375 seconds, Channel to launch a volley of 12 missiles in a target direction. Each missile impacts the first enemy in its path, dealing 40 (+4% per level) damage in a small area and Slowing by 30% for 2 seconds.\n\nStores 2 charges with a 3 second cooldown between each use.\n\nRequires Mech Mode."
       },
       {
         "name": "Mech Mode",
-        "type": "D",
+        "hotkey": "D",
         "icon": "/images/storm_ui_icon_dva_mechmode.avif",
         "description": "When D.Va's Mech dies, she is ejected out after 0.75 seconds and can continue to fight. D.Va's Mech only awards 50% of a normal Hero's experience upon dying.\n\nFusion Cannons\n\nD.Va's Mech Basic Attacks deal 22 (+4% per level) damage in a large area every 0.25 seconds. Deals 40% bonus damage against enemies very close to the Mech."
       },
       {
         "name": "Mechanized Walker",
-        "type": "Z",
+        "hotkey": "Z",
         "icon": "/images/storm_ui_icon_dva_mount.avif",
         "description": "D.Va's Mech can shoot while moving. While shooting or channeling an ability, the Mech's Movement Speed is quickly reduced by 25%."
       }
@@ -4430,7 +4430,7 @@
     "abilities": [
       {
         "name": "Arcane Flare",
-        "type": "Q",
+        "hotkey": "Q",
         "icon": "/images/storm_ui_icon_brightwing_arcaneflare.avif",
         "cooldown": "Cooldown: 6 seconds",
         "cost": "Mana: 35",
@@ -4438,7 +4438,7 @@
       },
       {
         "name": "Polymorph",
-        "type": "W",
+        "hotkey": "W",
         "icon": "/images/storm_ui_icon_brightwing_polymorph.avif",
         "cooldown": "Cooldown: 12 seconds",
         "cost": "Mana: 50",
@@ -4446,7 +4446,7 @@
       },
       {
         "name": "Pixie Dust",
-        "type": "E",
+        "hotkey": "E",
         "icon": "/images/storm_ui_icon_brightwing_pixiedust.avif",
         "cooldown": "Cooldown: 10 seconds",
         "cost": "Mana: 60",
@@ -4454,7 +4454,7 @@
       },
       {
         "name": "Blink Heal",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_brightwing_blinkheal.avif",
         "cooldown": "Charge Cooldown: 9 seconds",
         "cost": "Mana: 40",
@@ -4462,7 +4462,7 @@
       },
       {
         "name": "Emerald Wind",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_brightwing_emeraldwind.avif",
         "cooldown": "Cooldown: 50 seconds",
         "cost": "Mana: 90",
@@ -4470,14 +4470,14 @@
       },
       {
         "name": "Soothing Mist",
-        "type": "D",
+        "hotkey": "D",
         "icon": "/images/storm_ui_icon_brightwing_soothingmist.avif",
         "cooldown": "Cooldown: 75 seconds",
         "description": "Activate to remove all Stun, Root, Slow, and Silence effects from nearby allied Heroes.\n\nPassive: Brightwing heals nearby allied Heroes for 110 (+4% per level) every 4 seconds"
       },
       {
         "name": "Phase Shift",
-        "type": "Z",
+        "hotkey": "Z",
         "icon": "/images/storm_ui_icon_brightwing_mount.avif",
         "cooldown": "Cooldown: 40 seconds",
         "description": "After 2 seconds, teleport to an allied Hero and heal them for 25% of their maximum Health."
@@ -4622,7 +4622,7 @@
     "abilities": [
       {
         "name": "Hammerang",
-        "type": "Q",
+        "hotkey": "Q",
         "icon": "/images/storm_ui_icon_falstad_hammerang.avif",
         "cooldown": "Cooldown: 10 seconds",
         "cost": "Mana: 60",
@@ -4630,7 +4630,7 @@
       },
       {
         "name": "Lightning Rod",
-        "type": "W",
+        "hotkey": "W",
         "icon": "/images/storm_ui_icon_falstad_lightningrod.avif",
         "cooldown": "Cooldown: 12 seconds",
         "cost": "Mana: 60",
@@ -4638,7 +4638,7 @@
       },
       {
         "name": "Barrel Roll",
-        "type": "E",
+        "hotkey": "E",
         "icon": "/images/storm_ui_icon_falstad_barrelroll.avif",
         "cooldown": "Cooldown: 13 seconds",
         "cost": "Mana: 70",
@@ -4646,7 +4646,7 @@
       },
       {
         "name": "Mighty Gust",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_falstad_mightygust.avif",
         "cooldown": "Cooldown: 60 seconds",
         "cost": "Mana: 70",
@@ -4654,7 +4654,7 @@
       },
       {
         "name": "Hinterland Blast",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_falstad_hinterlandblast.avif",
         "cooldown": "Cooldown: 120 seconds",
         "cost": "Mana: 80",
@@ -4662,14 +4662,14 @@
       },
       {
         "name": "Tailwind",
-        "type": "D",
+        "hotkey": "D",
         "icon": "/images/storm_ui_icon_falstad_tailwind.avif",
         "cooldown": "Cooldown: 5 seconds",
         "description": "Gain 15% increased Movement Speed after not taking damage for 5 seconds."
       },
       {
         "name": "Flight",
-        "type": "Z",
+        "hotkey": "Z",
         "icon": "/images/storm_ui_icon_falstad_mount.avif",
         "cooldown": "Cooldown: 75 seconds",
         "description": "Instead of mounting, Falstad can fly a great distance over terrain."
@@ -4812,41 +4812,41 @@
     "abilities": [
       {
         "name": "Plasma Cutter",
-        "type": "Q",
+        "hotkey": "Q",
         "icon": "/images/storm_ui_icon_fenix_q.avif",
         "cooldown": "Cooldown: 12 seconds",
         "description": "Create a laser beam at the target point that circles around Fenix twice, dealing 135 (+4% per level) damage to enemies hit and Slowing them by 25% for 4 seconds."
       },
       {
         "name": "Weapon Mode: Repeater Cannon",
-        "type": "W",
+        "hotkey": "W",
         "icon": "/images/storm_ui_icon_fenix_w_2.avif",
         "description": "Basic Attack speed increased by 150%.\n\nActivate to change to Weapon Mode: Phase Bomb, increasing Basic Attack range and damage, and causing Basic Attacks to splash."
       },
       {
         "name": "Warp",
-        "type": "E",
+        "hotkey": "E",
         "icon": "/images/storm_ui_icon_fenix_teleport.avif",
         "cooldown": "Cooldown: 17 seconds",
         "description": "Warp to a targeted location, phasing out after 0.5 seconds, and arriving 0.75 seconds later."
       },
       {
         "name": "Planet Cracker",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_fenix_r_planet_cracker.avif",
         "cooldown": "Cooldown: 100 seconds",
         "description": "After 0.5 seconds, Channel a powerful beam that spans across the battleground for 4 seconds, dealing 112 (+4% per level) damage every 0.25 seconds to non-Structure enemies hit."
       },
       {
         "name": "Purification Salvo",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_fenix_r_scan.avif",
         "cooldown": "Cooldown: 90 seconds",
         "description": "Channel for 1.5 seconds, sweeping a laser in front of Fenix that locks onto enemy Heroes. Once Channeling finishes, fire 5 missiles at each locked Hero, dealing 79 (+4% per level) damage each. Deals 50% increased damage to Slowed targets."
       },
       {
         "name": "Shield Capacitor",
-        "type": "D",
+        "hotkey": "D",
         "icon": "/images/storm_ui_icon_fenix_shield_1.avif",
         "description": "Fenix has a permanent 760 (+4% per level) Shield which regenerates at 10% per second after not taking damage for 5 seconds."
       }
@@ -4991,7 +4991,7 @@
     "abilities": [
       {
         "name": "Flame Stream",
-        "type": "Q",
+        "hotkey": "Q",
         "icon": "/images/storm_ui_icon_blaze_flame.avif",
         "cooldown": "Cooldown: 4 seconds",
         "cost": "Mana: 30",
@@ -4999,7 +4999,7 @@
       },
       {
         "name": "Oil Spill",
-        "type": "W",
+        "hotkey": "W",
         "icon": "/images/storm_ui_icon_blaze_oil.avif",
         "cooldown": "Charge Cooldown: 12 seconds",
         "cost": "Mana: 50",
@@ -5007,7 +5007,7 @@
       },
       {
         "name": "Jet Propulsion",
-        "type": "E",
+        "hotkey": "E",
         "icon": "/images/storm_ui_icon_blaze_jet.avif",
         "cooldown": "Cooldown: 10 seconds",
         "cost": "Mana: 45",
@@ -5015,7 +5015,7 @@
       },
       {
         "name": "Bunker Drop",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_blaze_bunker.avif",
         "cooldown": "Cooldown: 85 seconds",
         "cost": "Mana: 80",
@@ -5023,7 +5023,7 @@
       },
       {
         "name": "Combustion",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_blaze_combustion.avif",
         "cooldown": "Cooldown: 80 seconds",
         "cost": "Mana: 70",
@@ -5031,7 +5031,7 @@
       },
       {
         "name": "Pyromania",
-        "type": "D",
+        "hotkey": "D",
         "icon": "/images/storm_ui_icon_blaze_pyromania.avif",
         "cooldown": "Cooldown: 90 seconds",
         "description": "Gain 40 Armor and deal 40 (+4% per level) damage to nearby enemies every 0.5 seconds for 4 seconds.\n\nEach Hero hit by Flame Stream reduces Pyromania's cooldown by 4 seconds."
@@ -5177,55 +5177,55 @@
     "abilities": [
       {
         "name": "Shadowflame",
-        "type": "Q",
+        "hotkey": "Q",
         "icon": "/images/storm_ui_icon_gall_shadowflame.avif",
         "cooldown": "Cooldown: 3 seconds",
         "description": "Deal 135 (+5% per level) damage to enemies in the area."
       },
       {
         "name": "Dread Orb",
-        "type": "W",
+        "hotkey": "W",
         "icon": "/images/storm_ui_icon_gall_chaoscollision.avif",
         "cooldown": "Cooldown: 6 seconds",
         "description": "Throw a bomb that will bounce three times, dealing 126 (+5% per level) damage to enemies."
       },
       {
         "name": "Runic Blast",
-        "type": "E",
+        "hotkey": "E",
         "icon": "/images/storm_ui_icon_gall_detonaterunes.avif",
         "description": "Detonate Cho's Rune Bomb, dealing 210 (+4% per level) damage around it."
       },
       {
         "name": "Twisting Nether",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_gall_twistingnether_a.avif",
         "cooldown": "Cooldown: 80 seconds",
         "description": "After 1 second, nearby enemies are Slowed by 50% while Gall channels, up to 5 seconds. Activate to deal 353 (+5% per level) damage."
       },
       {
         "name": "Shadow Bolt Volley",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_gall_shadowboltvolley.avif",
         "cooldown": "Cooldown: 60 seconds",
         "description": "After 1 second, unleash 20 Shadow Bolts over 4 seconds, each dealing 87 (+4% per level) damage to the first target hit. The bolts fire towards your mouse."
       },
       {
         "name": "Ogre Rage",
-        "type": "D",
+        "hotkey": "D",
         "icon": "/images/storm_ui_icon_gall_ogrerage.avif",
         "cooldown": "Cooldown: 5 seconds",
         "description": "Activate to increase Gall's damage by 25%, but reduce Cho's Armor by 25.\n\nPassive: Gall is permanently immune to Stun and Silence effects."
       },
       {
         "name": "Shove",
-        "type": "Z",
+        "hotkey": "Z",
         "icon": "/images/storm_ui_icon_gall_shove.avif",
         "cooldown": "Cooldown: 30 seconds",
         "description": "Nudge Cho a small distance and grant him 25% Movement Speed for 2 seconds."
       },
       {
         "name": "Eye of Kilrogg",
-        "type": "1",
+        "hotkey": "1",
         "icon": "/images/storm_ui_icon_gall_eyeofkilrogg.avif",
         "cooldown": "Cooldown: 45 seconds",
         "description": "Place an eye, granting vision of a large area around it for 45 seconds. The eye can be killed by enemies with 2 Basic Attacks. Stores up to 2 charges."
@@ -5366,7 +5366,7 @@
     "abilities": [
       {
         "name": "Groundbreaker",
-        "type": "Q",
+        "hotkey": "Q",
         "icon": "/images/storm_ui_icon_garrosh_groundbreaker.avif",
         "cooldown": "Cooldown: 8 seconds",
         "cost": "Mana: 40",
@@ -5374,7 +5374,7 @@
       },
       {
         "name": "Bloodthirst",
-        "type": "W",
+        "hotkey": "W",
         "icon": "/images/storm_ui_icon_garrosh_bloodthirst.avif",
         "cooldown": "Cooldown: 12 seconds",
         "cost": "Mana: 55",
@@ -5382,7 +5382,7 @@
       },
       {
         "name": "Wrecking Ball",
-        "type": "E",
+        "hotkey": "E",
         "icon": "/images/storm_ui_icon_garrosh_wrecking_ball.avif",
         "cooldown": "Cooldown: 16 seconds",
         "cost": "Mana: 60",
@@ -5390,7 +5390,7 @@
       },
       {
         "name": "Warlord's Challenge",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_garrosh_warlords_challenge.avif",
         "cooldown": "Cooldown: 50 seconds",
         "cost": "Mana: 40",
@@ -5398,7 +5398,7 @@
       },
       {
         "name": "Decimate",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_garrosh_decimate.avif",
         "cooldown": "Charge Cooldown: 8 seconds",
         "cost": "Mana: 25",
@@ -5406,13 +5406,13 @@
       },
       {
         "name": "Armor Up",
-        "type": "D",
+        "hotkey": "D",
         "icon": "/images/storm_ui_icon_garrosh_armor_up.avif",
         "description": "Garrosh gains 1 Armor for every 2% of maximum Health missing."
       },
       {
         "name": "Into the Fray",
-        "type": "1",
+        "hotkey": "1",
         "icon": "/images/storm_ui_icon_garrosh_intothefray.avif",
         "cooldown": "Cooldown: 45 seconds",
         "description": "Activate to throw a nearby ally and grant them 20 Armor for 3 seconds. Deals 91 (+4% per level) damage to nearby enemies upon impact and Slows them by 30% for 2.5 seconds.\n\nWhile in flight, allied Heroes are Unstoppable."
@@ -5557,7 +5557,7 @@
     "abilities": [
       {
         "name": "Shuriken",
-        "type": "Q",
+        "hotkey": "Q",
         "icon": "/images/storm_ui_icon_genji_shurikens.avif",
         "cooldown": "Charge Cooldown: 12 seconds",
         "cost": "Mana: 20",
@@ -5565,7 +5565,7 @@
       },
       {
         "name": "Deflect",
-        "type": "W",
+        "hotkey": "W",
         "icon": "/images/storm_ui_icon_genji_deflect.avif",
         "cooldown": "Cooldown: 16 seconds",
         "cost": "Mana: 70",
@@ -5573,7 +5573,7 @@
       },
       {
         "name": "Swift Strike",
-        "type": "E",
+        "hotkey": "E",
         "icon": "/images/storm_ui_icon_genji_swiftstrike.avif",
         "cooldown": "Cooldown: 12 seconds",
         "cost": "Mana: 75",
@@ -5581,7 +5581,7 @@
       },
       {
         "name": "Dragonblade",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_genji_dragonblade.avif",
         "cooldown": "Cooldown: 100 seconds",
         "cost": "Mana: 75",
@@ -5589,7 +5589,7 @@
       },
       {
         "name": "X-Strike",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_genji_shurikens_xblade.avif",
         "cooldown": "Cooldown: 75 seconds",
         "cost": "Mana: 70",
@@ -5597,7 +5597,7 @@
       },
       {
         "name": "Cyber Agility",
-        "type": "D",
+        "hotkey": "D",
         "icon": "/images/storm_ui_icon_genji_cyberagility.avif",
         "cooldown": "Cooldown: 20 seconds",
         "description": "Activate to jump to the target area."
@@ -5739,7 +5739,7 @@
     "abilities": [
       {
         "name": "Gilnean Cocktail",
-        "type": "Q",
+        "hotkey": "Q",
         "icon": "/images/storm_ui_icon_greymane_qattack.avif",
         "cooldown": "Cooldown: 9 seconds",
         "cost": "Mana: 55",
@@ -5747,7 +5747,7 @@
       },
       {
         "name": "Inner Beast",
-        "type": "W",
+        "hotkey": "W",
         "icon": "/images/storm_ui_icon_greymane_beastfocus.avif",
         "cooldown": "Cooldown: 20 seconds",
         "cost": "Mana: 70",
@@ -5755,7 +5755,7 @@
       },
       {
         "name": "Darkflight",
-        "type": "E",
+        "hotkey": "E",
         "icon": "/images/storm_ui_icon_greymane_darkflight.avif",
         "cooldown": "Cooldown: 5 seconds",
         "cost": "Mana: 10",
@@ -5763,7 +5763,7 @@
       },
       {
         "name": "Go for the Throat",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_greymane_goforthethroat.avif",
         "cooldown": "Cooldown: 80 seconds",
         "cost": "Mana: 90",
@@ -5771,7 +5771,7 @@
       },
       {
         "name": "Cursed Bullet",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_greymane_snapshot.avif",
         "cooldown": "Cooldown: 30 seconds",
         "cost": "Mana: 50",
@@ -5779,7 +5779,7 @@
       },
       {
         "name": "Curse of the Worgen",
-        "type": "D",
+        "hotkey": "D",
         "icon": "/images/storm_ui_icon_greymane_curseoftheworgen.avif",
         "description": "Greymane can use certain Abilities to shapeshift between a Human and a Worgen.\n\nWhile Human, Greymane's Basic Attacks are ranged.\n\nWhile Worgen, Greymane gains 10 Armor, and his Basic Attacks become melee but deal 40% more damage."
       }
@@ -5920,7 +5920,7 @@
     "abilities": [
       {
         "name": "Fel Flame",
-        "type": "Q",
+        "hotkey": "Q",
         "icon": "/images/storm_ui_icon_guldan_felflame.avif",
         "cooldown": "Cooldown: 1.5 seconds",
         "cost": "Mana: 75",
@@ -5928,14 +5928,14 @@
       },
       {
         "name": "Drain Life",
-        "type": "W",
+        "hotkey": "W",
         "icon": "/images/storm_ui_icon_guldan_healthfunnel.avif",
         "cooldown": "Cooldown: 10 seconds",
         "description": "Drain the life from an enemy over 3 seconds, dealing 132 (+4% per level) damage per second and healing Gul'dan for 188 (+4% per level) Health per second."
       },
       {
         "name": "Corruption",
-        "type": "E",
+        "hotkey": "E",
         "icon": "/images/storm_ui_icon_guldan_handofguldan.avif",
         "cooldown": "Cooldown: 14 seconds",
         "cost": "Mana: 90",
@@ -5943,7 +5943,7 @@
       },
       {
         "name": "Horrify",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_guldan_horrify.avif",
         "cooldown": "Cooldown: 80 seconds",
         "cost": "Mana: 90",
@@ -5951,7 +5951,7 @@
       },
       {
         "name": "Rain of Destruction",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_guldan_rainoffire.avif",
         "cooldown": "Cooldown: 70 seconds",
         "cost": "Mana: 80",
@@ -5959,7 +5959,7 @@
       },
       {
         "name": "Life Tap",
-        "type": "D",
+        "hotkey": "D",
         "icon": "/images/storm_ui_icon_guldan_lifetap.avif",
         "description": "Gul'dan does not regenerate Mana.\n\nActivate to restore 25% of Gul'dan's Mana."
       }
@@ -6103,7 +6103,7 @@
     "abilities": [
       {
         "name": "Storm Bow",
-        "type": "Q",
+        "hotkey": "Q",
         "icon": "/images/storm_ui_icon_hanzo_stormbow.avif",
         "cooldown": "Cooldown: 4 seconds",
         "cost": "Mana: 20",
@@ -6111,7 +6111,7 @@
       },
       {
         "name": "Scatter Arrow",
-        "type": "W",
+        "hotkey": "W",
         "icon": "/images/storm_ui_icon_hanzo_scatterarrow.avif",
         "cooldown": "Cooldown: 8 seconds",
         "cost": "Mana: 50",
@@ -6119,7 +6119,7 @@
       },
       {
         "name": "Sonic Arrow",
-        "type": "E",
+        "hotkey": "E",
         "icon": "/images/storm_ui_icon_hanzo_sonicarrow.avif",
         "cooldown": "Cooldown: 20 seconds",
         "cost": "Mana: 50",
@@ -6127,7 +6127,7 @@
       },
       {
         "name": "Dragonstrike",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_hanzo_dragonstrike.avif",
         "cooldown": "Cooldown: 60 seconds",
         "cost": "Mana: 60",
@@ -6135,7 +6135,7 @@
       },
       {
         "name": "Dragon's Arrow",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_hanzo_thedragonsarrow.avif",
         "cooldown": "Cooldown: 70 seconds",
         "cost": "Mana: 90",
@@ -6143,7 +6143,7 @@
       },
       {
         "name": "Natural Agility",
-        "type": "D",
+        "hotkey": "D",
         "icon": "/images/storm_ui_icon_hanzo_wallvault.avif",
         "cooldown": "Cooldown: 25 seconds",
         "description": "Jump over unpathable terrain or Structures, up to a maximum range."
@@ -6285,42 +6285,42 @@
     "abilities": [
       {
         "name": "Staggering Blow",
-        "type": "Q",
+        "hotkey": "Q",
         "icon": "/images/storm_ui_icon_hogger_q.avif",
         "cooldown": "Cooldown: 12 seconds",
         "description": "Swing your chain in a wide arc, dealing 140 (+4% per level) damage to enemies hit and knocking them away. If an enemy hits terrain, deal an additional 150 (+4% per level) damage, Stun for 0.75 seconds, and gain 15 Rage."
       },
       {
         "name": "Ez-Thro Dynamite",
-        "type": "W",
+        "hotkey": "W",
         "icon": "/images/storm_ui_icon_hogger_w.avif",
         "cooldown": "Cooldown: 8 seconds",
         "description": "Toss a bundle of Dynamite with a 1.5 second fuse. Upon detonation, enemies take 180 (+4% per level) damage and are Slowed by 30% for 2 seconds. \n\nThe Dynamite instantly detonates when landing on an enemy Hero granting Hogger 10 Rage."
       },
       {
         "name": "Hogg Wild",
-        "type": "E",
+        "hotkey": "E",
         "icon": "/images/storm_ui_icon_hogger_e.avif",
         "cooldown": "Cooldown: 14 seconds",
         "description": "After 0.25 seconds, become Unstoppable and uncontrollably spin towards the target direction, ricocheting off terrain. Ricocheting off terrain refreshes the duration.\n\nEvery 0.125 seconds, deal 44 (+4% per level) damage to nearby non-Structure enemies. Damage against Heroes is increased by .5% for each point of Rage."
       },
       {
         "name": "Hoardapult",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_hogger_r1.avif",
         "cooldown": "Cooldown: 60 seconds",
         "description": "Launch an empowered Loot Hoard with Hogger attached, dealing 100 (+4% per level) damage and Slowing enemies by 50% for 2 seconds.\n\nHoardapult's Loot Hoard lasts for up to 20 seconds, decaying rapidly while not nearby. Every 10 seconds Hogger can take a chunk of Meat from the Loot Hoard."
       },
       {
         "name": "Shockwave",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_hogger_r2.avif",
         "cooldown": "Cooldown: 70 seconds",
         "description": "After 0.5 seconds, slam the ground, sending out a shockwave that travels in a long line. Enemies hit by the initial slam take 335 (+4% per level) damage and are Stunned for 1.5 seconds. Enemies only hit by the shockwave take 230 (+4% per level) damage and are Stunned for 0.75 seconds."
       },
       {
         "name": "Loot Hoard",
-        "type": "D",
+        "hotkey": "D",
         "icon": "/images/storm_ui_icon_hogger_trait.avif",
         "cooldown": "Cooldown: 20 seconds",
         "description": "Toss a pile of junk onto the battlefield, dealing 102 (+4% per level) damage in an area, knocking enemies away, and acting as terrain for up to 5 seconds.\n\nWhen the Loot Hoard expires or is destroyed, a chunk of Meat falls out that can be picked up to restore 3% of maximum Health every second for 4 seconds.\n\nReactivate to destroy Loot Hoard."
@@ -6462,42 +6462,42 @@
     "abilities": [
       {
         "name": "Dive",
-        "type": "Q",
+        "hotkey": "Q",
         "icon": "/images/storm_ui_icon_illidan_dive.avif",
         "cooldown": "Cooldown: 6 seconds",
         "description": "Dive at the target, dealing 66 (+4% per level) damage and flipping to the other side of the target."
       },
       {
         "name": "Sweeping Strike",
-        "type": "W",
+        "hotkey": "W",
         "icon": "/images/storm_ui_icon_illidan_sweepingstrike.avif",
         "cooldown": "Cooldown: 8 seconds",
         "description": "Dash towards target point, dealing 119 (+4% per level) damage to enemies along the way. Hitting an enemy increases Illidan's Basic Attack damage by 35% for 3 seconds."
       },
       {
         "name": "Evasion",
-        "type": "E",
+        "hotkey": "E",
         "icon": "/images/storm_ui_icon_illidan_evasion.avif",
         "cooldown": "Cooldown: 15 seconds",
         "description": "Evade enemy Basic Attacks for 2.5 seconds."
       },
       {
         "name": "The Hunt",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_illidan_thehunt.avif",
         "cooldown": "Cooldown: 100 seconds",
         "description": "Charge to target unit, dealing 251 (+4% per level) damage on impact and stunning for 1 second."
       },
       {
         "name": "Metamorphosis",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_illidan_metamorphosis.avif",
         "cooldown": "Cooldown: 120 seconds",
         "description": "Transform into Demon Form at the target location, dealing 46 (+4% per level) damage in the area. Temporarily increases maximum Health by 220 (+4% per level) for each Hero hit by the initial impact. Lasts for 18 seconds."
       },
       {
         "name": "Betrayer's Thirst",
-        "type": "D",
+        "hotkey": "D",
         "icon": "/images/storm_ui_icon_illidan_betrayersthirst.avif",
         "description": "Basic Attacks heal for 30% of damage dealt and reduce Ability cooldowns by 1 second."
       }
@@ -6637,7 +6637,7 @@
     "abilities": [
       {
         "name": "Celestial Charge",
-        "type": "Q",
+        "hotkey": "Q",
         "icon": "/images/storm_ui_icon_imperius_q.avif",
         "cooldown": "Cooldown: 10 seconds",
         "cost": "Mana: 40",
@@ -6645,7 +6645,7 @@
       },
       {
         "name": "Solarion's Fire",
-        "type": "W",
+        "hotkey": "W",
         "icon": "/images/storm_ui_icon_imperius_w.avif",
         "cooldown": "Cooldown: 8 seconds",
         "cost": "Mana: 50",
@@ -6653,7 +6653,7 @@
       },
       {
         "name": "Molten Armor",
-        "type": "E",
+        "hotkey": "E",
         "icon": "/images/storm_ui_icon_imperius_e.avif",
         "cooldown": "Cooldown: 12 seconds",
         "cost": "Mana: 75",
@@ -6661,7 +6661,7 @@
       },
       {
         "name": "Angelic Armaments",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_imperius_r1.avif",
         "cooldown": "Cooldown: 70 seconds",
         "cost": "Mana: 70",
@@ -6669,7 +6669,7 @@
       },
       {
         "name": "Wrath of the Angiris",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_imperius_r2.avif",
         "cooldown": "Cooldown: 80 seconds",
         "cost": "Mana: 80",
@@ -6677,7 +6677,7 @@
       },
       {
         "name": "Valorous Brand",
-        "type": "D",
+        "hotkey": "D",
         "icon": "/images/storm_ui_icon_imperius_trait.avif",
         "description": "Each Basic Ability marks enemy Heroes hit for 10 seconds. Basic Attacks consume the target's marks, dealing 20% bonus damage per mark and healing for 75 (+4% per level) per mark."
       }
@@ -6826,7 +6826,7 @@
     "abilities": [
       {
         "name": "Frostbolt",
-        "type": "Q",
+        "hotkey": "Q",
         "icon": "/images/storm_ui_icon_jaina_frostbolt.avif",
         "cooldown": "Cooldown: 4 seconds",
         "cost": "Mana: 30",
@@ -6834,7 +6834,7 @@
       },
       {
         "name": "Blizzard",
-        "type": "W",
+        "hotkey": "W",
         "icon": "/images/storm_ui_icon_jaina_blizzard.avif",
         "cooldown": "Cooldown: 15 seconds",
         "cost": "Mana: 90",
@@ -6842,7 +6842,7 @@
       },
       {
         "name": "Cone of Cold",
-        "type": "E",
+        "hotkey": "E",
         "icon": "/images/storm_ui_icon_jaina_coneofcold.avif",
         "cooldown": "Cooldown: 10 seconds",
         "cost": "Mana: 40",
@@ -6850,7 +6850,7 @@
       },
       {
         "name": "Summon Water Elemental",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_jaina_summonwaterelemental.avif",
         "cooldown": "Cooldown: 60 seconds",
         "cost": "Mana: 60",
@@ -6858,7 +6858,7 @@
       },
       {
         "name": "Ring of Frost",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_jaina_ringoffrost.avif",
         "cooldown": "Cooldown: 70 seconds",
         "cost": "Mana: 70",
@@ -6866,20 +6866,20 @@
       },
       {
         "name": "Frostbite",
-        "type": "D",
+        "hotkey": "D",
         "icon": "/images/storm_ui_icon_jaina_frostbite.avif",
         "description": "Jaina's Abilities Chill targets, Slowing them by 25% and amplifying damage taken from her Abilities by 50%. Lasts 4 seconds.\n\nQuest: Deal Ability damage to Chilled Heroes.\n\nReward: Upon dealing 12000 damage, unlock the Improved Ice Block Ability, allowing Jaina to become temporarily Invulnerable.\n\nMythic Reward: Upon dealing 30000 damage, Ice Block upgrades to Ice Cold, allowing Jaina to move and cast while active."
       },
       {
         "name": "Improved Ice Block",
-        "type": "1",
+        "hotkey": "1",
         "icon": "/images/storm_ui_icon_talent_iceblock.avif",
         "cooldown": "Cooldown: 40 seconds",
         "description": "Activate to place Jaina in Stasis and gain Invulnerability for 2.5 seconds. When this effect expires, nearby enemies are Chilled."
       },
       {
         "name": "Ice Cold",
-        "type": "2",
+        "hotkey": "2",
         "icon": "/images/storm_ui_icon_talent_iceblock.avif",
         "cooldown": "Cooldown: 40 seconds",
         "description": "Activate to grant Jaina Protected and Unstoppable for 2.5 seconds. When this effect expires, nearby enemies are Chilled."
@@ -7023,42 +7023,42 @@
     "abilities": [
       {
         "name": "Frag Launcher",
-        "type": "Q",
+        "hotkey": "Q",
         "icon": "/images/storm_ui_icon_junkrat_frag_launcher.avif",
         "cooldown": "Charge Cooldown: 12 seconds",
         "description": "Launch a grenade that explodes at the end of its path or upon hitting an enemy, dealing 124 (+4% per level) damage to nearby enemies. Grenades can ricochet off of terrain. Deals 50% less damage to Structures.\n\nStores up to 4 charges. Frag Launcher's cooldown replenishes all charges at the same time."
       },
       {
         "name": "Concussion Mine",
-        "type": "W",
+        "hotkey": "W",
         "icon": "/images/storm_ui_icon_junkrat_concussion_mine.avif",
         "cooldown": "Cooldown: 16 seconds",
         "description": "Place a mine on the ground. Junkrat's Trait can be activated to detonate the mine, dealing 180 (+4% per level) damage to nearby enemies and knocking them back. Junkrat can also be affected by Concussion Mine, but takes no damage.\n\nLimit 1 active mine."
       },
       {
         "name": "Steel Trap",
-        "type": "E",
+        "hotkey": "E",
         "icon": "/images/storm_ui_icon_junkrat_steel_trap.avif",
         "cooldown": "Cooldown: 15 seconds",
         "description": "Place a trap on the ground that arms after 2 seconds. Deals 130 (+4% per level) damage to the first enemy that walks over it and Roots them for 2 seconds.\n\nLimit 1 active trap."
       },
       {
         "name": "RIP-Tire",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_junkrat_rip_tire.avif",
         "cooldown": "Cooldown: 75 seconds",
         "description": "Create a motorized bomb with 530 (+4% per level) Health that lasts 15 seconds. While active, Junkrat is immobile but gains control of RIP-Tire's movement.\n\nRIP-Tire can be reactivated to detonate immediately, knocking nearby enemies back and dealing 720 (+4% per level) damage to enemies near the center gradually reduced to 445 (+4% per level) to enemies on the edge."
       },
       {
         "name": "Rocket Ride",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_junkrat_rocket_ride.avif",
         "cooldown": "Cooldown: 75 seconds",
         "description": "After 1.25 seconds, Junkrat launches into the air. While in the air, he can steer the landing location by moving.\n\nAfter 3.75 seconds, Junkrat lands, dealing 935 (+4% per level) damage to nearby enemies and activating Total Mayhem. 5 seconds after landing, Junkrat reappears at the Hall of Storms and gains 150% additional Movement Speed until dismounted."
       },
       {
         "name": "Total Mayhem",
-        "type": "D",
+        "hotkey": "D",
         "icon": "/images/storm_ui_icon_junkrat_bomb_pack.avif",
         "description": "Upon dying, drop 5 grenades that explode after 0.75 seconds, each dealing 250 (+4% per level) damage to nearby enemies. Deals 75% less damage to Structures.\n\nDetonate Mine\n\nDetonate an active Concussion Mine."
       }
@@ -7203,7 +7203,7 @@
     "abilities": [
       {
         "name": "Flamestrike",
-        "type": "Q",
+        "hotkey": "Q",
         "icon": "/images/storm_ui_icon_kaelthas_flamestrike.avif",
         "cooldown": "Cooldown: 7 seconds",
         "cost": "Mana: 70",
@@ -7211,7 +7211,7 @@
       },
       {
         "name": "Living Bomb",
-        "type": "W",
+        "hotkey": "W",
         "icon": "/images/storm_ui_icon_kaelthas_livingbomb.avif",
         "cooldown": "Cooldown: 10 seconds",
         "cost": "Mana: 50",
@@ -7219,7 +7219,7 @@
       },
       {
         "name": "Gravity Lapse",
-        "type": "E",
+        "hotkey": "E",
         "icon": "/images/storm_ui_icon_kaelthas_gravitylapse.avif",
         "cooldown": "Cooldown: 12 seconds",
         "cost": "Mana: 90",
@@ -7227,7 +7227,7 @@
       },
       {
         "name": "Pyroblast",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_kaelthas_pyroblast.avif",
         "cooldown": "Cooldown: 100 seconds",
         "cost": "Mana: 80",
@@ -7235,7 +7235,7 @@
       },
       {
         "name": "Phoenix",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_kaelthas_phoenix.avif",
         "cooldown": "Cooldown: 60 seconds",
         "cost": "Mana: 80",
@@ -7243,7 +7243,7 @@
       },
       {
         "name": "Verdant Spheres",
-        "type": "D",
+        "hotkey": "D",
         "icon": "/images/storm_ui_icon_kaelthas_verdantspheres.avif",
         "cooldown": "Cooldown: 6 seconds",
         "description": "Activate to make Kael'thas's next Basic Ability more powerful."
@@ -7385,7 +7385,7 @@
     "abilities": [
       {
         "name": "Death and Decay",
-        "type": "Q",
+        "hotkey": "Q",
         "icon": "/images/storm_ui_icon_kel'thuzad_deathanddecay.avif",
         "cooldown": "Cooldown: 5 seconds",
         "cost": "Mana: 20",
@@ -7393,7 +7393,7 @@
       },
       {
         "name": "Frost Nova",
-        "type": "W",
+        "hotkey": "W",
         "icon": "/images/storm_ui_icon_kel'thuzad_frostnova.avif",
         "cooldown": "Cooldown: 8 seconds",
         "cost": "Mana: 50",
@@ -7401,7 +7401,7 @@
       },
       {
         "name": "Chains of Kel'Thuzad",
-        "type": "E",
+        "hotkey": "E",
         "icon": "/images/storm_ui_icon_kel'thuzad_chains.avif",
         "cooldown": "Cooldown: 10 seconds",
         "cost": "Mana: 50",
@@ -7409,7 +7409,7 @@
       },
       {
         "name": "Frost Blast",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_kel'thuzad_frozentomb.avif",
         "cooldown": "Cooldown: 50 seconds",
         "cost": "Mana: 45",
@@ -7417,7 +7417,7 @@
       },
       {
         "name": "Shadow Fissure",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_kel'thuzad_shadowfissure.avif",
         "cooldown": "Cooldown: 16 seconds",
         "cost": "Mana: 40",
@@ -7425,13 +7425,13 @@
       },
       {
         "name": "Master of the Cold Dark",
-        "type": "D",
+        "hotkey": "D",
         "icon": "/images/storm_ui_icon_kel'thuzad_powerofthecolddark.avif",
         "description": "Quest: Gain 1 Blight every time a Hero is Rooted by Frost Nova or hit by Chains of Kel'Thuzad.\n\nReward: After gaining 15 Blight, gain the Glacial Spike Ability.\n\nReward: After gaining 30 Blight, gain 75% Spell Power.\n\nBlight: 0/30"
       },
       {
         "name": "Glacial Spike",
-        "type": "1",
+        "hotkey": "1",
         "icon": "/images/storm_ui_icon_kel'thuzad_glacialspike.avif",
         "cooldown": "Cooldown: 30 seconds",
         "description": "Activate to create a spike that detonates after 4 seconds, dealing 70 (+2.5% per level) damage to nearby enemies. The spike can be affected by Chains of Kel'Thuzad."
@@ -7576,7 +7576,7 @@
     "abilities": [
       {
         "name": "Ravage",
-        "type": "Q",
+        "hotkey": "Q",
         "icon": "/images/storm_ui_icon_kerrigan_ravage.avif",
         "cooldown": "Charge Cooldown: 8 seconds",
         "cost": "Mana: 20",
@@ -7584,7 +7584,7 @@
       },
       {
         "name": "Impaling Blades",
-        "type": "W",
+        "hotkey": "W",
         "icon": "/images/storm_ui_icon_kerrigan_impalingblades.avif",
         "cooldown": "Cooldown: 9 seconds",
         "cost": "Mana: 80",
@@ -7592,7 +7592,7 @@
       },
       {
         "name": "Primal Grasp",
-        "type": "E",
+        "hotkey": "E",
         "icon": "/images/storm_ui_icon_kerrigan_primalgrasp.avif",
         "cooldown": "Cooldown: 8 seconds",
         "cost": "Mana: 65",
@@ -7600,7 +7600,7 @@
       },
       {
         "name": "Summon Ultralisk",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_kerrigan_ultralisk.avif",
         "cooldown": "Cooldown: 80 seconds",
         "cost": "Mana: 75",
@@ -7608,7 +7608,7 @@
       },
       {
         "name": "Maelstrom",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_kerrigan_maelstrom.avif",
         "cooldown": "Cooldown: 90 seconds",
         "cost": "Mana: 80",
@@ -7616,7 +7616,7 @@
       },
       {
         "name": "Assimilation",
-        "type": "D",
+        "hotkey": "D",
         "icon": "/images/storm_ui_icon_kerrigan_assimilation.avif",
         "description": "Gain 10% of damage dealt from Abilities and 20% from Basic Attacks as Shields for 6 seconds. Shield amount gained doubled against Heroes.\n\nCurrent maximum: 1004 (+4% per level)"
       }
@@ -7759,7 +7759,7 @@
     "abilities": [
       {
         "name": "Powerslide",
-        "type": "Q",
+        "hotkey": "Q",
         "icon": "/images/storm_ui_icon_etc_powerslide.avif",
         "cooldown": "Cooldown: 12 seconds",
         "cost": "Mana: 60",
@@ -7767,7 +7767,7 @@
       },
       {
         "name": "Face Melt",
-        "type": "W",
+        "hotkey": "W",
         "icon": "/images/storm_ui_icon_etc_facemelt.avif",
         "cooldown": "Cooldown: 10 seconds",
         "cost": "Mana: 55",
@@ -7775,7 +7775,7 @@
       },
       {
         "name": "Guitar Solo",
-        "type": "E",
+        "hotkey": "E",
         "icon": "/images/storm_ui_icon_etc_guitarsolo.avif",
         "cooldown": "Cooldown: 9 seconds",
         "cost": "Mana: 40",
@@ -7783,7 +7783,7 @@
       },
       {
         "name": "Mosh Pit",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_etc_moshpit.avif",
         "cooldown": "Cooldown: 120 seconds",
         "cost": "Mana: 100",
@@ -7791,7 +7791,7 @@
       },
       {
         "name": "Stage Dive",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_etc_stagedive.avif",
         "cooldown": "Cooldown: 75 seconds",
         "cost": "Mana: 70",
@@ -7799,7 +7799,7 @@
       },
       {
         "name": "Rockstar",
-        "type": "D",
+        "hotkey": "D",
         "icon": "/images/storm_ui_icon_etc_rockstar.avif",
         "description": "Using a Basic Ability grants 25 Armor for 2 seconds. Heroic Abilities grant 50 Armor."
       }
@@ -7948,7 +7948,7 @@
     "abilities": [
       {
         "name": "Skeletal Swing",
-        "type": "Q",
+        "hotkey": "Q",
         "icon": "/images/storm_ui_icon_leoric_skeletalswing.avif",
         "cooldown": "Cooldown: 12 seconds",
         "cost": "Mana: 70",
@@ -7956,7 +7956,7 @@
       },
       {
         "name": "Drain Hope",
-        "type": "W",
+        "hotkey": "W",
         "icon": "/images/storm_ui_icon_leoric_drainhope.avif",
         "cooldown": "Cooldown: 10 seconds",
         "cost": "Mana: 60",
@@ -7964,7 +7964,7 @@
       },
       {
         "name": "Wraith Walk",
-        "type": "E",
+        "hotkey": "E",
         "icon": "/images/storm_ui_icon_leoric_wraithwalk.avif",
         "cooldown": "Cooldown: 14 seconds",
         "cost": "Mana: 50",
@@ -7972,7 +7972,7 @@
       },
       {
         "name": "Entomb",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_leoric_entomb.avif",
         "cooldown": "Cooldown: 50 seconds",
         "cost": "Mana: 90",
@@ -7980,7 +7980,7 @@
       },
       {
         "name": "March of the Black King",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_leoric_r2.avif",
         "cooldown": "Cooldown: 50 seconds",
         "cost": "Mana: 75",
@@ -7988,7 +7988,7 @@
       },
       {
         "name": "Undying",
-        "type": "D",
+        "hotkey": "D",
         "icon": "/images/storm_ui_icon_leoric_trait.avif",
         "description": "Leoric becomes a ghost when he dies, and resurrects upon reaching full Health. Leoric deals no damage while dead.\n\nWrath Of The Bone King\n\nLeoric's first two Basic Attacks cleave for 100% damage, and his third Basic Attack deals 225% damage to a single target."
       }
@@ -8131,7 +8131,7 @@
     "abilities": [
       {
         "name": "Healing Brew",
-        "type": "Q",
+        "hotkey": "Q",
         "icon": "/images/storm_ui_icon_lili_healingbrew.avif",
         "cooldown": "Cooldown: 4 seconds",
         "cost": "Mana: 25",
@@ -8139,7 +8139,7 @@
       },
       {
         "name": "Cloud Serpent",
-        "type": "W",
+        "hotkey": "W",
         "icon": "/images/storm_ui_icon_lili_cloudserpent.avif",
         "cooldown": "Cooldown: 11 seconds",
         "cost": "Mana: 35",
@@ -8147,7 +8147,7 @@
       },
       {
         "name": "Blinding Wind",
-        "type": "E",
+        "hotkey": "E",
         "icon": "/images/storm_ui_icon_lili_blindingwind.avif",
         "cooldown": "Cooldown: 12 seconds",
         "cost": "Mana: 30",
@@ -8155,7 +8155,7 @@
       },
       {
         "name": "Jug of 1,000 Cups",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_lili_jugofathousandcups.avif",
         "cooldown": "Cooldown: 20 seconds",
         "cost": "Mana: 80",
@@ -8163,7 +8163,7 @@
       },
       {
         "name": "Water Dragon",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_lili_waterdragon.avif",
         "cooldown": "Cooldown: 50 seconds",
         "cost": "Mana: 60",
@@ -8171,7 +8171,7 @@
       },
       {
         "name": "Fast Feet",
-        "type": "D",
+        "hotkey": "D",
         "icon": "/images/storm_ui_icon_lili_fastfeet.avif",
         "description": "Upon taking damage, your Basic Ability cooldowns refresh 50% faster and you gain 10% Movement Speed for 1 second."
       }
@@ -8315,52 +8315,52 @@
     "abilities": [
       {
         "name": "Longboat Raid!",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_lostvikings_longboatraid.avif",
         "cooldown": "Cooldown: 90 seconds",
         "description": "Hop into an Unstoppable Longboat that fires at nearby enemies for 128 (+4% per level) damage per second and can fire a mortar that deals 228 (+4% per level) damage in an area.  The boat has increased Health for each Viking inside. If the boat is destroyed by enemies, all Vikings are Stunned for 1 second. Lasts 15 seconds.\n\nRequires all surviving Vikings to be nearby."
       },
       {
         "name": "Play Again!",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_lostvikings_playagain.avif",
         "cooldown": "Cooldown: 100 seconds",
         "description": "Summon, fully heal, and revive all Lost Vikings at target location after a Viking channels for 2 seconds. \n\nOnly one Viking may attempt to summon at a time."
       },
       {
         "name": "Viking Hoard",
-        "type": "D",
+        "hotkey": "D",
         "icon": "/images/storm_ui_icon_lostvikings_vikinghoard.avif",
         "description": "Gathering a Regeneration Globe with a Viking permanently increases all their Health Regeneration by 0.5 per second.\n\nCurrent Bonus: 0 Regen per second"
       },
       {
         "name": "Go Go Go!",
-        "type": "Z",
+        "hotkey": "Z",
         "icon": "/images/storm_ui_icon_lostvikings_mount.avif",
         "cooldown": "Cooldown: 30 seconds",
         "description": "The Vikings gain 30% increased Movement Speed for 4 seconds."
       },
       {
         "name": "Select Olaf",
-        "type": "1",
+        "hotkey": "1",
         "icon": "/images/storm_ui_icon_lostvikings_selectolaf.avif",
         "description": "Olaf can charge enemies and slow their Movement Speed by 30% for 3 seconds by right-clicking on them. 8 second cooldown. \n\nOlaf gains increased Health Regeneration when out of combat for 4 seconds."
       },
       {
         "name": "Select Baleog",
-        "type": "2",
+        "hotkey": "2",
         "icon": "/images/storm_ui_icon_lostvikings_selectbaleog.avif",
         "description": "Baleog's Basic Attacks deal 50% damage to enemies behind his attack target."
       },
       {
         "name": "Select Erik",
-        "type": "3",
+        "hotkey": "3",
         "icon": "/images/storm_ui_icon_lostvikings_selecterik.avif",
         "description": "Erik moves faster than the other Vikings and has increased Basic Attack range."
       },
       {
         "name": "Select All Vikings",
-        "type": "4",
+        "hotkey": "4",
         "icon": "/images/storm_ui_ingame_heroselect_btn_lostvikings.avif",
         "description": "The Lost Vikings can be controlled individually or as a group. Each Viking has particular strengths."
       }
@@ -8517,7 +8517,7 @@
     "abilities": [
       {
         "name": "Soundwave",
-        "type": "Q",
+        "hotkey": "Q",
         "icon": "/images/storm_ui_icon_lucio_soundwave.avif",
         "cooldown": "Cooldown: 8 seconds",
         "cost": "Mana: 45",
@@ -8525,13 +8525,13 @@
       },
       {
         "name": "Crossfade",
-        "type": "W",
+        "hotkey": "W",
         "icon": "/images/storm_ui_icon_lucio_crossfadehealing.avif",
         "description": "Currently playing Speed Boost, increasing the Movement Speed of Lúcio and nearby allied Heroes by 10%.\n\nToggle to play Healing Boost instead."
       },
       {
         "name": "Amp It Up",
-        "type": "E",
+        "hotkey": "E",
         "icon": "/images/storm_ui_icon_lucio_ampitup.avif",
         "cooldown": "Cooldown: 13 seconds",
         "cost": "Mana: 90",
@@ -8539,7 +8539,7 @@
       },
       {
         "name": "Sound Barrier",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_lucio_soundbarrier.avif",
         "cooldown": "Cooldown: 80 seconds",
         "cost": "Mana: 100",
@@ -8547,7 +8547,7 @@
       },
       {
         "name": "High Five",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_lucio_highfive.avif",
         "cooldown": "Cooldown: 25 seconds per ally",
         "cost": "Mana: 30",
@@ -8555,14 +8555,14 @@
       },
       {
         "name": "Push Off",
-        "type": "D",
+        "hotkey": "D",
         "icon": "/images/storm_ui_icon_lucio_accelerando.avif",
         "cooldown": "Cooldown: 20 seconds",
         "description": "While moving alongside terrain, activate to slide towards a targeted location. Enemies hit take 100 (+4% per level) damage and are Slowed by 75% for 1 second."
       },
       {
         "name": "Wall Ride",
-        "type": "Z",
+        "hotkey": "Z",
         "icon": "/images/storm_ui_icon_lucio_mount.avif",
         "description": "When moving alongside terrain, Lúcio begins to Wall Ride for 2 seconds. While Wall Ride is active, Lúcio can walk through units and gains 20% Movement Speed that stacks with other bonuses."
       }
@@ -8705,7 +8705,7 @@
     "abilities": [
       {
         "name": "Fan of Knives",
-        "type": "Q",
+        "hotkey": "Q",
         "icon": "/images/storm_ui_icon_maiev_knives.avif",
         "cooldown": "Cooldown: 4 seconds",
         "cost": "Mana: 30",
@@ -8713,7 +8713,7 @@
       },
       {
         "name": "Umbral Bind",
-        "type": "W",
+        "hotkey": "W",
         "icon": "/images/storm_ui_icon_maiev_umbra_1.avif",
         "cooldown": "Cooldown: 14 seconds",
         "cost": "Mana: 55",
@@ -8721,7 +8721,7 @@
       },
       {
         "name": "Spirit of Vengeance",
-        "type": "E",
+        "hotkey": "E",
         "icon": "/images/storm_ui_icon_maiev_rush_1.avif",
         "cooldown": "Cooldown: 13 seconds",
         "cost": "Mana: 50",
@@ -8729,7 +8729,7 @@
       },
       {
         "name": "Containment Disc",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_maiev_heroic_1_a.avif",
         "cooldown": "Cooldown: 40 seconds",
         "cost": "Mana: 50",
@@ -8737,7 +8737,7 @@
       },
       {
         "name": "Warden's Cage",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_maiev_heroic_2.avif",
         "cooldown": "Cooldown: 100 seconds",
         "cost": "Mana: 80",
@@ -8745,7 +8745,7 @@
       },
       {
         "name": "Vault of the Wardens",
-        "type": "D",
+        "hotkey": "D",
         "icon": "/images/storm_ui_icon_maiev_trait.avif",
         "cooldown": "Cooldown: 13 seconds",
         "description": "Leap into the air, becoming Immune to all hostile effects for 0.75 seconds.\n\nAfter reaching Level 20, Vault of the Wardens gains an additional charge."
@@ -8882,7 +8882,7 @@
     "abilities": [
       {
         "name": "Regrowth",
-        "type": "Q",
+        "hotkey": "Q",
         "icon": "/images/storm_ui_icon_malfurion_regrowth.avif",
         "cooldown": "Cooldown: 5 seconds",
         "cost": "Mana: 35",
@@ -8890,7 +8890,7 @@
       },
       {
         "name": "Moonfire",
-        "type": "W",
+        "hotkey": "W",
         "icon": "/images/storm_ui_icon_malfurion_moonfire.avif",
         "cooldown": "Cooldown: 3 seconds",
         "cost": "Mana: 10",
@@ -8898,7 +8898,7 @@
       },
       {
         "name": "Entangling Roots",
-        "type": "E",
+        "hotkey": "E",
         "icon": "/images/storm_ui_icon_malfurion_entanglingroots.avif",
         "cooldown": "Cooldown: 12 seconds",
         "cost": "Mana: 65",
@@ -8906,7 +8906,7 @@
       },
       {
         "name": "Tranquility",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_malfurion_tranquility.avif",
         "cooldown": "Cooldown: 80 seconds",
         "cost": "Mana: 80",
@@ -8914,7 +8914,7 @@
       },
       {
         "name": "Twilight Dream",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_malfurion_twilightdream.avif",
         "cooldown": "Cooldown: 90 seconds",
         "cost": "Mana: 100",
@@ -8922,7 +8922,7 @@
       },
       {
         "name": "Innervate",
-        "type": "D",
+        "hotkey": "D",
         "icon": "/images/storm_ui_icon_malfurion_innerrvate.avif",
         "cooldown": "Cooldown: 25 seconds",
         "description": "Grant an allied Hero 20% of their maximum Mana over 5 seconds. While affected by Innervate, their Basic Ability cooldowns recharge 50% faster.\n\nCannot be used on Heroes that do not use Mana."
@@ -9065,7 +9065,7 @@
     "abilities": [
       {
         "name": "Fel Claws",
-        "type": "Q",
+        "hotkey": "Q",
         "icon": "/images/storm_ui_icon_malganis_fel_1.avif",
         "cooldown": "Cooldown: 8 seconds",
         "cost": "Mana: 45",
@@ -9073,7 +9073,7 @@
       },
       {
         "name": "Necrotic Embrace",
-        "type": "W",
+        "hotkey": "W",
         "icon": "/images/storm_ui_icon_malganis_necrotic.avif",
         "cooldown": "Cooldown: 8 seconds",
         "cost": "Mana: 35",
@@ -9081,7 +9081,7 @@
       },
       {
         "name": "Night Rush",
-        "type": "E",
+        "hotkey": "E",
         "icon": "/images/storm_ui_icon_malganis_nightrush.avif",
         "cooldown": "Cooldown: 14 seconds",
         "cost": "Mana: 70",
@@ -9089,7 +9089,7 @@
       },
       {
         "name": "Dark Conversion",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_malganis_ult_conversion.avif",
         "cooldown": "Cooldown: 60 seconds",
         "cost": "Mana: 60",
@@ -9097,7 +9097,7 @@
       },
       {
         "name": "Carrion Swarm",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_malganis_ult_swarm.avif",
         "cooldown": "Cooldown: 100 seconds",
         "cost": "Mana: 70",
@@ -9105,7 +9105,7 @@
       },
       {
         "name": "Vampiric Touch",
-        "type": "D",
+        "hotkey": "D",
         "icon": "/images/storm_ui_icon_malganis_trait.avif",
         "description": "Mal'Ganis heals for 50% of damage dealt to enemy Heroes and 15% of damage dealt to non-Heroes."
       }
@@ -9247,7 +9247,7 @@
     "abilities": [
       {
         "name": "Soul Rip",
-        "type": "Q",
+        "hotkey": "Q",
         "icon": "/images/storm_ui_icon_malthael_soulrip.avif",
         "cooldown": "Cooldown: 2 seconds",
         "cost": "Mana: 25",
@@ -9255,7 +9255,7 @@
       },
       {
         "name": "Wraith Strike",
-        "type": "W",
+        "hotkey": "W",
         "icon": "/images/storm_ui_icon_malthael_wraithstrike.avif",
         "cooldown": "Cooldown: 5 seconds",
         "cost": "Mana: 30",
@@ -9263,7 +9263,7 @@
       },
       {
         "name": "Death Shroud",
-        "type": "E",
+        "hotkey": "E",
         "icon": "/images/storm_ui_icon_malthael_deathshroud.avif",
         "cooldown": "Cooldown: 8 seconds",
         "cost": "Mana: 50",
@@ -9271,7 +9271,7 @@
       },
       {
         "name": "Tormented Souls",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_malthael_tormentedsoul.avif",
         "cooldown": "Cooldown: 60 seconds",
         "cost": "Mana: 20",
@@ -9279,7 +9279,7 @@
       },
       {
         "name": "Last Rites",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_malthael_lastrites.avif",
         "cooldown": "Cooldown: 70 seconds",
         "cost": "Mana: 100",
@@ -9287,7 +9287,7 @@
       },
       {
         "name": "Reaper's Mark",
-        "type": "D",
+        "hotkey": "D",
         "icon": "/images/storm_ui_icon_malthael_reapersmark.avif",
         "description": "Basic Attacks cleave in an area in front of Malthael and afflict non-Structure targets with Reaper's Mark for 4 seconds. Marked enemies are revealed and take damage equal to 2% of their maximum Health every 1 second."
       }
@@ -9438,42 +9438,42 @@
     "abilities": [
       {
         "name": "Healing Beam",
-        "type": "Q",
+        "hotkey": "Q",
         "icon": "/images/storm_ui_icon_medic_healingbeam.avif",
         "cost": "Energy: 6 per second",
         "description": "Heal target allied Hero or Minion for 172 (+4% per level) Health per second as long as they are in range. After not channeling Healing Beam for 2 seconds, regenerate 6 Energy per second.\n\nReactivate to switch targets, or self-cast to cancel channeling."
       },
       {
         "name": "Safeguard",
-        "type": "W",
+        "hotkey": "W",
         "icon": "/images/storm_ui_icon_medic_deployshield.avif",
         "cooldown": "Cooldown: 11 seconds",
         "description": "Grant target ally Hero 35 Armor for 3 seconds."
       },
       {
         "name": "Displacement Grenade",
-        "type": "E",
+        "hotkey": "E",
         "icon": "/images/storm_ui_icon_medic_displacementgrenade.avif",
         "cooldown": "Cooldown: 12 seconds",
         "description": "Fire a grenade that can be manually detonated, dealing 208 (+4% per level) to nearby enemies and knocking them away."
       },
       {
         "name": "Stim Drone",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_medic_stim.avif",
         "cooldown": "Cooldown: 70 seconds",
         "description": "Grant an allied Hero 75% Attack Speed and 25% Movement Speed for 10 seconds."
       },
       {
         "name": "Medivac Dropship",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_medic_medivacdropship.avif",
         "cooldown": "Cooldown: 45 seconds",
         "description": "Target a location for a Medivac transport. For up to 10 seconds before takeoff, allies can right-click to enter the Medivac."
       },
       {
         "name": "Caduceus Reactor",
-        "type": "D",
+        "hotkey": "D",
         "icon": "/images/storm_ui_icon_medic_caduceusreactor.avif",
         "description": "While channeling Healing Beam, Lt. Morales regenerates 2% of her maximum Health per second."
       }
@@ -9613,7 +9613,7 @@
     "abilities": [
       {
         "name": "Arcane Rift",
-        "type": "Q",
+        "hotkey": "Q",
         "icon": "/images/storm_ui_icon_medivh_arcanemissile.avif",
         "cooldown": "Cooldown: 7 seconds",
         "cost": "Mana: 50",
@@ -9621,7 +9621,7 @@
       },
       {
         "name": "Force of Will",
-        "type": "W",
+        "hotkey": "W",
         "icon": "/images/storm_ui_icon_medivh_forceofwill.avif",
         "cooldown": "Cooldown: 9 seconds",
         "cost": "Mana: 60",
@@ -9629,7 +9629,7 @@
       },
       {
         "name": "Portal",
-        "type": "E",
+        "hotkey": "E",
         "icon": "/images/storm_ui_icon_medivh_portal.avif",
         "cooldown": "Cooldown: 16 seconds",
         "cost": "Mana: 65",
@@ -9637,7 +9637,7 @@
       },
       {
         "name": "Poly Bomb",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_medivh_polybomb.avif",
         "cooldown": "Cooldown: 40 seconds",
         "cost": "Mana: 75",
@@ -9645,7 +9645,7 @@
       },
       {
         "name": "Ley Line Seal",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_medivh_leylineblast.avif",
         "cooldown": "Cooldown: 80 seconds",
         "cost": "Mana: 75",
@@ -9653,13 +9653,13 @@
       },
       {
         "name": "Raven Form",
-        "type": "D",
+        "hotkey": "D",
         "icon": "/images/storm_ui_icon_medivh_ravenform.avif",
         "description": "Instead of mounting, Medivh can transform into a raven, increasing Movement Speed by 20%. While transformed, Medivh can see and fly over all terrain and is immune to all effects."
       },
       {
         "name": "Raven Form",
-        "type": "Z",
+        "hotkey": "Z",
         "icon": "/images/storm_ui_icon_medivh_mount.avif",
         "cooldown": "Cooldown: 4 seconds",
         "description": "Transform into a raven, increasing Movement Speed by 20%. While transformed, Medivh can see and fly over terrain and is immune to all effects."
@@ -9811,7 +9811,7 @@
     "abilities": [
       {
         "name": "Snow Blind",
-        "type": "Q",
+        "hotkey": "Q",
         "icon": "/images/storm_ui_icon_mei_q_snowblind.avif",
         "cooldown": "Cooldown: 10 seconds",
         "cost": "Mana: 35",
@@ -9819,7 +9819,7 @@
       },
       {
         "name": "Blizzard",
-        "type": "W",
+        "hotkey": "W",
         "icon": "/images/storm_ui_icon_mei_w_blizzard.avif",
         "cooldown": "Cooldown: 14 seconds",
         "cost": "Mana: 70",
@@ -9827,7 +9827,7 @@
       },
       {
         "name": "Icing",
-        "type": "E",
+        "hotkey": "E",
         "icon": "/images/storm_ui_icon_mei_e1_slide.avif",
         "cooldown": "Cooldown: 14 seconds",
         "cost": "Mana: 70",
@@ -9835,7 +9835,7 @@
       },
       {
         "name": "Avalanche",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_mei_r1_avalanche.avif",
         "cooldown": "Cooldown: 90 seconds",
         "cost": "Mana: 80",
@@ -9843,7 +9843,7 @@
       },
       {
         "name": "Ice Wall",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_mei_r2_icewall.avif",
         "cooldown": "Cooldown: 60 seconds",
         "cost": "Mana: 50",
@@ -9851,7 +9851,7 @@
       },
       {
         "name": "Cryo-Freeze",
-        "type": "D",
+        "hotkey": "D",
         "icon": "/images/storm_ui_icon_mei_trait.avif",
         "cooldown": "Cooldown: 40 seconds",
         "description": "Become encased in ice for 3 seconds, gaining a rapidly decaying Shield that absorbs up to 1104 (+4% per level) damage. While active, this Shield grants Unstoppable and restores up to 35% of Mei's maximum Health."
@@ -9994,7 +9994,7 @@
     "abilities": [
       {
         "name": "Skull Missile",
-        "type": "Q",
+        "hotkey": "Q",
         "icon": "/images/storm_ui_icon_mephisto_skull.avif",
         "cooldown": "Cooldown: 8 seconds",
         "cost": "Mana: 20",
@@ -10002,7 +10002,7 @@
       },
       {
         "name": "Lightning Nova",
-        "type": "W",
+        "hotkey": "W",
         "icon": "/images/storm_ui_icon_mephisto_lightning.avif",
         "cooldown": "Cooldown: 14 seconds",
         "cost": "Mana: 50",
@@ -10010,7 +10010,7 @@
       },
       {
         "name": "Shade of Mephisto",
-        "type": "E",
+        "hotkey": "E",
         "icon": "/images/storm_ui_icon_mephisto_shade.avif",
         "cooldown": "Cooldown: 18 seconds",
         "cost": "Mana: 35",
@@ -10018,7 +10018,7 @@
       },
       {
         "name": "Consume Souls",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_mephisto_souls.avif",
         "cooldown": "Cooldown: 120 seconds",
         "cost": "Mana: 80",
@@ -10026,7 +10026,7 @@
       },
       {
         "name": "Durance of Hate",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_mephisto_durance.avif",
         "cooldown": "Cooldown: 50 seconds",
         "cost": "Mana: 50",
@@ -10034,7 +10034,7 @@
       },
       {
         "name": "Lord Of Hatred",
-        "type": "D",
+        "hotkey": "D",
         "icon": "/images/storm_ui_icon_mephisto_hatred.avif",
         "description": "Hitting enemy Heroes with Basic Abilities reduces Mephisto's Basic Ability cooldowns.\n\nSkull Missile and Shade of Mephisto grant 1.5 seconds of cooldown reduction per Hero hit, and Lightning Nova grants 0.3 seconds per Hero hit."
       }
@@ -10176,7 +10176,7 @@
     "abilities": [
       {
         "name": "Radiant Dash",
-        "type": "Q",
+        "hotkey": "Q",
         "icon": "/images/storm_ui_icon_monk_dash.avif",
         "cooldown": "Charge Cooldown: 12 seconds",
         "cost": "Mana: 25",
@@ -10184,7 +10184,7 @@
       },
       {
         "name": "Breath of Heaven",
-        "type": "W",
+        "hotkey": "W",
         "icon": "/images/storm_ui_icon_monk_breath0fheaven.avif",
         "cooldown": "Cooldown: 10 seconds",
         "cost": "Mana: 65",
@@ -10192,7 +10192,7 @@
       },
       {
         "name": "Deadly Reach",
-        "type": "E",
+        "hotkey": "E",
         "icon": "/images/storm_ui_icon_monk_deadlyreach.avif",
         "cooldown": "Cooldown: 10 seconds",
         "cost": "Mana: 45",
@@ -10200,7 +10200,7 @@
       },
       {
         "name": "Seven-Sided Strike",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_monk_sevensidedstrike.avif",
         "cooldown": "Cooldown: 50 seconds",
         "cost": "Mana: 77",
@@ -10208,7 +10208,7 @@
       },
       {
         "name": "Divine Palm",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_monk_divinepalm.avif",
         "cooldown": "Cooldown: 50 seconds",
         "cost": "Mana: 50",
@@ -10216,7 +10216,7 @@
       },
       {
         "name": "Pick Your Trait",
-        "type": "D",
+        "hotkey": "D",
         "icon": "/images/storm_ui_icon_monk_trait1.avif",
         "description": "Choose between Transcendence, Iron Fists, and Insight from the Talents panel."
       }
@@ -10367,7 +10367,7 @@
     "abilities": [
       {
         "name": "Storm Bolt",
-        "type": "Q",
+        "hotkey": "Q",
         "icon": "/images/storm_ui_icon_muradin_stormbolt.avif",
         "cooldown": "Cooldown: 10 seconds",
         "cost": "Mana: 45",
@@ -10375,7 +10375,7 @@
       },
       {
         "name": "Thunder Clap",
-        "type": "W",
+        "hotkey": "W",
         "icon": "/images/storm_ui_icon_muradin_thunderclap.avif",
         "cooldown": "Cooldown: 8 seconds",
         "cost": "Mana: 50",
@@ -10383,7 +10383,7 @@
       },
       {
         "name": "Dwarf Toss",
-        "type": "E",
+        "hotkey": "E",
         "icon": "/images/storm_ui_icon_muradin_dwarftoss.avif",
         "cooldown": "Cooldown: 10 seconds",
         "cost": "Mana: 55",
@@ -10391,7 +10391,7 @@
       },
       {
         "name": "Avatar",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_muradin_avatar.avif",
         "cooldown": "Cooldown: 90 seconds",
         "cost": "Mana: 80",
@@ -10399,7 +10399,7 @@
       },
       {
         "name": "Haymaker",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_muradin_haymaker.avif",
         "cooldown": "Cooldown: 40 seconds",
         "cost": "Mana: 60",
@@ -10407,7 +10407,7 @@
       },
       {
         "name": "Second Wind",
-        "type": "D",
+        "hotkey": "D",
         "icon": "/images/storm_ui_icon_muradin_secondwind.avif",
         "description": "Muradin restores 55 (+4% per level) Health per second when he has not taken damage for 4 seconds. When below 40% Health, increased to 111 (+4% per level) Health per second."
       }
@@ -10551,42 +10551,42 @@
     "abilities": [
       {
         "name": "Slime",
-        "type": "Q",
+        "hotkey": "Q",
         "icon": "/images/storm_ui_icon_murky_slime.avif",
         "cooldown": "Cooldown: 4 seconds",
         "description": "Deal 86 (+4% per level) damage and apply Slime on nearby enemies for 6 seconds, Slowing them by 20%. \n\nDeal 210 (+4% per level) damage to enemies who are already Slimed. Structures take 50% damage."
       },
       {
         "name": "Pufferfish",
-        "type": "W",
+        "hotkey": "W",
         "icon": "/images/storm_ui_icon_murky_pufferfish.avif",
         "cooldown": "Cooldown: 15 seconds",
         "description": "Spit out a Pufferfish with 225 (+5.5% per level) health at the target point. After 2.75 seconds, the fish will blow up for 330 (+4% per level) damage. Deals 50% less damage to Structures.\n\nQuest: Kill Slimed Enemies or hit them with Pufferfish. Heroes and Structures award 4 bonus stacks.\n\nReward: After obtaining 200 stacks, Murky's Basic Abilities no longer deal reduced damage to structures.\n\nMythic Reward: After obtaining 400 stacks, Murky's health is increased by 50%."
       },
       {
         "name": "Safety Bubble",
-        "type": "E",
+        "hotkey": "E",
         "icon": "/images/storm_ui_icon_murky_safetybubble.avif",
         "cooldown": "Cooldown: 14 seconds",
         "description": "Becomes Invulnerable for 2 seconds. While active, Murky cannot attack or use abilities."
       },
       {
         "name": "March of the Murlocs",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_murky_marchofthemurlocs.avif",
         "cooldown": "Cooldown: 90 seconds",
         "description": "After 0.75 seconds, Murky commands a legion of Murlocs to march in a target direction, each one leaping onto the first enemy Hero or Structure they find. Each Murloc deals 130 (+4% per level) damage and slows its target by 15% for 5 seconds. Murlocs deal 50% damage to Structures."
       },
       {
         "name": "Octo-Grab",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_murky_octograb.avif",
         "cooldown": "Cooldown: 50 seconds",
         "description": "Murky becomes Unstoppable and Stuns target enemy Hero for 3 seconds while he hits them for 1 damage a second."
       },
       {
         "name": "Spawn Egg",
-        "type": "D",
+        "hotkey": "D",
         "icon": "/images/storm_ui_icon_murky_trait_spawnegg.avif",
         "cooldown": "Cooldown: 15 seconds",
         "description": "Place an Egg at target location, revealing the nearby area. Upon dying, Murky respawns at the Egg after 8 seconds. Murky only grants 25% of a real Hero's experience upon dying.\n\nIf Murky's Egg is killed, he is revealed to enemies for 15 seconds, and Spawn Egg is placed on cooldown."
@@ -10726,7 +10726,7 @@
     "abilities": [
       {
         "name": "Spectral Scythe",
-        "type": "Q",
+        "hotkey": "Q",
         "icon": "/images/storm_ui_icon_necromancer_reap.avif",
         "cooldown": "Cooldown: 8 seconds",
         "cost": "Mana: 55",
@@ -10734,7 +10734,7 @@
       },
       {
         "name": "Cursed Strikes",
-        "type": "W",
+        "hotkey": "W",
         "icon": "/images/storm_ui_icon_necromancer_cursedstrikes_off.avif",
         "cooldown": "Cooldown: 16 seconds",
         "cost": "Mana: 50",
@@ -10742,7 +10742,7 @@
       },
       {
         "name": "Bone Prison",
-        "type": "E",
+        "hotkey": "E",
         "icon": "/images/storm_ui_icon_necromancer_boneprison.avif",
         "cooldown": "Cooldown: 10 seconds",
         "cost": "Mana: 70",
@@ -10750,7 +10750,7 @@
       },
       {
         "name": "Skeletal Mages",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_necromancer_skeletalmages.avif",
         "cooldown": "Cooldown: 90 seconds",
         "cost": "Mana: 80",
@@ -10758,7 +10758,7 @@
       },
       {
         "name": "Poison Nova",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_necromancer_poisonnova.avif",
         "cooldown": "Cooldown: 90 seconds",
         "cost": "Mana: 100",
@@ -10766,13 +10766,13 @@
       },
       {
         "name": "Raise Skeleton",
-        "type": "D",
+        "hotkey": "D",
         "icon": "/images/storm_ui_icon_necromancer_raiseskeleton.avif",
         "description": "When a nearby enemy Minion dies, it becomes a Skeletal Warrior with 240 (+4% per level) Health that attacks for 21 (+4% per level) damage and lasts up to 12 seconds. Upon death, Skeletal Warriors deal 40 (+4% per level) damage to nearby enemies.  Up to 3 Skeletal Warriors can be active at once when spawned in this way."
       },
       {
         "name": "Bone Armor",
-        "type": "1",
+        "hotkey": "1",
         "icon": "/images/storm_ui_icon_necromancer_bonearmor.avif",
         "cooldown": "Cooldown: 30 seconds",
         "description": "Activate to gain a Shield equal to 25% of Xul's maximum Health for 3 seconds."
@@ -10915,7 +10915,7 @@
     "abilities": [
       {
         "name": "Carnage",
-        "type": "Q",
+        "hotkey": "Q",
         "icon": "/images/storm_ui_icon_nexushunter_q.avif",
         "cooldown": "Cooldown: 6 seconds",
         "cost": "Mana: 40",
@@ -10923,7 +10923,7 @@
       },
       {
         "name": "Blood Rage",
-        "type": "W",
+        "hotkey": "W",
         "icon": "/images/storm_ui_icon_nexushunter_w.avif",
         "cooldown": "Cooldown: 7 seconds",
         "cost": "Mana: 35",
@@ -10931,7 +10931,7 @@
       },
       {
         "name": "Revolving Sweep",
-        "type": "E",
+        "hotkey": "E",
         "icon": "/images/storm_ui_icon_nexushunter_e.avif",
         "cooldown": "Cooldown: 16 seconds",
         "cost": "Mana: 70",
@@ -10939,7 +10939,7 @@
       },
       {
         "name": "Unrelenting Strikes",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_nexushunter_r1.avif",
         "cooldown": "Cooldown: 60 seconds",
         "cost": "Mana: 50",
@@ -10947,7 +10947,7 @@
       },
       {
         "name": "Final Strike",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_nexushunter_r2.avif",
         "cooldown": "Cooldown: 40 seconds",
         "cost": "Mana: 45",
@@ -10955,7 +10955,7 @@
       },
       {
         "name": "Grappling Hook",
-        "type": "D",
+        "hotkey": "D",
         "icon": "/images/storm_ui_icon_nexushunter_d.avif",
         "cooldown": "Cooldown: 20 seconds",
         "description": "Qhira fires a grappling hook that pulls her to terrain it contacts. If an enemy Hero is hit, they take 35 (+4% per level) damage and Qhira launches at them, kicking them for an additional 108 (+4% per level) damage.\n\nCan be used while Revolving Sweep is active."
@@ -11097,7 +11097,7 @@
     "abilities": [
       {
         "name": "Snipe",
-        "type": "Q",
+        "hotkey": "Q",
         "icon": "/images/storm_ui_icon_nova_snipe.avif",
         "cooldown": "Cooldown: 6 seconds",
         "cost": "Mana: 50",
@@ -11105,7 +11105,7 @@
       },
       {
         "name": "Pinning Shot",
-        "type": "W",
+        "hotkey": "W",
         "icon": "/images/storm_ui_icon_nova_pinningshot.avif",
         "cooldown": "Cooldown: 12 seconds",
         "cost": "Mana: 65",
@@ -11113,7 +11113,7 @@
       },
       {
         "name": "Holo Decoy",
-        "type": "E",
+        "hotkey": "E",
         "icon": "/images/storm_ui_icon_nova_holodecoy.avif",
         "cooldown": "Cooldown: 15 seconds",
         "cost": "Mana: 50",
@@ -11121,7 +11121,7 @@
       },
       {
         "name": "Triple Tap",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_nova_tripletap.avif",
         "cooldown": "Cooldown: 100 seconds",
         "cost": "Mana: 100",
@@ -11129,7 +11129,7 @@
       },
       {
         "name": "Precision Strike",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_nova_orbitalstrike.avif",
         "cooldown": "Cooldown: 50 seconds",
         "cost": "Mana: 100",
@@ -11137,13 +11137,13 @@
       },
       {
         "name": "Permanent Cloak",
-        "type": "D",
+        "hotkey": "D",
         "icon": "/images/storm_ui_icon_nova_personalcloaking.avif",
         "description": "Gain Stealth when out of combat for 3 seconds. Taking damage, attacking, using Abilities, or Channeling ends Stealth. Remaining stationary for at least 1.5 seconds while Stealthed grants Invisible.\n\nPassive: Gain 15% Movement Speed while Stealthed."
       },
       {
         "name": "Ghost Protocol",
-        "type": "1",
+        "hotkey": "1",
         "icon": "/images/storm_ui_icon_nova_personalcloaking.avif",
         "cooldown": "Cooldown: 60 seconds",
         "description": "Activate to instantly grant Stealth to Nova and spawn a Holo Decoy at her location. Nova is Unrevealable for the first 0.5 seconds when Stealthed by Ghost Protocol."
@@ -11286,7 +11286,7 @@
     "abilities": [
       {
         "name": "Shadow Waltz",
-        "type": "Q",
+        "hotkey": "Q",
         "icon": "/images/storm_ui_icon_orphea_q.avif",
         "cooldown": "Cooldown: 5 seconds",
         "cost": "Mana: 35",
@@ -11294,7 +11294,7 @@
       },
       {
         "name": "Chomp",
-        "type": "W",
+        "hotkey": "W",
         "icon": "/images/storm_ui_icon_orphea_w.avif",
         "cooldown": "Cooldown: 10 seconds",
         "cost": "Mana: 60",
@@ -11302,7 +11302,7 @@
       },
       {
         "name": "Dread",
-        "type": "E",
+        "hotkey": "E",
         "icon": "/images/storm_ui_icon_orphea_e.avif",
         "cooldown": "Cooldown: 14 seconds",
         "cost": "Mana: 50",
@@ -11310,7 +11310,7 @@
       },
       {
         "name": "Crushing Jaws",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_orphea_ult_thrasher.avif",
         "cooldown": "Cooldown: 70 seconds",
         "cost": "Mana: 75",
@@ -11318,7 +11318,7 @@
       },
       {
         "name": "Eternal Feast",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_orphea_ult_darkfall.avif",
         "cooldown": "Cooldown: 50 seconds",
         "cost": "Mana: 75",
@@ -11326,7 +11326,7 @@
       },
       {
         "name": "Overflowing Chaos",
-        "type": "D",
+        "hotkey": "D",
         "icon": "/images/storm_ui_icon_orphea_trait.avif",
         "description": "Hitting an enemy Hero with a Basic Ability grants 1 Chaos. Chaos can stack up to 3 times.\n\nWhile Orphea has Chaos, her Basic Attacks against Heroes consume all Chaos, dealing 50% increased damage per stack, and healing for 100% of the damage dealt."
       }
@@ -11471,7 +11471,7 @@
     "abilities": [
       {
         "name": "Disruption Pulse",
-        "type": "Q",
+        "hotkey": "Q",
         "icon": "/images/storm_ui_icon_probius_disruptionpulse.avif",
         "cooldown": "Cooldown: 3 seconds",
         "cost": "Mana: 75",
@@ -11479,7 +11479,7 @@
       },
       {
         "name": "Warp Rift",
-        "type": "W",
+        "hotkey": "W",
         "icon": "/images/storm_ui_icon_probius_warprift.avif",
         "cooldown": "Charge Cooldown: 6 seconds",
         "cost": "Mana: 150",
@@ -11487,14 +11487,14 @@
       },
       {
         "name": "Photon Cannon",
-        "type": "E",
+        "hotkey": "E",
         "icon": "/images/storm_ui_icon_probius_photoncannon.avif",
         "cooldown": "Cooldown: 15 seconds",
         "description": "Warp in a Photon Cannon that deals 105 (+4% per level) damage. Lasts for 13 seconds.\n\nWhile within a Pylon's Power Field, Photon Cannons gain 40% Attack Speed over 4 seconds and reveal nearby enemies."
       },
       {
         "name": "Pylon Overcharge",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_probius_pylonovercharge.avif",
         "cooldown": "Cooldown: 80 seconds",
         "cost": "Mana: 100",
@@ -11502,7 +11502,7 @@
       },
       {
         "name": "Null Gate",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_probius_voidgate.avif",
         "cooldown": "Cooldown: 25 seconds",
         "cost": "Mana: 100",
@@ -11510,14 +11510,14 @@
       },
       {
         "name": "Warp In Pylon",
-        "type": "D",
+        "hotkey": "D",
         "icon": "/images/storm_ui_icon_probius_warpinpylon.avif",
         "cooldown": "Cooldown: 14 seconds",
         "description": "Warp in a Pylon that generates a Power Field and grants vision of the surrounding area. Probius only regenerates mana while inside a Power Field. Enemy Heroes and Minions drop Minerals when killed. Gather Minerals to reduce the cooldown of Warp In Pylon by 0.75 seconds.\n\nUp to 2 Pylons can be active at a time."
       },
       {
         "name": "Worker Rush",
-        "type": "Z",
+        "hotkey": "Z",
         "icon": "/images/storm_ui_icon_probius_mount.avif",
         "cooldown": "Cooldown: 30 seconds",
         "description": "Activate to gain an additional 60% Movement Speed for 5 seconds. Taking damage ends this effect early. Worker Rush is always active while at the Hall of Storms.\n\nPassive: Probius moves 10% faster by hovering over the ground."
@@ -11659,7 +11659,7 @@
     "abilities": [
       {
         "name": "Empower Sulfuras",
-        "type": "Q",
+        "hotkey": "Q",
         "icon": "/images/storm_ui_icon_ragnaros_empowersulfuras.avif",
         "cooldown": "Cooldown: 4 seconds",
         "cost": "Mana: 25",
@@ -11667,7 +11667,7 @@
       },
       {
         "name": "Living Meteor",
-        "type": "W",
+        "hotkey": "W",
         "icon": "/images/storm_ui_icon_ragnaros_livingmeteor.avif",
         "cooldown": "Cooldown: 12 seconds",
         "cost": "Mana: 60",
@@ -11675,7 +11675,7 @@
       },
       {
         "name": "Blast Wave",
-        "type": "E",
+        "hotkey": "E",
         "icon": "/images/storm_ui_icon_ragnaros_blastwave.avif",
         "cooldown": "Cooldown: 9 seconds",
         "cost": "Mana: 50",
@@ -11683,7 +11683,7 @@
       },
       {
         "name": "Sulfuras Smash",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_ragnaros_sulfurassmash.avif",
         "cooldown": "Cooldown: 60 seconds",
         "cost": "Mana: 70",
@@ -11691,7 +11691,7 @@
       },
       {
         "name": "Lava Wave",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_ragnaros_lavawave.avif",
         "cooldown": "Cooldown: 120 seconds",
         "cost": "Mana: 80",
@@ -11699,7 +11699,7 @@
       },
       {
         "name": "Molten Core",
-        "type": "D",
+        "hotkey": "D",
         "icon": "/images/storm_ui_icon_ragnaros_moltencore.avif",
         "cooldown": "Cooldown: 180 seconds",
         "description": "Channel on an allied or destroyed Fort or Keep to replace it with Ragnaros's ultimate form, temporarily gaining new Abilities, having 5000 (+4% per level) Health that burns away over 23 seconds.  Ragnaros's ability ranges increase over the duration of Molten Core.\n\nRagnaros returns to his normal form but is Stunned for 1 second upon losing all Health in Molten Core."
@@ -11842,7 +11842,7 @@
     "abilities": [
       {
         "name": "Penetrating Round",
-        "type": "Q",
+        "hotkey": "Q",
         "icon": "/images/storm_ui_icon_raynor_penetratinground.avif",
         "cooldown": "Cooldown: 9 seconds",
         "cost": "Mana: 60",
@@ -11850,7 +11850,7 @@
       },
       {
         "name": "Inspire",
-        "type": "W",
+        "hotkey": "W",
         "icon": "/images/storm_ui_icon_raynor_inspire.avif",
         "cooldown": "Cooldown: 12 seconds",
         "cost": "Mana: 50",
@@ -11858,7 +11858,7 @@
       },
       {
         "name": "Adrenaline Rush",
-        "type": "E",
+        "hotkey": "E",
         "icon": "/images/storm_ui_icon_raynor_adrenalinrush.avif",
         "cooldown": "Cooldown: 45 seconds",
         "cost": "Mana: 75",
@@ -11866,7 +11866,7 @@
       },
       {
         "name": "Hyperion",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_raynor_hyperion.avif",
         "cooldown": "Cooldown: 100 seconds",
         "cost": "Mana: 100",
@@ -11874,14 +11874,14 @@
       },
       {
         "name": "Raynor's Raider",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_raynor_raynorsraiders.avif",
         "cooldown": "Cooldown: 45 seconds",
         "description": "Summon a Banshee that assists Raynor. The Banshee deals 84 (+4% per level) damage per second and regenerates 75 (+4% per level) Health per second if it hasn't taken damage in the last 4 seconds. Can reactivate to retarget or move the Banshee.\n\nThe Banshee respawns automatically after 45 seconds."
       },
       {
         "name": "Give 'Em Some Pepper",
-        "type": "D",
+        "hotkey": "D",
         "icon": "/images/storm_ui_icon_raynor_acquireweakspot.avif",
         "description": "Every 4th Basic Attack splashes in a small area and deals 125% more damage to the main target."
       }
@@ -12027,7 +12027,7 @@
     "abilities": [
       {
         "name": "Chain Heal",
-        "type": "Q",
+        "hotkey": "Q",
         "icon": "/images/storm_ui_icon_rehgar_chainheal.avif",
         "cooldown": "Cooldown: 8 seconds",
         "cost": "Mana: 60",
@@ -12035,7 +12035,7 @@
       },
       {
         "name": "Lightning Shield",
-        "type": "W",
+        "hotkey": "W",
         "icon": "/images/storm_ui_icon_rehgar_lightningshield.avif",
         "cooldown": "Cooldown: 8 seconds",
         "cost": "Mana: 50",
@@ -12043,7 +12043,7 @@
       },
       {
         "name": "Earthbind Totem",
-        "type": "E",
+        "hotkey": "E",
         "icon": "/images/storm_ui_icon_rehgar_earthbindtotem.avif",
         "cooldown": "Cooldown: 15 seconds",
         "cost": "Mana: 50",
@@ -12051,7 +12051,7 @@
       },
       {
         "name": "Bloodlust",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_rehgar_bloodlust.avif",
         "cooldown": "Cooldown: 90 seconds",
         "cost": "Mana: 70",
@@ -12059,7 +12059,7 @@
       },
       {
         "name": "Ancestral Healing",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_rehgar_ancestralhealing.avif",
         "cooldown": "Cooldown: 100 seconds",
         "cost": "Mana: 80",
@@ -12067,14 +12067,14 @@
       },
       {
         "name": "Purge",
-        "type": "D",
+        "hotkey": "D",
         "icon": "/images/storm_ui_icon_rehgar_purge.avif",
         "cooldown": "Cooldown: 60 seconds",
         "description": "When used on an allied Hero, make them Unstoppable for 0.5 seconds. When used on an enemy Hero, Slow them by 80%, decaying over 2 seconds.\n\nCannot be cast on yourself."
       },
       {
         "name": "Ghost Wolf",
-        "type": "Z",
+        "hotkey": "Z",
         "icon": "/images/storm_ui_icon_rehgar_mount.avif",
         "cooldown": "Cooldown: 4 seconds",
         "description": "Instead of using a mount, Rehgar transforms into a Ghost Wolf with 20% increased Movement Speed. Basic Attacks in Ghost Wolf form cause him to lunge at his target and deal 60% bonus damage. Dealing damage, using Abilities, and channeling cancels Ghost Wolf form."
@@ -12218,7 +12218,7 @@
     "abilities": [
       {
         "name": "Spirit Swoop",
-        "type": "Q",
+        "hotkey": "Q",
         "icon": "/images/storm_ui_icon_rexxar_spiritswoop.avif",
         "cooldown": "Cooldown: 7 seconds",
         "cost": "Mana: 40",
@@ -12226,7 +12226,7 @@
       },
       {
         "name": "Misha, Charge!",
-        "type": "W",
+        "hotkey": "W",
         "icon": "/images/storm_ui_icon_rexxar_mishacharge.avif",
         "cooldown": "Cooldown: 10 seconds",
         "cost": "Mana: 45",
@@ -12234,7 +12234,7 @@
       },
       {
         "name": "Mend Pet",
-        "type": "E",
+        "hotkey": "E",
         "icon": "/images/storm_ui_icon_rexxar_mendpet.avif",
         "cooldown": "Cooldown: 10 seconds",
         "cost": "Mana: 70",
@@ -12242,7 +12242,7 @@
       },
       {
         "name": "Unleash the Boars",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_rexxar_unleashtheboars.avif",
         "cooldown": "Cooldown: 60 seconds",
         "cost": "Mana: 75",
@@ -12250,7 +12250,7 @@
       },
       {
         "name": "Bestial Wrath",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_rexxar_bestialwrath.avif",
         "cooldown": "Cooldown: 50 seconds",
         "cost": "Mana: 75",
@@ -12258,7 +12258,7 @@
       },
       {
         "name": "Misha, Focus!",
-        "type": "D",
+        "hotkey": "D",
         "icon": "/images/storm_ui_icon_rexxar_mishafixate.avif",
         "description": "Passive: Misha gains 15% move speed. \n\nCommand Misha to attack a specific enemy or move to a point and wait.\n\nTargeting Rexxar commands Misha to retreat to his position, gaining 30% move speed until she reaches Rexxar.\n\nTargeting Misha commands her to hold her current position."
       }
@@ -12408,42 +12408,42 @@
     "abilities": [
       {
         "name": "Mirror Image",
-        "type": "Q",
+        "hotkey": "Q",
         "icon": "/images/storm_ui_icon_samuro_mirrorimage.avif",
         "cooldown": "Cooldown: 14 seconds",
         "description": "Teleport a short distance in the direction of the mouse cursor, creating 2 Mirror Image in the opposite direction with as much Health as Samuro, each dealing 11 (+4% per level) damage with their Basic Attacks. Whenever an Image takes damage, it deals that amount of damage to itself, effectively doubling the damage it takes.\n\nMirror Images last for 8 seconds, and up to 2 Mirror Images can be active at a time. Each time they or Samuro hit an enemy Hero with their Basic Attack, their duration is extended by 1 second. Using Mirror Image removes most negative effects from Samuro."
       },
       {
         "name": "Critical Strike",
-        "type": "W",
+        "hotkey": "W",
         "icon": "/images/storm_ui_icon_samuro_criticalstrike.avif",
         "cooldown": "Cooldown: 10 seconds",
         "description": "Activate to cause Samuro and his Mirror Images next Basic Attack within 8 seconds to be a Critical Strike, dealing 50% additional damage. Stealth is not broken when activated.\n\nPassive: Samuro and his Images also deal a Critical Strike every 4th Basic Attack."
       },
       {
         "name": "Wind Walk",
-        "type": "E",
+        "hotkey": "E",
         "icon": "/images/storm_ui_icon_samuro_windwalk.avif",
         "cooldown": "Cooldown: 15 seconds",
         "description": "Grant Samuro Stealth for up to 10 seconds or until he attacks, uses an Ability, or takes damage.\n\nWhile Stealthed, Samuro heals for 2% of his maximum Health every second, his Movement Speed is increased by 20% and he can pass through other units. Remaining stationary for at least 1.5 seconds while Stealthed grants Invisible.\n\nSamuro is Unrevealable for the first 1 second of Wind Walk."
       },
       {
         "name": "Bladestorm",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_samuro_bladestorm.avif",
         "cooldown": "Cooldown: 30 seconds",
         "description": "Cause a Bladestorm of destructive force around Samuro for 3 seconds, granting him 25 Armor and dealing 180 (+4% per level) damage per second to nearby enemies."
       },
       {
         "name": "Illusion Master",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_samuro_illusiondancer.avif",
         "cooldown": "Cooldown: 8 seconds",
         "description": "Mirror Images can be controlled individually or as a group and their damage is increased by 100%. \n\nPassive: Image Transmission's cooldown is reduced to 8 seconds."
       },
       {
         "name": "Image Transmission",
-        "type": "D",
+        "hotkey": "D",
         "icon": "/images/storm_ui_icon_samuro_flowingstrikes.avif",
         "cooldown": "Cooldown: 14 seconds",
         "description": "Activate to switch places with a target Mirror Image, removing most negative effects from Samuro and all Mirror Images.\n\nAdvancing Strikes\n\nBasic Attacks against enemy Heroes increase Samuro's Movement Speed by 25% for 2 seconds."
@@ -12583,7 +12583,7 @@
     "abilities": [
       {
         "name": "Spider Mines",
-        "type": "Q",
+        "hotkey": "Q",
         "icon": "/images/storm_ui_icon_sgthammer_spidermines.avif",
         "cooldown": "Cooldown: 14 seconds",
         "cost": "Mana: 50",
@@ -12591,7 +12591,7 @@
       },
       {
         "name": "Concussive Blast",
-        "type": "W",
+        "hotkey": "W",
         "icon": "/images/storm_ui_icon_sgthammer_concussiveblast.avif",
         "cooldown": "Cooldown: 12 seconds",
         "cost": "Mana: 80",
@@ -12599,7 +12599,7 @@
       },
       {
         "name": "Neosteel Plating",
-        "type": "E",
+        "hotkey": "E",
         "icon": "/images/storm_ui_icon_sgthammer_neosteelplating.avif",
         "cooldown": "Cooldown: 16 seconds",
         "cost": "Mana: 60",
@@ -12607,7 +12607,7 @@
       },
       {
         "name": "Napalm Strike",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_sgthammer_napalmstrike.avif",
         "cooldown": "Cooldown: 6 seconds",
         "cost": "Mana: 35",
@@ -12615,7 +12615,7 @@
       },
       {
         "name": "Blunt Force Gun",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_sgthammer_bluntforcegun.avif",
         "cooldown": "Cooldown: 70 seconds",
         "cost": "Mana: 100",
@@ -12623,14 +12623,14 @@
       },
       {
         "name": "Siege Mode",
-        "type": "D",
+        "hotkey": "D",
         "icon": "/images/storm_ui_icon_sgthammer_siegemode.avif",
         "cooldown": "Cooldown: 2 seconds",
         "description": "Activate to enter Siege Mode. While in Siege Mode, Basic Attacks deal 20% more damage, have 100% increased range, and deal 25% of their damage as splash damage around the target."
       },
       {
         "name": "Thrusters",
-        "type": "Z",
+        "hotkey": "Z",
         "icon": "/images/storm_ui_icon_sgthammer_mount.avif",
         "cooldown": "Cooldown: 30 seconds",
         "description": "Increase Movement Speed by 60% for 4 seconds. Thrusters are always active while at the Hall of Storms. Activating Thrusters cancels Siege Mode."
@@ -12773,7 +12773,7 @@
     "abilities": [
       {
         "name": "Hook",
-        "type": "Q",
+        "hotkey": "Q",
         "icon": "/images/storm_ui_icon_stitches_hook.avif",
         "cooldown": "Cooldown: 16 seconds",
         "cost": "Mana: 75",
@@ -12781,7 +12781,7 @@
       },
       {
         "name": "Slam",
-        "type": "W",
+        "hotkey": "W",
         "icon": "/images/storm_ui_icon_stitches_slam.avif",
         "cooldown": "Cooldown: 8 seconds",
         "cost": "Mana: 35",
@@ -12789,7 +12789,7 @@
       },
       {
         "name": "Devour",
-        "type": "E",
+        "hotkey": "E",
         "icon": "/images/storm_ui_icon_stitches_devour.avif",
         "cooldown": "Cooldown: 20 seconds",
         "cost": "Mana: 55",
@@ -12797,7 +12797,7 @@
       },
       {
         "name": "Putrid Bile",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_stitches_putridbile.avif",
         "cooldown": "Cooldown: 75 seconds",
         "cost": "Mana: 75",
@@ -12805,7 +12805,7 @@
       },
       {
         "name": "Gorge",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_stitches_cannibalize.avif",
         "cooldown": "Cooldown: 65 seconds",
         "cost": "Mana: 70",
@@ -12813,14 +12813,14 @@
       },
       {
         "name": "Shambling Horror",
-        "type": "D",
+        "hotkey": "D",
         "icon": "/images/storm_ui_icon_stitches_acidcloud.avif",
         "cooldown": "Cooldown: 60 seconds",
         "description": "Activate to spread Vile Gas in a large area every second and prevent your Movement Speed from being reduced below 110% for 4 seconds.\n\nVile Gas\nHitting enemies with Basic Attacks or the inner area of Slam afflicts them with Vile Gas, dealing an additional 36 (+4% per level) damage over 4 seconds. Deals 150% more damage to Minions, Mercenaries, and Monsters."
       },
       {
         "name": "Helping Hand",
-        "type": "1",
+        "hotkey": "1",
         "icon": "/images/storm_ui_icon_stitches_hook_var1.avif",
         "cooldown": "Cooldown: 16 seconds",
         "cost": "Mana: 75",
@@ -12963,7 +12963,7 @@
     "abilities": [
       {
         "name": "Healing Pathogen",
-        "type": "Q",
+        "hotkey": "Q",
         "icon": "/images/storm_ui_icon_stukov_healingpathogen.avif",
         "cooldown": "Cooldown: 10 seconds",
         "cost": "Mana: 40",
@@ -12971,7 +12971,7 @@
       },
       {
         "name": "Weighted Pustule",
-        "type": "W",
+        "hotkey": "W",
         "icon": "/images/storm_ui_icon_stukov_weightedpustule.avif",
         "cooldown": "Cooldown: 10 seconds",
         "cost": "Mana: 50",
@@ -12979,7 +12979,7 @@
       },
       {
         "name": "Lurking Arm",
-        "type": "E",
+        "hotkey": "E",
         "icon": "/images/storm_ui_icon_stukov_lurkingarm.avif",
         "cooldown": "Cooldown: 10 seconds",
         "cost": "Mana: 60",
@@ -12987,7 +12987,7 @@
       },
       {
         "name": "Massive Shove",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_stukov_massiveshove.avif",
         "cooldown": "Cooldown: 20 seconds",
         "cost": "Mana: 50",
@@ -12995,7 +12995,7 @@
       },
       {
         "name": "Flailing Swipe",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_stukov_flailingswipe.avif",
         "cooldown": "Cooldown: 60 seconds",
         "cost": "Mana: 60",
@@ -13003,7 +13003,7 @@
       },
       {
         "name": "Bio-Kill Switch",
-        "type": "D",
+        "hotkey": "D",
         "icon": "/images/storm_ui_icon_stukov_bio-killswitch.avif",
         "cooldown": "Cooldown: 16 seconds",
         "description": "Activate to detonate all of Stukov's Viruses. Each Healing Pathogen heals its target for 435 (+4% per level) Health, and each Weighted Pustule does 100 (+4% per level) damage and Slows its target by 70% for 2 seconds.\n\nCan be cast while Channeling Lurking Arm."
@@ -13146,7 +13146,7 @@
     "abilities": [
       {
         "name": "Withering Fire",
-        "type": "Q",
+        "hotkey": "Q",
         "icon": "/images/storm_ui_icon_sylvanas_witheringfire.avif",
         "cooldown": "Cooldown: 8 seconds",
         "cost": "Mana: 25",
@@ -13154,7 +13154,7 @@
       },
       {
         "name": "Shadow Dagger",
-        "type": "W",
+        "hotkey": "W",
         "icon": "/images/storm_ui_icon_sylvanas_shadowdagger.avif",
         "cooldown": "Cooldown: 11 seconds",
         "cost": "Mana: 50",
@@ -13162,7 +13162,7 @@
       },
       {
         "name": "Haunting Wave",
-        "type": "E",
+        "hotkey": "E",
         "icon": "/images/storm_ui_icon_sylvanas_hauntingwave.avif",
         "cooldown": "Cooldown: 11 seconds",
         "cost": "Mana: 75",
@@ -13170,7 +13170,7 @@
       },
       {
         "name": "Wailing Arrow",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_sylvanas_wailingarrow.avif",
         "cooldown": "Cooldown: 90 seconds",
         "cost": "Mana: 100",
@@ -13178,7 +13178,7 @@
       },
       {
         "name": "Mind Control",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_sylvanas_mindcontrol.avif",
         "cooldown": "Cooldown: 40 seconds",
         "cost": "Mana: 50",
@@ -13186,13 +13186,13 @@
       },
       {
         "name": "Black Arrows",
-        "type": "D",
+        "hotkey": "D",
         "icon": "/images/storm_ui_icon_sylvanas_blackarrows.avif",
         "description": "Basic Attacks infect enemies with Black Arrows for 3 seconds, stacking up to 3 times. Sylvanas deals 15% more damage to enemies with 3 stacks.\n\nQuest: Damage Heroes and Structures with 3 stacks of Black Arrows.\n\nReward: Upon damaging enemies 250 times, increase the damage bonus provided by Black Arrows to 50%.\n\nMythic Reward: Upon damaging enemies 400 times, Black Arrows now heals Sylvanas for 25% of damage dealt at 3 stacks, doubled against Heroes."
       },
       {
         "name": "Possession",
-        "type": "1",
+        "hotkey": "1",
         "icon": "/images/storm_ui_icon_sylvanas_possession.avif",
         "cooldown": "Charge Cooldown: 25 seconds",
         "description": "Activate to force an enemy Minion to fight for Sylvanas's team. Catapults require 3 charges. Stores up to 4 charges."
@@ -13337,7 +13337,7 @@
     "abilities": [
       {
         "name": "Shock Ray",
-        "type": "Q",
+        "hotkey": "Q",
         "icon": "/images/storm_ui_icon_tassadar_rework_q_ray.avif",
         "cooldown": "Cooldown: 7 seconds",
         "cost": "Mana: 55",
@@ -13345,7 +13345,7 @@
       },
       {
         "name": "Psionic Storm",
-        "type": "W",
+        "hotkey": "W",
         "icon": "/images/storm_ui_icon_tassadar_psionicstorm.avif",
         "cooldown": "Cooldown: 8 seconds",
         "cost": "Mana: 60",
@@ -13353,7 +13353,7 @@
       },
       {
         "name": "Force Wall",
-        "type": "E",
+        "hotkey": "E",
         "icon": "/images/storm_ui_icon_tassadar_forcewall.avif",
         "cooldown": "Cooldown: 18 seconds",
         "cost": "Mana: 65",
@@ -13361,7 +13361,7 @@
       },
       {
         "name": "Archon",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_tassadar_archon.avif",
         "cooldown": "Cooldown: 90 seconds",
         "cost": "Mana: 100",
@@ -13369,7 +13369,7 @@
       },
       {
         "name": "Black Hole",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_tassadar_rework_blackhole.avif",
         "cooldown": "Cooldown: 60 seconds",
         "cost": "Mana: 60",
@@ -13377,7 +13377,7 @@
       },
       {
         "name": "Resonance Beam",
-        "type": "D",
+        "hotkey": "D",
         "icon": "/images/storm_ui_icon_tassadar_rework_trait.avif",
         "description": "Tassadar's Basic Attack is a Channeled beam that Slows by 15%. While Channeling, your Basic Attack damage and Mana regeneration increases by 25% a second, to a maximum of 100%. While at full charge, gain an extra 3 Mana every second.\n\nThis bonus is lost after 6 seconds of not Channeling."
       }
@@ -13521,7 +13521,7 @@
     "abilities": [
       {
         "name": "Chain Lightning",
-        "type": "Q",
+        "hotkey": "Q",
         "icon": "/images/storm_ui_icon_thrall_chainlightning.avif",
         "cooldown": "Cooldown: 7 seconds",
         "cost": "Mana: 40",
@@ -13529,7 +13529,7 @@
       },
       {
         "name": "Feral Spirit",
-        "type": "W",
+        "hotkey": "W",
         "icon": "/images/storm_ui_icon_thrall_feralspirit.avif",
         "cooldown": "Cooldown: 10 seconds",
         "cost": "Mana: 40",
@@ -13537,7 +13537,7 @@
       },
       {
         "name": "Windfury",
-        "type": "E",
+        "hotkey": "E",
         "icon": "/images/storm_ui_icon_thrall_windfury.avif",
         "cooldown": "Cooldown: 12 seconds",
         "cost": "Mana: 60",
@@ -13545,7 +13545,7 @@
       },
       {
         "name": "Sundering",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_thrall_sundering.avif",
         "cooldown": "Cooldown: 70 seconds",
         "cost": "Mana: 75",
@@ -13553,7 +13553,7 @@
       },
       {
         "name": "Earthquake",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_thrall_earthquake.avif",
         "cooldown": "Cooldown: 100 seconds",
         "cost": "Mana: 90",
@@ -13561,7 +13561,7 @@
       },
       {
         "name": "Frostwolf Resilience",
-        "type": "D",
+        "hotkey": "D",
         "icon": "/images/storm_ui_icon_thrall_frostwolfresilience.avif",
         "description": "Dealing damage with Abilities grants 1 stack of Frostwolf Resilience. At 5 stacks, Thrall is instantly healed for 240 (+4% per level) Health."
       }
@@ -13710,48 +13710,48 @@
     "abilities": [
       {
         "name": "Rock-It! Turret",
-        "type": "Q",
+        "hotkey": "Q",
         "icon": "/images/storm_ui_icon_gazlowe_rockitturret.avif",
         "cost": "Scrap: 4",
         "description": "Create a turret that deals 43 (+4% per level) damage. Loses Health over 20 seconds. \n\nTurrets prioritize the nearest enemy Hero when first created."
       },
       {
         "name": "Deth Lazor",
-        "type": "W",
+        "hotkey": "W",
         "icon": "/images/storm_ui_icon_gazlowe_dethlazor.avif",
         "cooldown": "Cooldown: 8 seconds",
         "description": "After 0.65 seconds, deal 175 (+4% per level) damage to enemies in a line. Heal for 25% of the damage dealt, increased to 75% against enemy Heroes."
       },
       {
         "name": "Xplodium Charge",
-        "type": "E",
+        "hotkey": "E",
         "icon": "/images/storm_ui_icon_gazlowe_explodiumcharge.avif",
         "cooldown": "Cooldown: 12 seconds",
         "description": "Place a bomb that deals 142 (+4% per level) damage to enemies within the target area after 1.25 seconds. Enemies hit are also Stunned for 1 second."
       },
       {
         "name": "Robo-Goblin",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_gazlowe_robogoblin.avif",
         "cooldown": "Cooldown: 40 seconds",
         "description": "Activate to become Unstoppable for 1.5 seconds. \n\nPassive: Basic Attacks deal 100 (+4% per level) bonus damage over 5 seconds, stacking up to 3 times."
       },
       {
         "name": "Grav-O-Bomb 3000",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_gazlowe_gravobomb.avif",
         "cooldown": "Cooldown: 60 seconds",
         "description": "After a 1.5 second delay, pull enemies toward the center of an area, dealing 220 (+4% per level) damage and Stunning them for 0.5 seconds. Basic Abilities deal 30% more damage for 5 seconds after casting Grav-O-Bomb 3000."
       },
       {
         "name": "Reduce, Reuse, Recycle",
-        "type": "D",
+        "hotkey": "D",
         "icon": "/images/storm_ui_icon_gazlowe_salvager.avif",
         "description": "Regenerate 1 Scrap every 4 seconds. Destroyed Rock-It! Turrets drop 1 Scrap, which can be picked up.\n\nActivate to destroy a target Rock-It! Turret."
       },
       {
         "name": "Focus Turrets!",
-        "type": "1",
+        "hotkey": "1",
         "icon": "/images/storm_ui_icon_gazlowe_rockitturret_var1.avif",
         "description": "Orders any nearby Rock-It! Turrets to focus the target."
       }
@@ -13891,34 +13891,34 @@
     "abilities": [
       {
         "name": "Blink",
-        "type": "Q",
+        "hotkey": "Q",
         "icon": "/images/storm_ui_icon_tracer_blink_empty.avif",
         "cooldown": "Charge Cooldown: 9 seconds",
         "description": "Dash towards an area.\n\nStores up to 3 charges."
       },
       {
         "name": "Melee",
-        "type": "W",
+        "hotkey": "W",
         "icon": "/images/storm_ui_icon_tracer_melee.avif",
         "cooldown": "Cooldown: 8 seconds",
         "description": "Deal 220 (+4% per level) damage to a nearby enemy, prioritizing Heroes. Gain 5% Pulse Bomb charge when using Melee against an enemy, and 10% against Heroes."
       },
       {
         "name": "Recall",
-        "type": "E",
+        "hotkey": "E",
         "icon": "/images/storm_ui_icon_tracer_recall.avif",
         "cooldown": "Cooldown: 20 seconds",
         "description": "After 1.25 seconds, Tracer returns to the position she was at 2 seconds prior to casting, refilling her ammo, and removing all negative status effects from herself."
       },
       {
         "name": "Pulse Bomb",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_tracer_pulsebomb.avif",
         "description": "Fire a short range bomb that can attach to an enemy if it hits them. The bomb explodes after 2 seconds dealing 298 (+6% per level) damage to them and 149 (+6% per level) damage to other nearby enemies.\n\nThis ability is slowly charged over time by dealing damage to enemies with Basic Attacks and Melee."
       },
       {
         "name": "Reload",
-        "type": "D",
+        "hotkey": "D",
         "icon": "/images/storm_ui_icon_tracer_reload.avif",
         "cooldown": "Cooldown: 1 second",
         "description": "Tracer can Basic Attack while moving, and after attacking 10 times she needs to reload over 0.75 seconds. Tracer can manually reload early by activating Reload.\n\nBasic Attacks heal Tracer for 10% of the damage dealt."
@@ -14061,7 +14061,7 @@
     "abilities": [
       {
         "name": "Overkill",
-        "type": "Q",
+        "hotkey": "Q",
         "icon": "/images/storm_ui_icon_tychus_overkill.avif",
         "cooldown": "Cooldown: 12 seconds",
         "cost": "Mana: 60",
@@ -14069,7 +14069,7 @@
       },
       {
         "name": "Frag Grenade",
-        "type": "W",
+        "hotkey": "W",
         "icon": "/images/storm_ui_icon_tychus_fraggrenade.avif",
         "cooldown": "Cooldown: 10 seconds",
         "cost": "Mana: 50",
@@ -14077,7 +14077,7 @@
       },
       {
         "name": "Run and Gun",
-        "type": "E",
+        "hotkey": "E",
         "icon": "/images/storm_ui_icon_tychus_runandgun.avif",
         "cooldown": "Cooldown: 10 seconds",
         "cost": "Mana: 50",
@@ -14085,7 +14085,7 @@
       },
       {
         "name": "Drakken Laser Drill",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_tychus_drakkinlaserdrill.avif",
         "cooldown": "Cooldown: 100 seconds",
         "cost": "Mana: 100",
@@ -14093,7 +14093,7 @@
       },
       {
         "name": "Commandeer Odin",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_tychus_commandeerodin.avif",
         "cooldown": "Cooldown: 100 seconds",
         "cost": "Mana: 100",
@@ -14101,7 +14101,7 @@
       },
       {
         "name": "Minigun",
-        "type": "D",
+        "hotkey": "D",
         "icon": "/images/storm_ui_icon_tychus_minigun.avif",
         "cooldown": "Cooldown: 12 seconds",
         "description": "Activate to have Basic Attacks against Heroes deal bonus damage equal to 2.5% of their maximum Health. Lasts 3 seconds."
@@ -14244,7 +14244,7 @@
     "abilities": [
       {
         "name": "El'druin's Might",
-        "type": "Q",
+        "hotkey": "Q",
         "icon": "/images/storm_ui_icon_tyrael_eldruinsmight_a.avif",
         "cooldown": "Cooldown: 12 seconds",
         "cost": "Mana: 45",
@@ -14252,7 +14252,7 @@
       },
       {
         "name": "Righteousness",
-        "type": "W",
+        "hotkey": "W",
         "icon": "/images/storm_ui_icon_tyrael_righteousness.avif",
         "cooldown": "Cooldown: 9 seconds",
         "cost": "Mana: 45",
@@ -14260,7 +14260,7 @@
       },
       {
         "name": "Smite",
-        "type": "E",
+        "hotkey": "E",
         "icon": "/images/storm_ui_icon_tyrael_smite.avif",
         "cooldown": "Cooldown: 6 seconds",
         "cost": "Mana: 45",
@@ -14268,7 +14268,7 @@
       },
       {
         "name": "Judgment",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_tyrael_judgement.avif",
         "cooldown": "Cooldown: 70 seconds",
         "cost": "Mana: 80",
@@ -14276,7 +14276,7 @@
       },
       {
         "name": "Sanctification",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_tyrael_sanctification.avif",
         "cooldown": "Cooldown: 85 seconds",
         "cost": "Mana: 70",
@@ -14284,7 +14284,7 @@
       },
       {
         "name": "Archangel's Wrath",
-        "type": "D",
+        "hotkey": "D",
         "icon": "/images/storm_ui_icon_tyrael_archangelswrath.avif",
         "description": "Upon dying, become Invulnerable and gain 20% Movement Speed for 4 seconds. Upon expiration, explode, dealing 450 (+4% per level) damage and reducing Tyrael's death timer by 10% per enemy Hero hit.\n\nArchangel's Wrath reduces nearby enemy Heroes' damage by 50% while active and for 3 seconds when it expires."
       }
@@ -14432,7 +14432,7 @@
     "abilities": [
       {
         "name": "Light of Elune",
-        "type": "Q",
+        "hotkey": "Q",
         "icon": "/images/storm_ui_icon_tyrande_lightofelune.avif",
         "cooldown": "Charge Cooldown: 16 seconds",
         "cost": "Mana: 15",
@@ -14440,7 +14440,7 @@
       },
       {
         "name": "Sentinel",
-        "type": "W",
+        "hotkey": "W",
         "icon": "/images/storm_ui_icon_tyrande_sentinel.avif",
         "cooldown": "Cooldown: 15 seconds",
         "cost": "Mana: 55",
@@ -14448,7 +14448,7 @@
       },
       {
         "name": "Lunar Flare",
-        "type": "E",
+        "hotkey": "E",
         "icon": "/images/storm_ui_icon_tyrande_lunarflare.avif",
         "cooldown": "Cooldown: 13 seconds",
         "cost": "Mana: 65",
@@ -14456,7 +14456,7 @@
       },
       {
         "name": "Shadowstalk",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_tyrande_shadowstalk.avif",
         "cooldown": "Cooldown: 90 seconds",
         "cost": "Mana: 85",
@@ -14464,7 +14464,7 @@
       },
       {
         "name": "Starfall",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_tyrande_starfall.avif",
         "cooldown": "Cooldown: 80 seconds",
         "cost": "Mana: 85",
@@ -14472,7 +14472,7 @@
       },
       {
         "name": "Hunter's Mark",
-        "type": "D",
+        "hotkey": "D",
         "icon": "/images/storm_ui_icon_tyrande_huntersmark.avif",
         "cooldown": "Cooldown: 20 seconds",
         "description": "Reveal a non-Structure enemy and reduce their Armor by 15 for 4 seconds.\n\nPassive: Tyrande's Basic Attacks heal her for 1% of her maximum Health, doubled against targets with Hunter's Mark."
@@ -14616,7 +14616,7 @@
     "abilities": [
       {
         "name": "Holy Light",
-        "type": "Q",
+        "hotkey": "Q",
         "icon": "/images/storm_ui_icon_uther_holylight.avif",
         "cooldown": "Cooldown: 12 seconds",
         "cost": "Mana: 80",
@@ -14624,7 +14624,7 @@
       },
       {
         "name": "Holy Radiance",
-        "type": "W",
+        "hotkey": "W",
         "icon": "/images/storm_ui_icon_uther_holyradiance.avif",
         "cooldown": "Cooldown: 10 seconds",
         "cost": "Mana: 55",
@@ -14632,7 +14632,7 @@
       },
       {
         "name": "Hammer of Justice",
-        "type": "E",
+        "hotkey": "E",
         "icon": "/images/storm_ui_icon_uther_hammerofjustice.avif",
         "cooldown": "Cooldown: 10 seconds",
         "cost": "Mana: 40",
@@ -14640,7 +14640,7 @@
       },
       {
         "name": "Divine Shield",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_uther_divineshield.avif",
         "cooldown": "Cooldown: 90 seconds",
         "cost": "Mana: 80",
@@ -14648,7 +14648,7 @@
       },
       {
         "name": "Divine Storm",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_uther_divinestorm.avif",
         "cooldown": "Cooldown: 80 seconds",
         "cost": "Mana: 80",
@@ -14656,7 +14656,7 @@
       },
       {
         "name": "Devotion",
-        "type": "D",
+        "hotkey": "D",
         "icon": "/images/storm_ui_icon_uther_eternaldevotion.avif",
         "description": "Uther's Basic Abilities grant 25 Armor to allied Heroes, and 15 to Uther, for 2 seconds.\n\nEternal Vanguard\n\nUpon dying, Uther becomes an Invulnerable spirit for up to 8 seconds. While in spirit form, Uther can heal allies with Flash of Light for 230 (+4% per level)."
       }
@@ -14800,7 +14800,7 @@
     "abilities": [
       {
         "name": "Sinister Strike",
-        "type": "Q",
+        "hotkey": "Q",
         "icon": "/images/storm_ui_icon_valeera_sinisterstrike.avif",
         "cooldown": "Cooldown: 5 seconds",
         "cost": "Energy: 25",
@@ -14808,7 +14808,7 @@
       },
       {
         "name": "Blade Flurry",
-        "type": "W",
+        "hotkey": "W",
         "icon": "/images/storm_ui_icon_valeera_bladeflurry.avif",
         "cooldown": "Cooldown: 4 seconds",
         "cost": "Energy: 40",
@@ -14816,7 +14816,7 @@
       },
       {
         "name": "Eviscerate",
-        "type": "E",
+        "hotkey": "E",
         "icon": "/images/storm_ui_icon_valeera_eviscerate.avif",
         "cooldown": "Cooldown: 1 second<n/>Consumes all Combo Points",
         "cost": "Energy: 25",
@@ -14824,21 +14824,21 @@
       },
       {
         "name": "Cloak of Shadows",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_valeera_cloakofshadows.avif",
         "cooldown": "Cooldown: 15 seconds",
         "description": "Valeera is enveloped in a Cloak of Shadows, which immediately removes all damage over time effects from her. For 1.5 seconds, she becomes Unstoppable and gains 75 Spell Armor, reducing Ability Damage taken by 75%.\n\nUsing this Ability does not break Stealth."
       },
       {
         "name": "Smoke Bomb",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_valeera_smokebomb.avif",
         "cooldown": "Cooldown: 60 seconds",
         "description": "Create a cloud of smoke. While in the smoke, Valeera is Unrevealable, can pass through other units, and gains 60 Armor, reducing damage taken by 60%. Valeera can continue to attack and use abilities without being revealed. Lasts 5 seconds.\n\nUsing this Ability does not break Stealth."
       },
       {
         "name": "Vanish",
-        "type": "D",
+        "hotkey": "D",
         "icon": "/images/storm_ui_icon_valeera_vanish.avif",
         "cooldown": "Cooldown: 8 seconds",
         "description": "Vanish from sight, becoming Stealthed, gaining 20% Movement Speed and access to new Abilities. For the first second, Valeera is Unrevealable and can pass through other units. Remaining stationary for at least 1.5 seconds while Stealthed grants Invisible.\n\nAfter being Stealthed for 3 seconds, the cast range of Ambush, Cheap Shot, and Garrote is increased from 2.5 to 5, and they cause Valeera to teleport to the target when used."
@@ -14991,7 +14991,7 @@
     "abilities": [
       {
         "name": "Lion's Fang",
-        "type": "Q",
+        "hotkey": "Q",
         "icon": "/images/storm_ui_icon_varian_lionsfang.avif",
         "cooldown": "Cooldown: 8 seconds",
         "cost": "Mana: 50",
@@ -14999,7 +14999,7 @@
       },
       {
         "name": "Parry",
-        "type": "W",
+        "hotkey": "W",
         "icon": "/images/storm_ui_icon_varian_parry.avif",
         "cooldown": "Charge Cooldown: 10 seconds",
         "cost": "Mana: 30",
@@ -15007,7 +15007,7 @@
       },
       {
         "name": "Charge",
-        "type": "E",
+        "hotkey": "E",
         "icon": "/images/storm_ui_icon_varian_charge.avif",
         "cooldown": "Cooldown: 12 seconds",
         "cost": "Mana: 45",
@@ -15015,7 +15015,7 @@
       },
       {
         "name": "Taunt",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_varian_taunt.avif",
         "cooldown": "Cooldown: 16 seconds",
         "cost": "Mana: 20",
@@ -15023,7 +15023,7 @@
       },
       {
         "name": "Colossus Smash",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_varian_colossus_smash.avif",
         "cooldown": "Cooldown: 20 seconds",
         "cost": "Mana: 40",
@@ -15031,13 +15031,13 @@
       },
       {
         "name": "Twin Blades of Fury",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_varian_twinbladesoffury.avif",
         "description": "Basic Attacks reduce Heroic Strike's cooldown by an additional 7 seconds, and increase Varian's Movement Speed by 30% for 2 seconds.\n\nPassive: Attack Speed increased by 100%.\nPassive: Base Attack Damage reduced by 25%."
       },
       {
         "name": "Heroic Strike",
-        "type": "D",
+        "hotkey": "D",
         "icon": "/images/storm_ui_icon_varian_heroicstrike.avif",
         "cooldown": "Cooldown: 18 seconds",
         "description": "Every 18 seconds, Varian's next Basic Attack deals 125 (+4% per level) bonus Spell Damage. Basic Attacks reduce this cooldown by 3 seconds."
@@ -15189,49 +15189,49 @@
     "abilities": [
       {
         "name": "Desperate Plea",
-        "type": "Q",
+        "hotkey": "Q",
         "icon": "/images/storm_ui_icon_whitemane_desperation.avif",
         "cost": "Mana: 45",
         "description": "Heal an allied Hero for 140 (+4% per level) and gain Desperation for 4 seconds.\n\nDesperation increases Desperate Plea's Mana cost by 40, and stacks up to 3 times.\n\nCurrent Mana Cost: 45"
       },
       {
         "name": "Inquisition",
-        "type": "W",
+        "hotkey": "W",
         "icon": "/images/storm_ui_icon_whitemane_inquisition.avif",
         "cooldown": "Cooldown: 12 seconds",
         "description": "Channel on an enemy Hero for up to 3 seconds, dealing 50 (+4% per level) damage every 0.5 seconds and Slowing them by 30%. Removes a stack of Desperation.\n\nShares a cooldown with Clemency."
       },
       {
         "name": "Searing Lash",
-        "type": "E",
+        "hotkey": "E",
         "icon": "/images/storm_ui_icon_whitemane_lash.avif",
         "cooldown": "Cooldown: 6 seconds",
         "description": "After 0.5 seconds, smite enemies in a straight line for 82 (+4% per level) damage.\n\nIf the first strike hits an enemy Hero, a second strike will occur after a short delay.\n\nRepeatable Quest: Hit Heroes with Searing Lash.\nRepeatable Quest: Hit 3 Heroes with Basic Attacks.\n\nReward: Permanently increase Whitemane's maximum Health by 3 and Mana by 2. Heroes hit with the second strike of Searing Lash count as 2 hits."
       },
       {
         "name": "Scarlet Aegis",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_whitemane_aegis.avif",
         "cooldown": "Cooldown: 60 seconds",
         "description": "Bolster the spirits of nearby allied Heroes, healing them for 300 (+4% per level) and granting them 40 Armor for 4 seconds."
       },
       {
         "name": "Divine Reckoning",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_whitemane_reckoning.avif",
         "cooldown": "Cooldown: 75 seconds",
         "description": "After 1 second, consecrate an area for 4 seconds, dealing 50 (+4% per level) damage every 0.5 seconds to enemies inside. 25% of the damage dealt to Heroes is returned as Mana."
       },
       {
         "name": "Zeal",
-        "type": "D",
+        "hotkey": "D",
         "icon": "/images/storm_ui_icon_whitemane_zeal.avif",
         "cooldown": "Cooldown: 40 seconds",
         "description": "Whitemane's healing Abilities apply Zeal for 8 seconds. Allies with Zeal are healed for 100% of the damage Whitemane deals to Heroes.\n\nActivate to gain 25% Spell Power and lose 15 Armor for 5 seconds. Can be cast while channeling abilities."
       },
       {
         "name": "Clemency",
-        "type": "1",
+        "hotkey": "1",
         "icon": "/images/storm_ui_icon_whitemane_clemency.avif",
         "cooldown": "Cooldown: 12 seconds",
         "description": "Activate to cast Inquisition on an allied Hero, healing them for up to 329 (+4% per level) over 3 seconds while Channeling. Removes a stack of Desperation\n\nShares a cooldown with Inquisition."
@@ -15374,7 +15374,7 @@
     "abilities": [
       {
         "name": "Corpse Spiders",
-        "type": "Q",
+        "hotkey": "Q",
         "icon": "/images/storm_ui_icon_nazeebo_corpsespider.avif",
         "cooldown": "Cooldown: 8 seconds",
         "cost": "Mana: 40",
@@ -15382,7 +15382,7 @@
       },
       {
         "name": "Zombie Wall",
-        "type": "W",
+        "hotkey": "W",
         "icon": "/images/storm_ui_icon_nazeebo_zombiewall.avif",
         "cooldown": "Cooldown: 14 seconds",
         "cost": "Mana: 70",
@@ -15390,7 +15390,7 @@
       },
       {
         "name": "Plague of Toads",
-        "type": "E",
+        "hotkey": "E",
         "icon": "/images/storm_ui_icon_nazeebo_plagueoftoads.avif",
         "cooldown": "Charge Cooldown: 8 seconds",
         "cost": "Mana: 30",
@@ -15398,7 +15398,7 @@
       },
       {
         "name": "Gargantuan",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_nazeebo_gargantuan.avif",
         "cooldown": "Cooldown: 70 seconds",
         "cost": "Mana: 90",
@@ -15406,7 +15406,7 @@
       },
       {
         "name": "Ravenous Spirit",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_nazeebo_ravenousspirit.avif",
         "cooldown": "Cooldown: 90 seconds",
         "cost": "Mana: 100",
@@ -15414,7 +15414,7 @@
       },
       {
         "name": "Voodoo Ritual",
-        "type": "D",
+        "hotkey": "D",
         "icon": "/images/storm_ui_icon_nazeebo_voodooritual.avif",
         "description": "Nazeebo's Basic Attacks and Abilities poison Non-Heroic enemies, causing them to take 66 (+4% per level) additional damage over 6 seconds. \n\nQuest: If a Minion dies while poisoned by Voodoo Ritual, Nazeebo permanently gains 6 Health and 1 Mana."
       }
@@ -15558,7 +15558,7 @@
     "abilities": [
       {
         "name": "Magic Missiles",
-        "type": "Q",
+        "hotkey": "Q",
         "icon": "/images/storm_ui_icon_wizard_magicmissiles.avif",
         "cooldown": "Cooldown: 3 seconds",
         "cost": "Mana: 20",
@@ -15566,7 +15566,7 @@
       },
       {
         "name": "Arcane Orb",
-        "type": "W",
+        "hotkey": "W",
         "icon": "/images/storm_ui_icon_wizard_arcaneorb.avif",
         "cooldown": "Cooldown: 8 seconds",
         "cost": "Mana: 40",
@@ -15574,7 +15574,7 @@
       },
       {
         "name": "Teleport",
-        "type": "E",
+        "hotkey": "E",
         "icon": "/images/storm_ui_icon_wizard_teleport.avif",
         "cooldown": "Cooldown: 5 seconds",
         "cost": "Mana: 30",
@@ -15582,7 +15582,7 @@
       },
       {
         "name": "Disintegrate",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_wizard_disintegrate.avif",
         "cooldown": "Cooldown: 20 seconds",
         "cost": "Mana: 80",
@@ -15590,7 +15590,7 @@
       },
       {
         "name": "Wave of Force",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_wizard_waveofforce.avif",
         "cooldown": "Cooldown: 30 seconds",
         "cost": "Mana: 80",
@@ -15598,7 +15598,7 @@
       },
       {
         "name": "Critical Mass",
-        "type": "D",
+        "hotkey": "D",
         "icon": "/images/storm_ui_icon_wizard_criticalmass.avif",
         "description": "Getting a Takedown will refresh the cooldown on all of Li-Ming's Abilities."
       }
@@ -15744,7 +15744,7 @@
     "abilities": [
       {
         "name": "Shadow Mark",
-        "type": "Q",
+        "hotkey": "Q",
         "icon": "/images/storm_ui_icon_xalatath_q_shadowmark.avif",
         "cooldown": "Cooldown: 7 seconds",
         "cost": "Mana: 45",
@@ -15752,7 +15752,7 @@
       },
       {
         "name": "Dark Heart Ritual",
-        "type": "W",
+        "hotkey": "W",
         "icon": "/images/storm_ui_icon_xalatath_e_darkheartritual.avif",
         "cooldown": "Cooldown: 15 seconds",
         "cost": "Mana: 50",
@@ -15760,7 +15760,7 @@
       },
       {
         "name": "Void Step",
-        "type": "E",
+        "hotkey": "E",
         "icon": "/images/storm_ui_icon_xalatath_w_voidstep.avif",
         "cooldown": "Cooldown: 15 seconds",
         "cost": "Mana: 50",
@@ -15768,7 +15768,7 @@
       },
       {
         "name": "Void Eruption",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_xalatath_r1_voideruption.avif",
         "cooldown": "Cooldown: 75 seconds",
         "cost": "Mana: 80",
@@ -15776,7 +15776,7 @@
       },
       {
         "name": "Void Convergence",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_xalatath_r2_voidconvergence.avif",
         "cooldown": "Cooldown: 75 seconds",
         "cost": "Mana: 75",
@@ -15784,7 +15784,7 @@
       },
       {
         "name": "Void Volley",
-        "type": "D",
+        "hotkey": "D",
         "icon": "/images/storm_ui_icon_xalatath_trait.avif",
         "cost": "Mana: 35",
         "description": "Every basic attack against heroes, and every 2 basic attacks against non-heroes generate charge. Once fully charged Xal'atath can activate Void Volley to unleash a barrage of 6 Void Orbs at a target location, each dealing 72 (+4% per level) damage on impact.\n\nCharge fully decays if Xal’atath does not hit an enemy with a Basic Attack after 6 seconds.\n\nQuest: Hit enemy Heroes with Void Volley to grant 1 stack per hit and increases Void Volley's damage by 1%. Lose all stacks upon dying.\n\nReward (20 Stacks):\n   +2 Void Volley Range\n   Stack loss on death lowered to 6.\n\nReward (60 Stacks):\n   -1 Basic Attack required to charge Void Volley.\n\nMythic Reward (100 Stacks):\n   +50% Basic Attack and Void Volley Damage.\n   Void Volley projectiles Pierce all targets.\n\nStack loss will never cause the Hero to fall below a quest reward threshold."
@@ -15931,7 +15931,7 @@
     "abilities": [
       {
         "name": "Vindication",
-        "type": "Q",
+        "hotkey": "Q",
         "icon": "/images/storm_ui_icon_yrel_vindication.avif",
         "cooldown": "Cooldown: 6 seconds",
         "cost": "Mana: 50",
@@ -15939,7 +15939,7 @@
       },
       {
         "name": "Righteous Hammer",
-        "type": "W",
+        "hotkey": "W",
         "icon": "/images/storm_ui_icon_yrel_righteous_hammer.avif",
         "cooldown": "Cooldown: 6 seconds",
         "cost": "Mana: 50",
@@ -15947,7 +15947,7 @@
       },
       {
         "name": "Avenging Wrath",
-        "type": "E",
+        "hotkey": "E",
         "icon": "/images/storm_ui_icon_yrel_avenging_wrath.avif",
         "cooldown": "Cooldown: 6 seconds",
         "cost": "Mana: 50",
@@ -15955,7 +15955,7 @@
       },
       {
         "name": "Ardent Defender",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_yrel_ardent_defender.avif",
         "cooldown": "Cooldown: 120 seconds",
         "cost": "Mana: 80",
@@ -15963,14 +15963,14 @@
       },
       {
         "name": "Sacred Ground",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_yrel_sacred_ground.avif",
         "cooldown": "Cooldown: 25 seconds",
         "description": "Yrel sanctifies the ground around her, gaining 50 Armor until she leaves the area."
       },
       {
         "name": "Divine Purpose",
-        "type": "D",
+        "hotkey": "D",
         "icon": "/images/storm_ui_icon_yrel_divine_purpose.avif",
         "cooldown": "Cooldown: 12 seconds",
         "description": "Activate to instantly charge Yrel's next Basic Ability at no mana cost. Divine Purpose's cooldown is reduced by 3 seconds if Stunned or Silenced while charging her skills.\n\nPassive: Yrel's Basic Abilities charge up over 1.5 seconds, increasing in effectiveness, but reducing Yrel's Movement Speed by 25%."
@@ -16114,7 +16114,7 @@
     "abilities": [
       {
         "name": "Baneling Barrage",
-        "type": "Q",
+        "hotkey": "Q",
         "icon": "/images/storm_ui_icon_zagara_banelingbarrage.avif",
         "cooldown": "Charge Cooldown: 4 seconds",
         "cost": "Mana: 15",
@@ -16122,7 +16122,7 @@
       },
       {
         "name": "Hunter Killer",
-        "type": "W",
+        "hotkey": "W",
         "icon": "/images/storm_ui_icon_zagara_hunterkiller.avif",
         "cooldown": "Cooldown: 16 seconds",
         "cost": "Mana: 75",
@@ -16130,7 +16130,7 @@
       },
       {
         "name": "Infested Drop",
-        "type": "E",
+        "hotkey": "E",
         "icon": "/images/storm_ui_icon_zagara_infesteddrop.avif",
         "cooldown": "Cooldown: 12 seconds",
         "cost": "Mana: 50",
@@ -16138,7 +16138,7 @@
       },
       {
         "name": "Nydus Network",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_zagara_nydusworm.avif",
         "cooldown": "Charge Cooldown: 120 seconds",
         "cost": "Mana: 50",
@@ -16146,7 +16146,7 @@
       },
       {
         "name": "Devouring Maw",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_zagara_devouringmaw.avif",
         "cooldown": "Cooldown: 80 seconds",
         "cost": "Mana: 70",
@@ -16154,7 +16154,7 @@
       },
       {
         "name": "Creep Tumor",
-        "type": "D",
+        "hotkey": "D",
         "icon": "/images/storm_ui_icon_zagara_creep.avif",
         "cooldown": "Charge Cooldown: 18 seconds",
         "description": "Lay a Creep Tumor that generates Creep. While on Creep, Zagara moves 20% faster and her summons move 30% faster. Tumors lose Health over 250 seconds and reveal the surrounding area while active.\n\nStores up to 3 charges."
@@ -16297,42 +16297,42 @@
     "abilities": [
       {
         "name": "Particle Grenade",
-        "type": "Q",
+        "hotkey": "Q",
         "icon": "/images/storm_ui_icon_zarya_particlegrenade.avif",
         "cooldown": "Charge Cooldown: 8 seconds",
         "description": "Launch a particle grenade that deals 80 (+4% per level) damage to enemies within the area. Deals 50% damage to Structures.\n\nStores up to 4 charges."
       },
       {
         "name": "Personal Barrier",
-        "type": "W",
+        "hotkey": "W",
         "icon": "/images/storm_ui_icon_zarya_personalbarrier.avif",
         "cooldown": "Cooldown: 10 seconds",
         "description": "Gain a Shield that absorbs 560 (+4% per level) damage for 3 seconds."
       },
       {
         "name": "Shield Ally",
-        "type": "E",
+        "hotkey": "E",
         "icon": "/images/storm_ui_icon_zarya_shieldally.avif",
         "cooldown": "Cooldown: 12 seconds",
         "description": "Grants an allied Hero a Shield that absorbs 420 (+4% per level) damage for 3 seconds."
       },
       {
         "name": "Graviton Surge",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_zarya_gravitonsurge.avif",
         "cooldown": "Cooldown: 60 seconds",
         "description": "Launch a gravity bomb that detonates after 1 second and draws enemy Heroes toward the center for 2.5 seconds. Affected Heroes take 30 (+4% per level) damage a second."
       },
       {
         "name": "Expulsion Zone",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_zarya_expulsionzone.avif",
         "cooldown": "Cooldown: 45 seconds",
         "description": "Launch a gravity bomb that deals 124 (+4% per level) damage and creates an expulsion zone for 3.5 seconds. Enemies who enter the affected area are knocked back and have their Movement Speed reduced by 50% for 1 second."
       },
       {
         "name": "Energy",
-        "type": "D",
+        "hotkey": "D",
         "icon": "/images/storm_ui_icon_zarya_energy.avif",
         "description": "Each time Zarya's Personal Barrier or Shield Ally absorbs 9 (+4% per level) damage, her Energy is increased by 1. Each point of Energy increases Zarya's damage by 2%. After 0.5 seconds, Energy decays by 3 per second."
       }
@@ -16488,7 +16488,7 @@
     "abilities": [
       {
         "name": "Cleave",
-        "type": "Q",
+        "hotkey": "Q",
         "icon": "/images/storm_ui_icon_zeratul_cleave.avif",
         "cooldown": "Cooldown: 6 seconds",
         "cost": "Mana: 40",
@@ -16496,7 +16496,7 @@
       },
       {
         "name": "Singularity Spike",
-        "type": "W",
+        "hotkey": "W",
         "icon": "/images/storm_ui_icon_zeratul_singularityspike.avif",
         "cooldown": "Cooldown: 12 seconds",
         "cost": "Mana: 70",
@@ -16504,7 +16504,7 @@
       },
       {
         "name": "Blink",
-        "type": "E",
+        "hotkey": "E",
         "icon": "/images/storm_ui_icon_zeratul_blink.avif",
         "cooldown": "Cooldown: 10 seconds",
         "cost": "Mana: 50",
@@ -16512,7 +16512,7 @@
       },
       {
         "name": "Might Of The Nerazim",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_zeratul_mightofnerazim.avif",
         "cooldown": "Cooldown: 20 seconds",
         "cost": "Mana: 30",
@@ -16520,7 +16520,7 @@
       },
       {
         "name": "Void Prison",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_zeratul_voidprison.avif",
         "cooldown": "Cooldown: 100 seconds",
         "cost": "Mana: 80",
@@ -16528,13 +16528,13 @@
       },
       {
         "name": "Permanent Cloak",
-        "type": "D",
+        "hotkey": "D",
         "icon": "/images/storm_ui_icon_zeratul_cloak.avif",
         "description": "Gain Stealth when out of combat for 3 seconds. Taking damage, attacking, using Abilities, or Channeling ends Stealth. Remaining stationary for at least 1.5 seconds while Stealthed grants Invisible."
       },
       {
         "name": "Vorpal Blade",
-        "type": "1",
+        "hotkey": "1",
         "icon": "/images/storm_ui_icon_zeratul_vorpalblade.avif",
         "cooldown": "Cooldown: 15 seconds",
         "description": "Activate to teleport to Zeratul's last non-structure Basic Attack target within 3 seconds. The target is revealed during these 3 seconds."
@@ -16677,7 +16677,7 @@
     "abilities": [
       {
         "name": "Grievous Throw",
-        "type": "Q",
+        "hotkey": "Q",
         "icon": "/images/storm_ui_icon_zuljin_grievousthrow.avif",
         "cooldown": "Cooldown: 8 seconds",
         "cost": "Mana: 40",
@@ -16685,7 +16685,7 @@
       },
       {
         "name": "Twin Cleave",
-        "type": "W",
+        "hotkey": "W",
         "icon": "/images/storm_ui_icon_zuljin_twincleave.avif",
         "cooldown": "Cooldown: 10 seconds",
         "cost": "Mana: 60",
@@ -16693,7 +16693,7 @@
       },
       {
         "name": "Regeneration",
-        "type": "E",
+        "hotkey": "E",
         "icon": "/images/storm_ui_icon_zuljin_regeneration.avif",
         "cooldown": "Cooldown: 15 seconds",
         "cost": "Mana: 75",
@@ -16701,7 +16701,7 @@
       },
       {
         "name": "Taz'dingo!",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_zuljin_tazdingo.avif",
         "cooldown": "Cooldown: 100 seconds",
         "cost": "Mana: 80",
@@ -16709,7 +16709,7 @@
       },
       {
         "name": "Guillotine",
-        "type": "R",
+        "hotkey": "R",
         "icon": "/images/storm_ui_icon_zuljin_guillotine.avif",
         "cooldown": "Cooldown: 30 seconds",
         "cost": "Mana: 60",
@@ -16717,13 +16717,13 @@
       },
       {
         "name": "Berserker",
-        "type": "D",
+        "hotkey": "D",
         "icon": "/images/storm_ui_icon_zuljin_berzerker.avif",
         "description": "Activate to increase Basic Attack damage by 25% but consume 2% maximum Health per attack.\n\nPassive: Zul'jin attacks 1% faster for every 1% of maximum Health missing.\n\nYou Want Axe?\n\nQuest: Every 5 Basic Attacks against Heroes permanently increases Basic Attack damage by 1.\n\nReward: After attacking Heroes 75 times, Basic Attack range is increased by 1.1.\n\nReward: After attacking Heroes 150 times, Twin Cleave now revolves twice.\n\nLose 3 stacks on death."
       },
       {
         "name": "Amani Rage",
-        "type": "1",
+        "hotkey": "1",
         "icon": "/images/storm_ui_icon_zuljin_davoodooshuffle.avif",
         "cooldown": "Cooldown: 30 seconds",
         "description": "Activate to cause Zul'jin to instantly lose 50% of his current Health and heal for that amount over 10 seconds."
