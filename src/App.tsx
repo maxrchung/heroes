@@ -168,7 +168,7 @@ function App() {
                           <img
                             sx={styles.heroPortrait}
                             src={hero.portrait}
-                            alt=""
+                            alt={hero.name}
                             loading="lazy"
                             decoding="async"
                           />
