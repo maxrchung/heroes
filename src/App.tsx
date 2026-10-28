@@ -5,6 +5,7 @@ import { Role, type Hero } from "./data/types";
 import { Heading } from "./components/Heading";
 import { colors } from "./styles/colors.stylex";
 import { borderRadius } from "./styles/borderRadius.stylex";
+import { spacing } from "./styles/spacing.stylex";
 
 const SORT_MODE_STORAGE_KEY = "heroes.sortMode";
 const heroes = Object.values(HEROES_DATA);
@@ -13,7 +14,7 @@ const roleOrder = Object.values(Role);
 const styles = stylex.create({
   page: {
     minHeight: "100vh",
-    padding: "24px",
+    padding: spacing[24],
     backgroundColor: colors.pageBg,
     color: colors.textPrimary,
     fontFamily: "sans-serif",
@@ -21,7 +22,7 @@ const styles = stylex.create({
   container: {
     display: "flex",
     flexDirection: "column",
-    gap: "24px",
+    gap: spacing[24],
     width: "100%",
     maxWidth: "960px",
     marginInline: "auto",
@@ -30,14 +31,16 @@ const styles = stylex.create({
     display: "flex",
     alignItems: "center",
     justifyContent: "space-between",
-    gap: "16px",
+    gap: spacing[16],
   },
   sortSelectContainer: {
     position: "relative",
   },
   sortSelect: {
     appearance: "none",
-    padding: "8px 36px 8px 12px",
+    paddingBlock: spacing[8],
+    paddingInlineStart: spacing[12],
+    paddingInlineEnd: spacing[36],
     borderWidth: "1px",
     borderStyle: "solid",
     borderColor: "transparent",
@@ -52,7 +55,7 @@ const styles = stylex.create({
   sortChevron: {
     position: "absolute",
     top: "50%",
-    right: "12px",
+    right: spacing[12],
     width: "16px",
     height: "16px",
     transform: "translateY(-50%)",
@@ -62,19 +65,20 @@ const styles = stylex.create({
   heroGroup: {
     display: "flex",
     flexDirection: "column",
-    gap: "16px",
+    gap: spacing[16],
   },
   heroList: {
     display: "grid",
     gridTemplateColumns: "repeat(auto-fill, minmax(180px, 1fr))",
     listStyle: "none",
-    gap: "8px",
+    gap: spacing[8],
   },
   heroLink: {
     display: "flex",
     alignItems: "center",
-    gap: "12px",
-    padding: "8px 12px",
+    gap: spacing[12],
+    paddingBlock: spacing[8],
+    paddingInline: spacing[12],
     borderRadius: borderRadius[4],
     backgroundColor: colors.controlBg,
     color: "inherit",
