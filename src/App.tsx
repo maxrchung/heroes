@@ -4,6 +4,7 @@ import { HEROES_DATA } from "./data";
 import { Role, type Hero } from "./data/types";
 import { Heading } from "./components/Heading";
 import { colors } from "./styles/colors.stylex";
+import { borderRadius } from "./styles/borderRadius.stylex";
 
 const SORT_MODE_STORAGE_KEY = "heroes.sortMode";
 const heroes = Object.values(HEROES_DATA);
@@ -36,14 +37,13 @@ const styles = stylex.create({
   },
   sortSelect: {
     appearance: "none",
-    padding: "8px 40px 8px 12px",
+    padding: "8px 36px 8px 12px",
     borderWidth: "1px",
     borderStyle: "solid",
-    borderColor: colors.border,
-    borderRadius: "4px",
+    borderColor: "transparent",
+    borderRadius: borderRadius[4],
     backgroundColor: colors.controlBg,
     color: colors.textPrimary,
-    fontSize: "16px",
     cursor: "pointer",
     ":hover": {
       backgroundColor: colors.controlHoverBg,
@@ -75,11 +75,10 @@ const styles = stylex.create({
     alignItems: "center",
     gap: "12px",
     padding: "8px 12px",
-    borderRadius: "4px",
+    borderRadius: borderRadius[4],
     backgroundColor: colors.controlBg,
     color: "inherit",
     textDecoration: "none",
-    fontSize: "16px",
     ":hover": {
       backgroundColor: colors.controlHoverBg,
     },

@@ -5,5 +5,4 @@ export const colors = stylex.defineConsts({
   textPrimary: "#eeefff",
   controlBg: "#1a1c29",
   controlHoverBg: "#232638",
-  border: "#303346",
 });
