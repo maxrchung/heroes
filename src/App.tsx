@@ -40,7 +40,7 @@ const styles = stylex.create({
     borderWidth: "1px",
     borderStyle: "solid",
     borderColor: colors.border,
-    borderRadius: "6px",
+    borderRadius: "4px",
     backgroundColor: colors.controlBg,
     color: colors.textPrimary,
     fontSize: "16px",
