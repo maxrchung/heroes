@@ -30,18 +30,31 @@ const styles = stylex.create({
     justifyContent: "space-between",
     gap: "16px",
   },
-  sortControl: {
-    display: "flex",
-    alignItems: "center",
-    gap: "8px",
+  sortSelectContainer: {
+    position: "relative",
   },
   sortSelect: {
-    padding: "8px 12px",
-    border: "1px solid #252738",
-    borderRadius: "4px",
+    appearance: "none",
+    padding: "8px 40px 8px 12px",
+    border: "1px solid #303346",
+    borderRadius: "6px",
     backgroundColor: "#151722",
     color: "#eeefff",
-    fontSize: "14px",
+    fontSize: "16px",
+    cursor: "pointer",
+    ":hover": {
+      backgroundColor: "#1d2030",
+    },
+  },
+  sortChevron: {
+    position: "absolute",
+    top: "50%",
+    right: "12px",
+    width: "16px",
+    height: "16px",
+    transform: "translateY(-50%)",
+    color: "#b7bad0",
+    pointerEvents: "none",
   },
   heroGroup: {
     display: "flex",
@@ -132,9 +145,7 @@ function App() {
         <div sx={styles.headingRow}>
           <Heading level={1}>Heroes</Heading>
 
-          <div sx={styles.sortControl}>
-            <label for="sort">Sort</label>
-
+          <div sx={styles.sortSelectContainer}>
             <select
               id="sort"
               sx={styles.sortSelect}
@@ -152,6 +163,20 @@ function App() {
 
               <option value="role">Role</option>
             </select>
+            <svg
+              {...stylex.props(styles.sortChevron)}
+              aria-hidden="true"
+              viewBox="0 0 16 16"
+              fill="none"
+            >
+              <path
+                d="m4 6 4 4 4-4"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
           </div>
         </div>
 
