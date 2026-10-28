@@ -12,7 +12,7 @@ import {
   space,
 } from "./styles/const.stylex";
 
-const SORT_MODE_STORAGE_KEY = "heroes.sortMode";
+const SORT_MODE_STORAGE_KEY = "heroes-sort-mode";
 const heroes = Object.values(HEROES_DATA);
 const roleOrder = Object.values(Role);
 
