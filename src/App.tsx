@@ -4,33 +4,9 @@ import { HEROES_DATA } from "./data";
 import { Role, type Hero } from "./data/types";
 import { Heading } from "./components/Heading";
 
-type SortMode = "name" | "releaseDate" | "role";
-type HeroGroup = { label: string; heroes: Hero[] };
-
+const SORT_MODE_STORAGE_KEY = "heroes.sortMode";
 const heroes = Object.values(HEROES_DATA);
 const roleOrder = Object.values(Role);
-
-function groupHeroes(sortedHeroes: Hero[], mode: SortMode): HeroGroup[] {
-  const groups = new Map<string, Hero[]>();
-
-  for (const hero of sortedHeroes) {
-    const label =
-      mode === "releaseDate"
-        ? hero.releaseDate.slice(0, 4)
-        : mode === "role"
-          ? hero.role
-          : hero.name.charAt(0).toLocaleUpperCase();
-    const group = groups.get(label);
-
-    if (group) {
-      group.push(hero);
-    } else {
-      groups.set(label, [hero]);
-    }
-  }
-
-  return [...groups].map(([label, heroes]) => ({ label, heroes }));
-}
 
 const styles = stylex.create({
   page: {
@@ -92,8 +68,8 @@ const styles = stylex.create({
     },
   },
   heroPortrait: {
-    width: "40px",
-    height: "40px",
+    width: "48px",
+    height: "48px",
     flex: "none",
     objectFit: "cover",
     borderRadius: "4px",
@@ -101,12 +77,14 @@ const styles = stylex.create({
 });
 
 function App() {
-  const [sortMode, setSortMode] = createSignal<SortMode>("name");
+  const localSortMode = localStorage.getItem(SORT_MODE_STORAGE_KEY);
+  const [sortMode, setSortMode] = createSignal(localSortMode ?? "name");
+
   const heroGroups = createMemo(() => {
     const sortedHeroes = [...heroes];
 
     switch (sortMode()) {
-      case "releaseDate":
+      case "release":
         sortedHeroes.sort(
           (a, b) =>
             b.releaseDate.localeCompare(a.releaseDate) ||
@@ -121,11 +99,30 @@ function App() {
         );
         break;
       case "name":
+      default:
         sortedHeroes.sort((a, b) => a.name.localeCompare(b.name));
         break;
     }
 
-    return groupHeroes(sortedHeroes, sortMode());
+    const groups = new Map<string, Hero[]>();
+
+    for (const hero of sortedHeroes) {
+      const label =
+        sortMode() === "release"
+          ? hero.releaseDate.slice(0, 4)
+          : sortMode() === "role"
+            ? hero.role
+            : hero.name.charAt(0).toLocaleUpperCase();
+      const group = groups.get(label);
+
+      if (group) {
+        group.push(hero);
+      } else {
+        groups.set(label, [hero]);
+      }
+    }
+
+    return [...groups].map(([label, heroes]) => ({ label, heroes }));
   });
 
   return (
@@ -138,13 +135,15 @@ function App() {
             sx={styles.sortSelect}
             aria-label="Sort heroes"
             value={sortMode()}
-            onChange={(event) =>
-              setSortMode(event.currentTarget.value as SortMode)
-            }
+            onChange={(event) => {
+              const sortMode = event.currentTarget.value;
+              setSortMode(sortMode);
+              localStorage.setItem(SORT_MODE_STORAGE_KEY, sortMode);
+            }}
           >
             <option value="name">Name</option>
 
-            <option value="releaseDate">Release Date</option>
+            <option value="release">Release</option>
 
             <option value="role">Role</option>
           </select>
