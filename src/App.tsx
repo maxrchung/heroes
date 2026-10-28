@@ -30,6 +30,16 @@ const styles = stylex.create({
     justifyContent: "space-between",
     gap: "16px",
   },
+  sortControl: {
+    display: "flex",
+    alignItems: "center",
+    gap: "8px",
+  },
+  sortLabel: {
+    display: {
+      "@media (max-width: 600px)": "none",
+    },
+  },
   sortSelect: {
     padding: "8px 12px",
     border: "1px solid #252738",
@@ -78,12 +88,12 @@ const styles = stylex.create({
 
 function App() {
   const localSortMode = localStorage.getItem(SORT_MODE_STORAGE_KEY);
-  const [sortMode, setSortMode] = createSignal(localSortMode ?? "name");
+  const [sort, setSort] = createSignal(localSortMode ?? "name");
 
-  const heroGroups = createMemo(() => {
+  const groups = createMemo(() => {
     const sortedHeroes = [...heroes];
 
-    switch (sortMode()) {
+    switch (sort()) {
       case "release":
         sortedHeroes.sort(
           (a, b) =>
@@ -108,9 +118,9 @@ function App() {
 
     for (const hero of sortedHeroes) {
       const label =
-        sortMode() === "release"
+        sort() === "release"
           ? hero.releaseDate.slice(0, 4)
-          : sortMode() === "role"
+          : sort() === "role"
             ? hero.role
             : hero.name.charAt(0).toLocaleUpperCase();
       const group = groups.get(label);
@@ -131,25 +141,32 @@ function App() {
         <div sx={styles.headingRow}>
           <Heading level={1}>Heroes</Heading>
 
-          <select
-            sx={styles.sortSelect}
-            aria-label="Sort heroes"
-            value={sortMode()}
-            onChange={(event) => {
-              const sortMode = event.currentTarget.value;
-              setSortMode(sortMode);
-              localStorage.setItem(SORT_MODE_STORAGE_KEY, sortMode);
-            }}
-          >
-            <option value="name">Name</option>
+          <div sx={styles.sortControl}>
+            <label {...stylex.props(styles.sortLabel)} for="sort">
+              Sort
+            </label>
 
-            <option value="release">Release</option>
+            <select
+              id="sort"
+              sx={styles.sortSelect}
+              aria-label="Sort heroes"
+              value={sort()}
+              onChange={(event) => {
+                const sortMode = event.currentTarget.value;
+                setSort(sortMode);
+                localStorage.setItem(SORT_MODE_STORAGE_KEY, sortMode);
+              }}
+            >
+              <option value="name">Name</option>
 
-            <option value="role">Role</option>
-          </select>
+              <option value="release">Release</option>
+
+              <option value="role">Role</option>
+            </select>
+          </div>
         </div>
 
-        <For each={heroGroups()}>
+        <For each={groups()}>
           {(group) => {
             const headingId = `group-${group.label.replaceAll(" ", "-")}`;
 
