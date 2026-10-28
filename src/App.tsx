@@ -63,7 +63,7 @@ const styles = stylex.create({
     display: "flex",
     alignItems: "center",
     gap: "12px",
-    padding: "8px 16px",
+    padding: "8px 12px",
     borderRadius: "4px",
     backgroundColor: "#151722",
     color: "inherit",
@@ -72,17 +72,13 @@ const styles = stylex.create({
     ":hover": {
       backgroundColor: "#1d2030",
     },
-    ":focus-visible": {
-      outline: "2px solid #8e83ff",
-      outlineOffset: "2px",
-    },
   },
   heroPortrait: {
     width: "48px",
     height: "48px",
     flex: "none",
     objectFit: "cover",
-    borderRadius: "4px",
+    borderRadius: "100%",
   },
 });
 
