@@ -3,6 +3,7 @@ import * as stylex from "@stylexjs/stylex";
 import { HEROES_DATA } from "./data";
 import { Role, type Hero } from "./data/types";
 import { Heading } from "./components/Heading";
+import { colors } from "./styles/colors.stylex";
 
 const SORT_MODE_STORAGE_KEY = "heroes.sortMode";
 const heroes = Object.values(HEROES_DATA);
@@ -12,8 +13,8 @@ const styles = stylex.create({
   page: {
     minHeight: "100vh",
     padding: "24px",
-    backgroundColor: "#0d0e16",
-    color: "#eeefff",
+    backgroundColor: colors.pageBackground,
+    color: colors.foreground,
     fontFamily: "sans-serif",
   },
   container: {
@@ -36,14 +37,16 @@ const styles = stylex.create({
   sortSelect: {
     appearance: "none",
     padding: "8px 40px 8px 12px",
-    border: "1px solid #303346",
+    borderWidth: "1px",
+    borderStyle: "solid",
+    borderColor: colors.border,
     borderRadius: "6px",
-    backgroundColor: "#151722",
-    color: "#eeefff",
+    backgroundColor: colors.surface,
+    color: colors.foreground,
     fontSize: "16px",
     cursor: "pointer",
     ":hover": {
-      backgroundColor: "#1d2030",
+      backgroundColor: colors.surfaceHover,
     },
   },
   sortChevron: {
@@ -53,7 +56,7 @@ const styles = stylex.create({
     width: "16px",
     height: "16px",
     transform: "translateY(-50%)",
-    color: "#b7bad0",
+    color: colors.mutedForeground,
     pointerEvents: "none",
   },
   heroGroup: {
@@ -73,12 +76,12 @@ const styles = stylex.create({
     gap: "12px",
     padding: "8px 12px",
     borderRadius: "4px",
-    backgroundColor: "#151722",
+    backgroundColor: colors.surface,
     color: "inherit",
     textDecoration: "none",
     fontSize: "16px",
     ":hover": {
-      backgroundColor: "#1d2030",
+      backgroundColor: colors.surfaceHover,
     },
   },
   heroPortrait: {
@@ -163,6 +166,7 @@ function App() {
 
               <option value="role">Role</option>
             </select>
+
             <svg
               {...stylex.props(styles.sortChevron)}
               aria-hidden="true"
