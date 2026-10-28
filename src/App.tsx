@@ -3,11 +3,14 @@ import * as stylex from "@stylexjs/stylex";
 import { HEROES_DATA } from "./data";
 import { Role, type Hero } from "./data/types";
 import { Heading } from "./components/Heading";
-import { colors } from "./styles/colors.stylex";
-import { borderRadius } from "./styles/borderRadius.stylex";
-import { spacing } from "./styles/spacing.stylex";
-import { sizing } from "./styles/sizing.stylex";
-import { fontFamily, fontSize } from "./styles/typography.stylex";
+import {
+  borderRadius,
+  colors,
+  fontFamily,
+  fontSize,
+  sizing,
+  spacing,
+} from "./styles/const.stylex";
 
 const SORT_MODE_STORAGE_KEY = "heroes.sortMode";
 const heroes = Object.values(HEROES_DATA);

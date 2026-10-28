@@ -1,6 +1,6 @@
 import type { JSX } from "solid-js";
 import * as stylex from "@stylexjs/stylex";
-import { fontFamily, fontSize, fontWeight } from "../styles/typography.stylex";
+import { fontFamily, fontSize, fontWeight } from "../styles/const.stylex";
 
 type HeadingProps = Omit<JSX.HTMLAttributes<HTMLHeadingElement>, "sx"> & {
   level: 1 | 2;
