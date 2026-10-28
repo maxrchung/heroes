@@ -6,6 +6,7 @@ import { Heading } from "./components/Heading";
 import { colors } from "./styles/colors.stylex";
 import { borderRadius } from "./styles/borderRadius.stylex";
 import { spacing } from "./styles/spacing.stylex";
+import { sizing } from "./styles/sizing.stylex";
 
 const SORT_MODE_STORAGE_KEY = "heroes.sortMode";
 const heroes = Object.values(HEROES_DATA);
@@ -24,7 +25,7 @@ const styles = stylex.create({
     flexDirection: "column",
     gap: spacing[24],
     width: "100%",
-    maxWidth: "960px",
+    maxWidth: sizing.pageWidth,
     marginInline: "auto",
   },
   headingRow: {
@@ -69,7 +70,7 @@ const styles = stylex.create({
   },
   heroList: {
     display: "grid",
-    gridTemplateColumns: "repeat(auto-fill, minmax(180px, 1fr))",
+    gridTemplateColumns: `repeat(auto-fill, minmax(${sizing.heroTileWidth}, 1fr))`,
     listStyle: "none",
     gap: spacing[8],
   },
@@ -88,8 +89,8 @@ const styles = stylex.create({
     },
   },
   heroPortrait: {
-    width: "48px",
-    height: "48px",
+    width: sizing.heroThumbnailSize,
+    height: sizing.heroThumbnailSize,
     flex: "none",
     objectFit: "cover",
     borderRadius: "100%",
