@@ -168,7 +168,7 @@ function App() {
             </select>
 
             <svg
-              {...stylex.props(styles.sortChevron)}
+              sx={styles.sortChevron}
               aria-hidden="true"
               viewBox="0 0 16 16"
               fill="none"

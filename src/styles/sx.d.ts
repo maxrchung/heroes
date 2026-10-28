@@ -4,9 +4,9 @@ import type { StyleXStyles } from "@stylexjs/stylex";
 
 declare module "solid-js" {
   namespace JSX {
-    // Keep T to match Solid's generic HTMLAttributes interface.
+    // Keep T to match Solid's generic DOMAttributes interface.
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
-    interface HTMLAttributes<T> {
+    interface DOMAttributes<T> {
       sx?: StyleXStyles;
     }
   }
