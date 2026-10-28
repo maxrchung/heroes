@@ -103,8 +103,8 @@ const styles = stylex.create({
 });
 
 function App() {
-  const localSortMode = localStorage.getItem(SORT_MODE_STORAGE_KEY);
-  const [sort, setSort] = createSignal(localSortMode ?? "name");
+  const storageSortMode = localStorage.getItem(SORT_MODE_STORAGE_KEY);
+  const [sort, setSort] = createSignal(storageSortMode ?? "name");
 
   const groups = createMemo(() => {
     const sortedHeroes = [...heroes];
