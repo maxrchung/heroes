@@ -13,8 +13,8 @@ const styles = stylex.create({
   page: {
     minHeight: "100vh",
     padding: "24px",
-    backgroundColor: colors.pageBackground,
-    color: colors.foreground,
+    backgroundColor: colors.pageBg,
+    color: colors.textPrimary,
     fontFamily: "sans-serif",
   },
   container: {
@@ -41,12 +41,12 @@ const styles = stylex.create({
     borderStyle: "solid",
     borderColor: colors.border,
     borderRadius: "6px",
-    backgroundColor: colors.surface,
-    color: colors.foreground,
+    backgroundColor: colors.controlBg,
+    color: colors.textPrimary,
     fontSize: "16px",
     cursor: "pointer",
     ":hover": {
-      backgroundColor: colors.surfaceHover,
+      backgroundColor: colors.controlHoverBg,
     },
   },
   sortChevron: {
@@ -56,7 +56,7 @@ const styles = stylex.create({
     width: "16px",
     height: "16px",
     transform: "translateY(-50%)",
-    color: colors.mutedForeground,
+    color: colors.textPrimary,
     pointerEvents: "none",
   },
   heroGroup: {
@@ -76,12 +76,12 @@ const styles = stylex.create({
     gap: "12px",
     padding: "8px 12px",
     borderRadius: "4px",
-    backgroundColor: colors.surface,
+    backgroundColor: colors.controlBg,
     color: "inherit",
     textDecoration: "none",
     fontSize: "16px",
     ":hover": {
-      backgroundColor: colors.surfaceHover,
+      backgroundColor: colors.controlHoverBg,
     },
   },
   heroPortrait: {
