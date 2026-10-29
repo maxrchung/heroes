@@ -1,8 +1,8 @@
 import { Show } from "solid-js";
 import { useParams } from "@solidjs/router";
 import { HEROES_DATA } from "../data";
-import { Heading } from "../components/Heading";
-import { PageLayout } from "../components/PageLayout";
+import { Heading } from "../components/heading";
+import { PageLayout } from "../components/layout";
 
 export function HeroDetailPage() {
   const params = useParams<{ slug: string }>();
