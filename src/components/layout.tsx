@@ -1,4 +1,4 @@
-import type { JSX } from "solid-js";
+import type { RouteSectionProps } from "@solidjs/router";
 import * as stylex from "@stylexjs/stylex";
 import { color, fontFamily, size, space } from "../styles/const.stylex";
 
@@ -20,14 +20,10 @@ const styles = stylex.create({
   },
 });
 
-type PageLayoutProps = {
-  children: JSX.Element;
-};
-
-export function PageLayout({ children }: PageLayoutProps) {
+export function Layout(props: RouteSectionProps) {
   return (
     <main sx={styles.page}>
-      <div sx={styles.content}>{children}</div>
+      <div sx={styles.content}>{props.children}</div>
     </main>
   );
 }
