@@ -3,6 +3,7 @@ import * as stylex from "@stylexjs/stylex";
 import { HEROES_DATA } from "../data";
 import { Role, type Hero } from "../data/types";
 import { Heading } from "../components/heading";
+import { Chevron } from "../components/chevron";
 import {
   borderRadius,
   color,
@@ -46,8 +47,6 @@ const styles = stylex.create({
     position: "absolute",
     top: "50%",
     right: space[12],
-    width: "16px",
-    height: "16px",
     transform: "translateY(-50%)",
     color: color.textPrimary,
     pointerEvents: "none",
@@ -159,20 +158,9 @@ export function HeroLandingPage() {
             <option value="role">Role</option>
           </select>
 
-          <svg
-            sx={styles.sortChevron}
-            aria-hidden="true"
-            viewBox="0 0 16 16"
-            fill="none"
-          >
-            <path
-              d="m4 6 4 4 4-4"
-              stroke="currentColor"
-              stroke-width="1.5"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-          </svg>
+          <div sx={styles.sortChevron}>
+            <Chevron direction="down" />
+          </div>
         </div>
       </div>
 
