@@ -1,5 +1,4 @@
 import { createMemo, createSignal, For } from "solid-js";
-import { A } from "@solidjs/router";
 import * as stylex from "@stylexjs/stylex";
 import { HEROES_DATA } from "../data";
 import { Role, type Hero } from "../data/types";
@@ -191,7 +190,7 @@ export function HeroLandingPage() {
                 <For each={group.heroes}>
                   {(hero) => (
                     <li>
-                      <A sx={styles.heroTile} href={`/${hero.slug}`}>
+                      <a sx={styles.heroTile} href={`/${hero.slug}`}>
                         <img
                           sx={styles.heroPortrait}
                           src={hero.portrait}
@@ -200,7 +199,7 @@ export function HeroLandingPage() {
                           decoding="async"
                         />
                         {hero.name}
-                      </A>
+                      </a>
                     </li>
                   )}
                 </For>
