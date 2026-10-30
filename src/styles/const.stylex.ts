@@ -5,8 +5,8 @@ export const borderRadius = stylex.defineConsts({
 });
 
 export const color = stylex.defineConsts({
-  controlBg: "#1a1c29",
-  controlHoverBg: "#232638",
+  tileBg: "#1a1c29",
+  tileHoverBg: "#232638",
   pageBg: "#0d0e16",
   textPrimary: "#eeefff",
 });

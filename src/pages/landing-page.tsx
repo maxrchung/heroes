@@ -35,12 +35,12 @@ const styles = stylex.create({
     borderStyle: "solid",
     borderColor: "transparent",
     borderRadius: borderRadius[4],
-    backgroundColor: color.controlBg,
+    backgroundColor: color.tileBg,
     color: color.textPrimary,
     fontSize: fontSize[16],
     cursor: "pointer",
     ":hover": {
-      backgroundColor: color.controlHoverBg,
+      backgroundColor: color.tileHoverBg,
     },
   },
   sortChevron: {
@@ -69,11 +69,11 @@ const styles = stylex.create({
     paddingBlock: space[8],
     paddingInline: space[12],
     borderRadius: borderRadius[4],
-    backgroundColor: color.controlBg,
+    backgroundColor: color.tileBg,
     color: "inherit",
     textDecoration: "none",
     ":hover": {
-      backgroundColor: color.controlHoverBg,
+      backgroundColor: color.tileHoverBg,
     },
   },
   heroPortrait: {

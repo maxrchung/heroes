@@ -28,11 +28,11 @@ const styles = stylex.create({
     paddingInlineStart: space[8],
     paddingInlineEnd: space[12],
     borderRadius: borderRadius[4],
-    backgroundColor: color.controlBg,
+    backgroundColor: color.tileBg,
     color: "inherit",
     textDecoration: "none",
     ":hover": {
-      backgroundColor: color.controlHoverBg,
+      backgroundColor: color.tileHoverBg,
     },
   },
   overviewSection: {
@@ -93,7 +93,7 @@ const styles = stylex.create({
     gap: space[12],
     padding: space[12],
     borderRadius: borderRadius[4],
-    backgroundColor: color.controlBg,
+    backgroundColor: color.tileBg,
   },
   cardHeading: {
     display: "flex",
