@@ -7,9 +7,8 @@ const styles = stylex.create({
   container: {
     display: "flex",
     flexDirection: "column",
+    gap: space[16],
   },
-  2: { gap: space[16] },
-  3: { gap: space[12] },
 });
 
 type ContainerProps = {
@@ -20,7 +19,7 @@ type ContainerProps = {
 
 export function Container({ level, heading, children }: ContainerProps) {
   return (
-    <div sx={[styles.container, styles[level]]}>
+    <div sx={[styles.container]}>
       <Show when={heading}>
         {(heading) => <Heading level={level}>{heading()}</Heading>}
       </Show>
