@@ -6,9 +6,7 @@ const styles = stylex.create({
   heading: {
     fontFamily: fontFamily.heading,
     fontWeight: fontWeight[400],
-    marginBlockEnd: "-8px",
   },
-  noMargin: { marginBlockEnd: 0 },
   1: { fontSize: fontSize[32] },
   2: { fontSize: fontSize[24] },
   3: { fontSize: fontSize[20] },
@@ -17,12 +15,10 @@ const styles = stylex.create({
 type HeadingProps = {
   level: 1 | 2 | 3;
   children: JSX.Element;
-  noMargin?: boolean;
 };
 
-export function Heading({ level, children, noMargin = false }: HeadingProps) {
-  const sx = [styles.heading, noMargin && styles.noMargin];
-
+export function Heading({ level, children }: HeadingProps) {
+  const sx = [styles.heading, styles[level]];
   switch (level) {
     case 1:
       return <h1 sx={sx}>{children}</h1>;

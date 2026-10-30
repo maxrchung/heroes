@@ -4,6 +4,7 @@ import { HEROES_DATA } from "../data";
 import { Role, type Hero } from "../data/types";
 import { Heading } from "../components/heading";
 import { Chevron } from "../components/chevron";
+import { Column } from "../components/column";
 import {
   borderRadius,
   color,
@@ -162,7 +163,7 @@ export function HeroLandingPage() {
       <For each={groups()}>
         {(group) => {
           return (
-            <>
+            <Column gap={16}>
               <Heading level={2}>{group.label}</Heading>
 
               <ul sx={styles.heroGrid}>
@@ -183,7 +184,7 @@ export function HeroLandingPage() {
                   )}
                 </For>
               </ul>
-            </>
+            </Column>
           );
         }}
       </For>
