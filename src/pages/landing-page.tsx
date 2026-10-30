@@ -4,7 +4,6 @@ import { HEROES_DATA } from "../data";
 import { Role, type Hero } from "../data/types";
 import { Heading } from "../components/heading";
 import { Chevron } from "../components/chevron";
-import { Container } from "../components/container";
 import {
   borderRadius,
   color,
@@ -52,7 +51,7 @@ const styles = stylex.create({
     color: color.textPrimary,
     pointerEvents: "none",
   },
-  heroList: {
+  heroGrid: {
     display: "grid",
     gridTemplateColumns: `repeat(auto-fill, minmax(${size.tileWidth}, 1fr))`,
     listStyle: "none",
@@ -163,11 +162,10 @@ export function HeroLandingPage() {
       <For each={groups()}>
         {(group) => {
           return (
-            <Container
-              level={2}
-              heading={<Heading level={2}>{group.label}</Heading>}
-            >
-              <ul sx={styles.heroList}>
+            <>
+              <Heading level={2}>{group.label}</Heading>
+
+              <ul sx={styles.heroGrid}>
                 <For each={group.heroes}>
                   {(hero) => (
                     <li>
@@ -185,7 +183,7 @@ export function HeroLandingPage() {
                   )}
                 </For>
               </ul>
-            </Container>
+            </>
           );
         }}
       </For>
