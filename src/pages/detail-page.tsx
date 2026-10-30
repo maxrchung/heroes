@@ -2,7 +2,6 @@ import { For, Show } from "solid-js";
 import { useParams } from "@solidjs/router";
 import * as stylex from "@stylexjs/stylex";
 import { HEROES_DATA } from "../data";
-import type { Ability, Talent } from "../data/types";
 import { Heading } from "../components/heading";
 import { Chevron } from "../components/chevron";
 import { Container } from "../components/container";
@@ -76,13 +75,7 @@ const styles = stylex.create({
     alignItems: "center",
     gap: space[12],
   },
-  abilityIcon: {
-    width: size.thumbnailSize,
-    height: size.thumbnailSize,
-    flex: "none",
-    objectFit: "cover",
-  },
-  talentIcon: {
+  cardIcon: {
     width: size.thumbnailSize,
     height: size.thumbnailSize,
     flex: "none",
@@ -106,47 +99,6 @@ const styles = stylex.create({
     lineHeight: 1.5,
   },
 });
-
-function AbilityCard(props: { ability: Ability }) {
-  return (
-    <article sx={styles.card}>
-      <div sx={styles.cardHeading}>
-        <img sx={styles.abilityIcon} src={props.ability.icon} alt="" />
-        <div>
-          <h3 sx={styles.cardTitle}>{props.ability.name}</h3>
-          <Show when={props.ability.hotkey}>
-            {(hotkey) => <span sx={styles.hotkey}>{hotkey()}</span>}
-          </Show>
-        </div>
-      </div>
-      <div sx={styles.metadata}>
-        <Show when={props.ability.cooldown}>
-          {(cooldown) => <span>{cooldown()}</span>}
-        </Show>
-        <Show when={props.ability.cost}>{(cost) => <span>{cost()}</span>}</Show>
-      </div>
-      <p sx={styles.cardDescription}>{props.ability.description}</p>
-    </article>
-  );
-}
-
-function TalentCard(props: { talent: Talent }) {
-  return (
-    <article sx={styles.card}>
-      <div sx={styles.cardHeading}>
-        <img sx={styles.talentIcon} src={props.talent.icon} alt="" />
-        <h4 sx={styles.cardTitle}>{props.talent.name}</h4>
-      </div>
-      <div sx={styles.metadata}>
-        <Show when={props.talent.cooldown}>
-          {(cooldown) => <span>{cooldown()}</span>}
-        </Show>
-        <Show when={props.talent.cost}>{(cost) => <span>{cost()}</span>}</Show>
-      </div>
-      <p sx={styles.cardDescription}>{props.talent.description}</p>
-    </article>
-  );
-}
 
 export function HeroDetailPage() {
   const params = useParams<{ slug: string }>();
@@ -182,7 +134,30 @@ export function HeroDetailPage() {
             <Container level={2} heading="Abilities">
               <div sx={styles.abilityGrid}>
                 <For each={hero().abilities}>
-                  {(ability) => <AbilityCard ability={ability} />}
+                  {(ability) => (
+                    <article sx={styles.card}>
+                      <div sx={styles.cardHeading}>
+                        <img sx={styles.cardIcon} src={ability.icon} alt="" />
+                        <div>
+                          <h3 sx={styles.cardTitle}>{ability.name}</h3>
+                          <Show when={ability.hotkey}>
+                            {(hotkey) => (
+                              <span sx={styles.hotkey}>{hotkey()}</span>
+                            )}
+                          </Show>
+                        </div>
+                      </div>
+                      <div sx={styles.metadata}>
+                        <Show when={ability.cooldown}>
+                          {(cooldown) => <span>{cooldown()}</span>}
+                        </Show>
+                        <Show when={ability.cost}>
+                          {(cost) => <span>{cost()}</span>}
+                        </Show>
+                      </div>
+                      <p sx={styles.cardDescription}>{ability.description}</p>
+                    </article>
+                  )}
                 </For>
               </div>
             </Container>
@@ -194,7 +169,29 @@ export function HeroDetailPage() {
                     <Container level={3} heading={`Level ${tier}`}>
                       <div sx={styles.talentGrid}>
                         <For each={talents}>
-                          {(talent) => <TalentCard talent={talent} />}
+                          {(talent) => (
+                            <article sx={styles.card}>
+                              <div sx={styles.cardHeading}>
+                                <img
+                                  sx={styles.cardIcon}
+                                  src={talent.icon}
+                                  alt=""
+                                />
+                                <h4 sx={styles.cardTitle}>{talent.name}</h4>
+                              </div>
+                              <div sx={styles.metadata}>
+                                <Show when={talent.cooldown}>
+                                  {(cooldown) => <span>{cooldown()}</span>}
+                                </Show>
+                                <Show when={talent.cost}>
+                                  {(cost) => <span>{cost()}</span>}
+                                </Show>
+                              </div>
+                              <p sx={styles.cardDescription}>
+                                {talent.description}
+                              </p>
+                            </article>
+                          )}
                         </For>
                       </div>
                     </Container>
