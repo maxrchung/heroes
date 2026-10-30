@@ -18,6 +18,7 @@ export const fontFamily = stylex.defineConsts({
 
 export const fontSize = stylex.defineConsts({
   16: "16px",
+  20: "20px",
   24: "24px",
   32: "32px",
 });

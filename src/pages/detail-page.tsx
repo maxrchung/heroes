@@ -5,6 +5,7 @@ import { HEROES_DATA } from "../data";
 import type { Ability, Talent } from "../data/types";
 import { Heading } from "../components/heading";
 import { Chevron } from "../components/chevron";
+import { Container } from "../components/container";
 import {
   borderRadius,
   color,
@@ -14,11 +15,6 @@ import {
 } from "../styles/const.stylex";
 
 const styles = stylex.create({
-  detail: {
-    display: "flex",
-    flexDirection: "column",
-    gap: space[24],
-  },
   backLink: {
     display: "flex",
     alignSelf: "start",
@@ -35,21 +31,10 @@ const styles = stylex.create({
       backgroundColor: color.tileHoverBg,
     },
   },
-  overviewSection: {
-    display: "flex",
-    flexDirection: "column",
-    gap: space[16],
-  },
   headingRow: {
     display: "flex",
     alignItems: "center",
     gap: space[12],
-  },
-  overview: {
-    display: "flex",
-    flexWrap: "wrap",
-    alignItems: "center",
-    gap: space[24],
   },
   portrait: {
     width: "64px",
@@ -57,11 +42,6 @@ const styles = stylex.create({
     flex: "none",
     objectFit: "cover",
     borderRadius: "100%",
-  },
-  section: {
-    display: "flex",
-    flexDirection: "column",
-    gap: space[16],
   },
   abilityGrid: {
     display: "grid",
@@ -72,11 +52,6 @@ const styles = stylex.create({
     display: "flex",
     flexDirection: "column",
     gap: space[24],
-  },
-  tier: {
-    display: "flex",
-    flexDirection: "column",
-    gap: space[12],
   },
   tierHeading: {
     fontSize: fontSize[16],
@@ -179,7 +154,7 @@ export function HeroDetailPage() {
   const hero = () => HEROES_DATA[params.slug];
 
   return (
-    <div sx={styles.detail}>
+    <>
       <a sx={styles.backLink} href="/">
         <Chevron direction="left" />
         Heroes
@@ -191,7 +166,7 @@ export function HeroDetailPage() {
       >
         {(hero) => (
           <>
-            <section sx={styles.overviewSection}>
+            <Container level={2}>
               <div sx={styles.headingRow}>
                 <img
                   sx={styles.portrait}
@@ -202,47 +177,34 @@ export function HeroDetailPage() {
               </div>
 
               <p>{hero().description}</p>
-            </section>
+            </Container>
 
-            <section sx={styles.section} aria-labelledby="abilities-heading">
-              <Heading level={2} id="abilities-heading">
-                Abilities
-              </Heading>
+            <Container level={2} heading="Abilities">
               <div sx={styles.abilityGrid}>
                 <For each={hero().abilities}>
                   {(ability) => <AbilityCard ability={ability} />}
                 </For>
               </div>
-            </section>
+            </Container>
 
-            <section sx={styles.section} aria-labelledby="talents-heading">
-              <Heading level={2} id="talents-heading">
-                Talents
-              </Heading>
+            <Container level={2} heading="Talents">
               <div sx={styles.talentTiers}>
-                <For
-                  each={Object.entries(hero().talents).sort(
-                    ([a], [b]) => Number(a) - Number(b),
-                  )}
-                >
+                <For each={Object.entries(hero().talents)}>
                   {([tier, talents]) => (
-                    <section sx={styles.tier} aria-labelledby={`tier-${tier}`}>
-                      <h3 sx={styles.tierHeading} id={`tier-${tier}`}>
-                        Level {tier}
-                      </h3>
+                    <Container level={3} heading={`Level ${tier}`}>
                       <div sx={styles.talentGrid}>
                         <For each={talents}>
                           {(talent) => <TalentCard talent={talent} />}
                         </For>
                       </div>
-                    </section>
+                    </Container>
                   )}
                 </For>
               </div>
-            </section>
+            </Container>
           </>
         )}
       </Show>
-    </div>
+    </>
   );
 }

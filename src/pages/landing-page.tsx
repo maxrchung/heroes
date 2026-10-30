@@ -4,6 +4,7 @@ import { HEROES_DATA } from "../data";
 import { Role, type Hero } from "../data/types";
 import { Heading } from "../components/heading";
 import { Chevron } from "../components/chevron";
+import { Container } from "../components/container";
 import {
   borderRadius,
   color,
@@ -50,11 +51,6 @@ const styles = stylex.create({
     transform: "translateY(-50%)",
     color: color.textPrimary,
     pointerEvents: "none",
-  },
-  sortGroup: {
-    display: "flex",
-    flexDirection: "column",
-    gap: space[16],
   },
   heroList: {
     display: "grid",
@@ -166,14 +162,11 @@ export function HeroLandingPage() {
 
       <For each={groups()}>
         {(group) => {
-          const headingId = `group-${group.label.replaceAll(" ", "-")}`;
-
           return (
-            <section sx={styles.sortGroup} aria-labelledby={headingId}>
-              <Heading level={2} id={headingId}>
-                {group.label}
-              </Heading>
-
+            <Container
+              level={2}
+              heading={<Heading level={2}>{group.label}</Heading>}
+            >
               <ul sx={styles.heroList}>
                 <For each={group.heroes}>
                   {(hero) => (
@@ -192,7 +185,7 @@ export function HeroLandingPage() {
                   )}
                 </For>
               </ul>
-            </section>
+            </Container>
           );
         }}
       </For>

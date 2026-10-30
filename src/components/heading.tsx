@@ -3,7 +3,7 @@ import * as stylex from "@stylexjs/stylex";
 import { fontFamily, fontSize, fontWeight } from "../styles/const.stylex";
 
 type HeadingProps = Omit<JSX.HTMLAttributes<HTMLHeadingElement>, "sx"> & {
-  level: 1 | 2;
+  level: 1 | 2 | 3;
   children: JSX.Element;
 };
 
@@ -18,20 +18,32 @@ const styles = stylex.create({
     fontSize: fontSize[24],
     fontWeight: fontWeight[400],
   },
+  h3: {
+    fontFamily: fontFamily.heading,
+    fontSize: fontSize[20],
+    fontWeight: fontWeight[400],
+  },
 });
 
 export function Heading({ level, children, ...rest }: HeadingProps) {
-  if (level === 1) {
-    return (
-      <h1 sx={styles.h1} {...rest}>
-        {children}
-      </h1>
-    );
+  switch (level) {
+    case 1:
+      return (
+        <h1 sx={styles.h1} {...rest}>
+          {children}
+        </h1>
+      );
+    case 2:
+      return (
+        <h2 sx={styles.h2} {...rest}>
+          {children}
+        </h2>
+      );
+    case 3:
+      return (
+        <h3 sx={styles.h3} {...rest}>
+          {children}
+        </h3>
+      );
   }
-
-  return (
-    <h2 sx={styles.h2} {...rest}>
-      {children}
-    </h2>
-  );
 }
