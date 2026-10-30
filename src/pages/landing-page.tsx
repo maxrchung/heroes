@@ -54,7 +54,7 @@ const styles = stylex.create({
   },
   heroList: {
     display: "grid",
-    gridTemplateColumns: `repeat(auto-fill, minmax(${size.heroTileWidth}, 1fr))`,
+    gridTemplateColumns: `repeat(auto-fill, minmax(${size.tileWidth}, 1fr))`,
     listStyle: "none",
     gap: space[8],
   },
@@ -73,8 +73,8 @@ const styles = stylex.create({
     },
   },
   heroPortrait: {
-    width: size.heroThumbnailSize,
-    height: size.heroThumbnailSize,
+    width: size.thumbnailSize,
+    height: size.thumbnailSize,
     flex: "none",
     objectFit: "cover",
     borderRadius: "100%",

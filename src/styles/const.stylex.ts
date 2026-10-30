@@ -36,8 +36,8 @@ export const space = stylex.defineConsts({
 });
 
 export const size = stylex.defineConsts({
-  heroThumbnailSize: "48px",
-  heroTileWidth: "180px",
   iconSize: "16px",
   pageWidth: "960px",
+  thumbnailSize: "48px",
+  tileWidth: "180px",
 });
