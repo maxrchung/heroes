@@ -11,6 +11,7 @@ import {
   color,
   fontSize,
   fontWeight,
+  size,
   space,
 } from "../styles/const.stylex";
 
@@ -37,8 +38,8 @@ const styles = stylex.create({
     gap: space[12],
   },
   portrait: {
-    width: "64px",
-    height: "64px",
+    width: size.thumbnailSize,
+    height: size.thumbnailSize,
     flex: "none",
     objectFit: "cover",
     borderRadius: "100%",
@@ -76,18 +77,16 @@ const styles = stylex.create({
     gap: space[12],
   },
   abilityIcon: {
-    width: "48px",
-    height: "48px",
+    width: size.thumbnailSize,
+    height: size.thumbnailSize,
     flex: "none",
     objectFit: "cover",
-    borderRadius: borderRadius[4],
   },
   talentIcon: {
-    width: "40px",
-    height: "40px",
+    width: size.thumbnailSize,
+    height: size.thumbnailSize,
     flex: "none",
     objectFit: "cover",
-    borderRadius: borderRadius[4],
   },
   cardTitle: {
     fontSize: fontSize[16],
@@ -173,6 +172,7 @@ export function HeroDetailPage() {
                   src={hero().portrait}
                   alt={hero().name}
                 />
+
                 <Heading level={1}>{hero().name}</Heading>
               </div>
 
