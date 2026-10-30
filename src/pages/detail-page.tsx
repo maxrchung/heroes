@@ -40,6 +40,11 @@ const styles = stylex.create({
     flexDirection: "column",
     gap: space[16],
   },
+  headingRow: {
+    display: "flex",
+    alignItems: "center",
+    gap: space[12],
+  },
   overview: {
     display: "flex",
     flexWrap: "wrap",
@@ -47,16 +52,11 @@ const styles = stylex.create({
     gap: space[24],
   },
   portrait: {
-    width: "96px",
-    height: "96px",
+    width: "64px",
+    height: "64px",
     flex: "none",
     objectFit: "cover",
     borderRadius: "100%",
-  },
-  heroDescription: {
-    flex: "1 1 240px",
-    fontSize: fontSize[16],
-    lineHeight: 1.6,
   },
   section: {
     display: "flex",
@@ -192,16 +192,16 @@ export function HeroDetailPage() {
         {(hero) => (
           <>
             <section sx={styles.overviewSection}>
-              <Heading level={1}>{hero().name}</Heading>
-              <div sx={styles.overview}>
+              <div sx={styles.headingRow}>
                 <img
                   sx={styles.portrait}
                   src={hero().portrait}
                   alt={hero().name}
                 />
-
-                <p sx={styles.heroDescription}>{hero().description}</p>
+                <Heading level={1}>{hero().name}</Heading>
               </div>
+
+              <p>{hero().description}</p>
             </section>
 
             <section sx={styles.section} aria-labelledby="abilities-heading">
