@@ -37,8 +37,9 @@ export const space = stylex.defineConsts({
 
 export const size = stylex.defineConsts({
   iconSize: "16px",
+  pageHalfWidth: "480px",
   pageWidth: "960px",
-  thumbnailSize: "48px",
   portraitSize: "64px",
+  thumbnailSize: "48px",
   tileWidth: "180px",
 });

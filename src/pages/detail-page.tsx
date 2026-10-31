@@ -43,17 +43,12 @@ const styles = stylex.create({
     objectFit: "cover",
     borderRadius: "100%",
   },
-  abilityList: {
+  cardList: {
     display: "flex",
     flexDirection: "column",
     gap: space[12],
-    maxWidth: "400px",
+    maxWidth: size.pageHalfWidth,
     width: "100%",
-  },
-  talentGrid: {
-    display: "grid",
-    gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))",
-    gap: space[8],
   },
   card: {
     display: "flex",
@@ -63,18 +58,13 @@ const styles = stylex.create({
     borderRadius: borderRadius[4],
     backgroundColor: color.tileBg,
   },
-  cardHeading: {
+  cardHeader: {
     display: "flex",
     alignItems: "center",
-    gap: space[12],
-  },
-  abilityHeading: {
-    display: "flex",
-    alignItems: "start",
     justifyContent: "space-between",
     gap: space[12],
   },
-  abilityTitleGroup: {
+  cardTitles: {
     display: "flex",
     alignItems: "center",
     gap: space[12],
@@ -88,18 +78,11 @@ const styles = stylex.create({
   },
   cardTitle: {
     fontSize: fontSize[16],
-    fontWeight: fontWeight[400],
   },
   hotkey: {
     opacity: 0.75,
   },
-  metadata: {
-    display: "flex",
-    flexWrap: "wrap",
-    gap: space[8],
-    opacity: 0.75,
-  },
-  abilityMetadata: {
+  cardMetadata: {
     display: "flex",
     flexDirection: "column",
     alignItems: "end",
@@ -110,6 +93,7 @@ const styles = stylex.create({
   cardDescription: {
     whiteSpace: "pre-line",
     lineHeight: 1.5,
+    paddingInlineStart: "76px",
   },
 });
 
@@ -147,12 +131,12 @@ export function HeroDetailPage() {
             <Column gap={16}>
               <Heading level={2}>Abilities</Heading>
 
-              <div sx={styles.abilityList}>
+              <div sx={styles.cardList}>
                 <For each={hero().abilities}>
                   {(ability) => (
                     <article sx={styles.card}>
-                      <div sx={styles.abilityHeading}>
-                        <div sx={styles.abilityTitleGroup}>
+                      <div sx={styles.cardHeader}>
+                        <div sx={styles.cardTitles}>
                           <img
                             sx={styles.cardIcon}
                             src={ability.icon}
@@ -170,7 +154,7 @@ export function HeroDetailPage() {
                           </div>
                         </div>
 
-                        <div sx={styles.abilityMetadata}>
+                        <div sx={styles.cardMetadata}>
                           <Show when={ability.cooldown}>
                             {(cooldown) => <span>{cooldown()}</span>}
                           </Show>
@@ -197,27 +181,30 @@ export function HeroDetailPage() {
                     <Column gap={16}>
                       <Heading level={3}>Level {tier}</Heading>
 
-                      <div sx={styles.talentGrid}>
+                      <div sx={styles.cardList}>
                         <For each={talents}>
                           {(talent) => (
                             <article sx={styles.card}>
-                              <div sx={styles.cardHeading}>
-                                <img
-                                  sx={styles.cardIcon}
-                                  src={talent.icon}
-                                  alt={talent.name}
-                                />
+                              <div sx={styles.cardHeader}>
+                                <div sx={styles.cardTitles}>
+                                  <img
+                                    sx={styles.cardIcon}
+                                    src={talent.icon}
+                                    alt={talent.name}
+                                  />
 
-                                <h4 sx={styles.cardTitle}>{talent.name}</h4>
-                              </div>
-                              <div sx={styles.metadata}>
-                                <Show when={talent.cooldown}>
-                                  {(cooldown) => <span>{cooldown()}</span>}
-                                </Show>
+                                  <h4 sx={styles.cardTitle}>{talent.name}</h4>
+                                </div>
 
-                                <Show when={talent.cost}>
-                                  {(cost) => <span>{cost()}</span>}
-                                </Show>
+                                <div sx={styles.cardMetadata}>
+                                  <Show when={talent.cooldown}>
+                                    {(cooldown) => <span>{cooldown()}</span>}
+                                  </Show>
+
+                                  <Show when={talent.cost}>
+                                    {(cost) => <span>{cost()}</span>}
+                                  </Show>
+                                </div>
                               </div>
 
                               <p sx={styles.cardDescription}>

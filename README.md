@@ -1,5 +1,13 @@
 # Heroes
 
+## TODO
+
+- Grid card
+- Image component
+- Deploy
+- TOC
+- Search
+
 ## Dev
 
 1. Install latest .NET SDK. Or use a .NET SDK Docker image.
