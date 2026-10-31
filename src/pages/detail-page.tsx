@@ -130,9 +130,15 @@ export function HeroDetailPage() {
                   {(ability) => (
                     <article sx={styles.card}>
                       <div sx={styles.cardHeading}>
-                        <img sx={styles.cardIcon} src={ability.icon} alt="" />
+                        <img
+                          sx={styles.cardIcon}
+                          src={ability.icon}
+                          alt={ability.name}
+                        />
+
                         <div>
                           <h3 sx={styles.cardTitle}>{ability.name}</h3>
+
                           <Show when={ability.hotkey}>
                             {(hotkey) => (
                               <span sx={styles.hotkey}>{hotkey()}</span>
@@ -140,14 +146,17 @@ export function HeroDetailPage() {
                           </Show>
                         </div>
                       </div>
+
                       <div sx={styles.metadata}>
                         <Show when={ability.cooldown}>
                           {(cooldown) => <span>{cooldown()}</span>}
                         </Show>
+
                         <Show when={ability.cost}>
                           {(cost) => <span>{cost()}</span>}
                         </Show>
                       </div>
+
                       <p sx={styles.cardDescription}>{ability.description}</p>
                     </article>
                   )}
@@ -172,18 +181,21 @@ export function HeroDetailPage() {
                                 <img
                                   sx={styles.cardIcon}
                                   src={talent.icon}
-                                  alt=""
+                                  alt={talent.name}
                                 />
+
                                 <h4 sx={styles.cardTitle}>{talent.name}</h4>
                               </div>
                               <div sx={styles.metadata}>
                                 <Show when={talent.cooldown}>
                                   {(cooldown) => <span>{cooldown()}</span>}
                                 </Show>
+
                                 <Show when={talent.cost}>
                                   {(cost) => <span>{cost()}</span>}
                                 </Show>
                               </div>
+
                               <p sx={styles.cardDescription}>
                                 {talent.description}
                               </p>
