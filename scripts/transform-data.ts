@@ -18,6 +18,14 @@ function cleanText(text?: string): string {
   return text.replace(/<n\/>/g, "\n").trim();
 }
 
+function transformCooldownText(text?: string): string | undefined {
+  return (
+    text
+      ?.replace(/^Charge Cooldown:/, "Cooldown:")
+      .replace(/(\d+(?:\.\d+)?) seconds\b/g, "$1s") || undefined
+  );
+}
+
 function avifFileName(originalName: string): string {
   const parsed = path.parse(originalName);
   return `${parsed.name}.avif`;
@@ -105,7 +113,7 @@ export async function runTransformation() {
             name: ability.name || "Ability",
             hotkey,
             icon: ability.icon ? `/images/${avifFileName(ability.icon)}` : "",
-            cooldown: ability.cooldownText || undefined,
+            cooldown: transformCooldownText(ability.cooldownText),
             cost: ability.energyText || undefined,
             description: cleanText(ability.fullText),
           });
@@ -124,7 +132,7 @@ export async function runTransformation() {
           return {
             name: talent.name || "Talent",
             icon: talent.icon ? `/images/${avifFileName(talent.icon)}` : "",
-            cooldown: talent.cooldownText || undefined,
+            cooldown: transformCooldownText(talent.cooldownText),
             cost: talent.energyText || undefined,
             description: cleanText(talent.fullText),
           };
