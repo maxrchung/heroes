@@ -1,5 +1,7 @@
 # Heroes
 
+## Dev
+
 1. Install latest .NET SDK. Or use a .NET SDK Docker image.
 
 2. Install HeroesDataParser (HDP).
@@ -11,11 +13,17 @@
 3. Run HDP to download full data.
 
    ```sh
-   dotnet heroes-data-parser online -e hero:i -g 4 -o hdp
+   dotnet heroes-data-parser online -e hero:i -g 2 -o hdp
    ```
 
 4. Transform HDP data to site data.
 
    ```sh
    npm run transform-data
+   ```
+
+5. Run dev site.
+
+   ```sh
+   npm run dev
    ```
