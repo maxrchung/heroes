@@ -9,7 +9,6 @@ import {
   borderRadius,
   color,
   fontSize,
-  fontWeight,
   size,
   space,
 } from "../styles/const.stylex";
@@ -47,16 +46,23 @@ const styles = stylex.create({
     display: "flex",
     flexDirection: "column",
     gap: space[12],
-    maxWidth: size.pageHalfWidth,
+    maxWidth: size.cardWidth,
     width: "100%",
   },
   card: {
-    display: "flex",
-    flexDirection: "column",
-    gap: space[8],
+    display: "grid",
+    gridTemplateColumns: `${size.portraitSize} minmax(0, 1fr)`,
+    columnGap: space[12],
+    alignItems: "start",
     padding: space[12],
     borderRadius: borderRadius[4],
     backgroundColor: color.tileBg,
+  },
+  cardContent: {
+    display: "flex",
+    flexDirection: "column",
+    gap: space[12],
+    minWidth: 0,
   },
   cardHeader: {
     display: "flex",
@@ -93,7 +99,6 @@ const styles = stylex.create({
   cardDescription: {
     whiteSpace: "pre-line",
     lineHeight: 1.5,
-    paddingInlineStart: "76px",
   },
 });
 
@@ -135,37 +140,39 @@ export function HeroDetailPage() {
                 <For each={hero().abilities}>
                   {(ability) => (
                     <article sx={styles.card}>
-                      <div sx={styles.cardHeader}>
-                        <div sx={styles.cardTitles}>
-                          <img
-                            sx={styles.cardIcon}
-                            src={ability.icon}
-                            alt={ability.name}
-                          />
+                      <img
+                        sx={styles.cardIcon}
+                        src={ability.icon}
+                        alt={ability.name}
+                      />
 
-                          <div>
-                            <h3 sx={styles.cardTitle}>{ability.name}</h3>
+                      <div sx={styles.cardContent}>
+                        <div sx={styles.cardHeader}>
+                          <div sx={styles.cardTitles}>
+                            <div>
+                              <h3 sx={styles.cardTitle}>{ability.name}</h3>
 
-                            <Show when={ability.hotkey}>
-                              {(hotkey) => (
-                                <span sx={styles.hotkey}>{hotkey()}</span>
-                              )}
+                              <Show when={ability.hotkey}>
+                                {(hotkey) => (
+                                  <span sx={styles.hotkey}>{hotkey()}</span>
+                                )}
+                              </Show>
+                            </div>
+                          </div>
+
+                          <div sx={styles.cardMetadata}>
+                            <Show when={ability.cost}>
+                              {(cost) => <span>{cost()}</span>}
+                            </Show>
+
+                            <Show when={ability.cooldown}>
+                              {(cooldown) => <span>{cooldown()}</span>}
                             </Show>
                           </div>
                         </div>
 
-                        <div sx={styles.cardMetadata}>
-                          <Show when={ability.cooldown}>
-                            {(cooldown) => <span>{cooldown()}</span>}
-                          </Show>
-
-                          <Show when={ability.cost}>
-                            {(cost) => <span>{cost()}</span>}
-                          </Show>
-                        </div>
+                        <p sx={styles.cardDescription}>{ability.description}</p>
                       </div>
-
-                      <p sx={styles.cardDescription}>{ability.description}</p>
                     </article>
                   )}
                 </For>
@@ -185,31 +192,33 @@ export function HeroDetailPage() {
                         <For each={talents}>
                           {(talent) => (
                             <article sx={styles.card}>
-                              <div sx={styles.cardHeader}>
-                                <div sx={styles.cardTitles}>
-                                  <img
-                                    sx={styles.cardIcon}
-                                    src={talent.icon}
-                                    alt={talent.name}
-                                  />
+                              <img
+                                sx={styles.cardIcon}
+                                src={talent.icon}
+                                alt={talent.name}
+                              />
 
-                                  <h4 sx={styles.cardTitle}>{talent.name}</h4>
+                              <div sx={styles.cardContent}>
+                                <div sx={styles.cardHeader}>
+                                  <div sx={styles.cardTitles}>
+                                    <h4 sx={styles.cardTitle}>{talent.name}</h4>
+                                  </div>
+
+                                  <div sx={styles.cardMetadata}>
+                                    <Show when={talent.cost}>
+                                      {(cost) => <span>{cost()}</span>}
+                                    </Show>
+
+                                    <Show when={talent.cooldown}>
+                                      {(cooldown) => <span>{cooldown()}</span>}
+                                    </Show>
+                                  </div>
                                 </div>
 
-                                <div sx={styles.cardMetadata}>
-                                  <Show when={talent.cooldown}>
-                                    {(cooldown) => <span>{cooldown()}</span>}
-                                  </Show>
-
-                                  <Show when={talent.cost}>
-                                    {(cost) => <span>{cost()}</span>}
-                                  </Show>
-                                </div>
+                                <p sx={styles.cardDescription}>
+                                  {talent.description}
+                                </p>
                               </div>
-
-                              <p sx={styles.cardDescription}>
-                                {talent.description}
-                              </p>
                             </article>
                           )}
                         </For>
