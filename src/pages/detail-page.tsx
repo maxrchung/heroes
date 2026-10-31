@@ -46,12 +46,12 @@ const styles = stylex.create({
   abilityGrid: {
     display: "grid",
     gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))",
-    gap: space[12],
+    gap: space[8],
   },
   talentGrid: {
     display: "grid",
     gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))",
-    gap: space[12],
+    gap: space[8],
   },
   card: {
     display: "flex",
