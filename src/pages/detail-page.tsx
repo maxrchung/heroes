@@ -43,10 +43,12 @@ const styles = stylex.create({
     objectFit: "cover",
     borderRadius: "100%",
   },
-  abilityGrid: {
-    display: "grid",
-    gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))",
-    gap: space[8],
+  abilityList: {
+    display: "flex",
+    flexDirection: "column",
+    gap: space[12],
+    maxWidth: "400px",
+    width: "100%",
   },
   talentGrid: {
     display: "grid",
@@ -56,7 +58,7 @@ const styles = stylex.create({
   card: {
     display: "flex",
     flexDirection: "column",
-    gap: space[12],
+    gap: space[8],
     padding: space[12],
     borderRadius: borderRadius[4],
     backgroundColor: color.tileBg,
@@ -125,7 +127,7 @@ export function HeroDetailPage() {
             <Column gap={16}>
               <Heading level={2}>Abilities</Heading>
 
-              <div sx={styles.abilityGrid}>
+              <div sx={styles.abilityList}>
                 <For each={hero().abilities}>
                   {(ability) => (
                     <article sx={styles.card}>
