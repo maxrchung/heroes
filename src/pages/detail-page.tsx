@@ -37,8 +37,8 @@ const styles = stylex.create({
     gap: space[12],
   },
   portrait: {
-    width: size.thumbnailSize,
-    height: size.thumbnailSize,
+    width: size.portraitSize,
+    height: size.portraitSize,
     flex: "none",
     objectFit: "cover",
     borderRadius: "100%",
@@ -68,9 +68,21 @@ const styles = stylex.create({
     alignItems: "center",
     gap: space[12],
   },
+  abilityHeading: {
+    display: "flex",
+    alignItems: "start",
+    justifyContent: "space-between",
+    gap: space[12],
+  },
+  abilityTitleGroup: {
+    display: "flex",
+    alignItems: "center",
+    gap: space[12],
+    minWidth: 0,
+  },
   cardIcon: {
-    width: size.thumbnailSize,
-    height: size.thumbnailSize,
+    width: size.portraitSize,
+    height: size.portraitSize,
     flex: "none",
     objectFit: "cover",
   },
@@ -85,6 +97,14 @@ const styles = stylex.create({
     display: "flex",
     flexWrap: "wrap",
     gap: space[8],
+    opacity: 0.75,
+  },
+  abilityMetadata: {
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "end",
+    flex: "none",
+    textAlign: "right",
     opacity: 0.75,
   },
   cardDescription: {
@@ -131,32 +151,34 @@ export function HeroDetailPage() {
                 <For each={hero().abilities}>
                   {(ability) => (
                     <article sx={styles.card}>
-                      <div sx={styles.cardHeading}>
-                        <img
-                          sx={styles.cardIcon}
-                          src={ability.icon}
-                          alt={ability.name}
-                        />
+                      <div sx={styles.abilityHeading}>
+                        <div sx={styles.abilityTitleGroup}>
+                          <img
+                            sx={styles.cardIcon}
+                            src={ability.icon}
+                            alt={ability.name}
+                          />
 
-                        <div>
-                          <h3 sx={styles.cardTitle}>{ability.name}</h3>
+                          <div>
+                            <h3 sx={styles.cardTitle}>{ability.name}</h3>
 
-                          <Show when={ability.hotkey}>
-                            {(hotkey) => (
-                              <span sx={styles.hotkey}>{hotkey()}</span>
-                            )}
+                            <Show when={ability.hotkey}>
+                              {(hotkey) => (
+                                <span sx={styles.hotkey}>{hotkey()}</span>
+                              )}
+                            </Show>
+                          </div>
+                        </div>
+
+                        <div sx={styles.abilityMetadata}>
+                          <Show when={ability.cooldown}>
+                            {(cooldown) => <span>{cooldown()}</span>}
+                          </Show>
+
+                          <Show when={ability.cost}>
+                            {(cost) => <span>{cost()}</span>}
                           </Show>
                         </div>
-                      </div>
-
-                      <div sx={styles.metadata}>
-                        <Show when={ability.cooldown}>
-                          {(cooldown) => <span>{cooldown()}</span>}
-                        </Show>
-
-                        <Show when={ability.cost}>
-                          {(cost) => <span>{cost()}</span>}
-                        </Show>
                       </div>
 
                       <p sx={styles.cardDescription}>{ability.description}</p>
