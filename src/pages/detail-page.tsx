@@ -36,8 +36,8 @@ const styles = stylex.create({
     gap: space[12],
   },
   portrait: {
-    width: size.portraitSize,
-    height: size.portraitSize,
+    width: size.thumbnailSize,
+    height: size.thumbnailSize,
     flex: "none",
     objectFit: "cover",
     borderRadius: "100%",
@@ -51,7 +51,7 @@ const styles = stylex.create({
   },
   card: {
     display: "grid",
-    gridTemplateColumns: `${size.portraitSize} minmax(0, 1fr)`,
+    gridTemplateColumns: `${size.thumbnailSize} minmax(0, 1fr)`,
     columnGap: space[12],
     alignItems: "start",
     padding: space[12],
@@ -77,8 +77,8 @@ const styles = stylex.create({
     minWidth: 0,
   },
   cardIcon: {
-    width: size.portraitSize,
-    height: size.portraitSize,
+    width: size.thumbnailSize,
+    height: size.thumbnailSize,
     flex: "none",
     objectFit: "contain",
   },
