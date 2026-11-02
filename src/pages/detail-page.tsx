@@ -80,7 +80,7 @@ const styles = stylex.create({
     width: size.portraitSize,
     height: size.portraitSize,
     flex: "none",
-    objectFit: "cover",
+    objectFit: "contain",
   },
   cardTitle: {
     fontSize: fontSize[16],

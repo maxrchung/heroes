@@ -2,10 +2,10 @@
 
 ## TODO
 
-- Grid card
-- Image component
+- Too much emphasis on left
 - Deploy
-- TOC
+- Hero units (e.g. symbiote)
+- TOC?
 - Search
 
 ## Dev
