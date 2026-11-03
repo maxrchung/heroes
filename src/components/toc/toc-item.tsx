@@ -2,12 +2,6 @@ import { For, Show } from "solid-js";
 import * as stylex from "@stylexjs/stylex";
 import { space } from "../../styles/const.stylex";
 
-export type TocItemProps = {
-  id: string;
-  label: string;
-  children?: TocItemProps[];
-};
-
 const styles = stylex.create({
   item: {
     display: "flex",
@@ -30,6 +24,12 @@ const styles = stylex.create({
     paddingInlineStart: space[16],
   },
 });
+
+export type TocItemProps = {
+  id: string;
+  label: string;
+  children?: TocItemProps[];
+};
 
 export function TocItem(props: TocItemProps) {
   return (

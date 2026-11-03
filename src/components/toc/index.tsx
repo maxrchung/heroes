@@ -7,15 +7,8 @@ import {
 } from "../../styles/const.stylex";
 import { TocItem, type TocItemProps } from "./toc-item";
 
-export type TocItem = TocItemProps;
-export { TocItem } from "./toc-item";
-
 export function getTocId(label: string): string {
   return label.toLowerCase().replace(/[^a-z0-9]/g, "-");
-}
-
-interface TocProps {
-  root: TocItemProps;
 }
 
 const styles = stylex.create({
@@ -36,6 +29,10 @@ const styles = stylex.create({
     borderRadius: borderRadius[4],
   },
 });
+
+export type TocProps = {
+  root: TocItemProps;
+};
 
 export function Toc(props: TocProps) {
   return (

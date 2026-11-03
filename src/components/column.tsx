@@ -20,6 +20,6 @@ type ColumnProps = {
   children: JSX.Element;
 };
 
-export function Column({ gap, children }: ColumnProps) {
-  return <div sx={[styles.column, styles[gap]]}>{children}</div>;
+export function Column(props: ColumnProps) {
+  return <div sx={[styles.column, styles[props.gap]]}>{props.children}</div>;
 }

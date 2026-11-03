@@ -24,25 +24,24 @@ type HeadingProps = {
   children: JSX.Element;
 };
 
-export function Heading({ level, id, children }: HeadingProps) {
-  const sx = [styles.heading, styles[level]];
-  switch (level) {
+export function Heading(props: HeadingProps) {
+  switch (props.level) {
     case 1:
       return (
-        <h1 id={id} sx={sx}>
-          {children}
+        <h1 id={props.id} sx={[styles.heading, styles[props.level]]}>
+          {props.children}
         </h1>
       );
     case 2:
       return (
-        <h2 id={id} sx={sx}>
-          {children}
+        <h2 id={props.id} sx={[styles.heading, styles[props.level]]}>
+          {props.children}
         </h2>
       );
     case 3:
       return (
-        <h3 id={id} sx={sx}>
-          {children}
+        <h3 id={props.id} sx={[styles.heading, styles[props.level]]}>
+          {props.children}
         </h3>
       );
   }
