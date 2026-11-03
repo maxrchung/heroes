@@ -7,10 +7,11 @@
   padding: 0;
 }
 
-/* Enable keyword animations */
+/* Enable keyword animations and smooth scrolling */
 @media (prefers-reduced-motion: no-preference) {
   html {
     interpolate-size: allow-keywords;
+    scroll-behavior: smooth;
   }
 }
 

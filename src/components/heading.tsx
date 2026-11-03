@@ -1,11 +1,17 @@
 import type { JSX } from "solid-js";
 import * as stylex from "@stylexjs/stylex";
-import { fontFamily, fontSize, fontWeight } from "../styles/const.stylex";
+import {
+  fontFamily,
+  fontSize,
+  fontWeight,
+  space,
+} from "../styles/const.stylex";
 
 const styles = stylex.create({
   heading: {
     fontFamily: fontFamily.heading,
     fontWeight: fontWeight[400],
+    scrollMarginTop: space[24],
   },
   1: { fontSize: fontSize[32] },
   2: { fontSize: fontSize[24] },
@@ -14,17 +20,30 @@ const styles = stylex.create({
 
 type HeadingProps = {
   level: 1 | 2 | 3;
+  id?: string;
   children: JSX.Element;
 };
 
-export function Heading({ level, children }: HeadingProps) {
+export function Heading({ level, id, children }: HeadingProps) {
   const sx = [styles.heading, styles[level]];
   switch (level) {
     case 1:
-      return <h1 sx={sx}>{children}</h1>;
+      return (
+        <h1 id={id} sx={sx}>
+          {children}
+        </h1>
+      );
     case 2:
-      return <h2 sx={sx}>{children}</h2>;
+      return (
+        <h2 id={id} sx={sx}>
+          {children}
+        </h2>
+      );
     case 3:
-      return <h3 sx={sx}>{children}</h3>;
+      return (
+        <h3 id={id} sx={sx}>
+          {children}
+        </h3>
+      );
   }
 }

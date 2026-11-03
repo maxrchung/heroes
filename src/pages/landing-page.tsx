@@ -5,6 +5,8 @@ import { Role, type Hero } from "../data/types";
 import { Heading } from "../components/heading";
 import { Chevron } from "../components/chevron";
 import { Column } from "../components/column";
+import { ContentWithToc } from "../components/content-with-toc";
+import { getTocId, Toc, type TocItem } from "../components/toc";
 import {
   borderRadius,
   color,
@@ -130,8 +132,21 @@ export function HeroLandingPage() {
     return [...groups].map(([label, heroes]) => ({ label, heroes }));
   });
 
+  const toc = createMemo<TocItem>(() => {
+    const toc = {
+      id: "heroes",
+      label: "Heroes",
+      children: groups().map((group) => ({
+        id: getTocId(group.label),
+        label: group.label,
+      })),
+    };
+
+    return toc;
+  });
+
   return (
-    <>
+    <ContentWithToc toc={<Toc root={toc()} />}>
       <div sx={styles.headingRow}>
         <Heading level={1}>Heroes</Heading>
 
@@ -164,7 +179,9 @@ export function HeroLandingPage() {
         {(group) => {
           return (
             <Column gap={16}>
-              <Heading level={2}>{group.label}</Heading>
+              <Heading level={2} id={getTocId(group.label)}>
+                {group.label}
+              </Heading>
 
               <ul sx={styles.heroGrid}>
                 <For each={group.heroes}>
@@ -188,6 +205,6 @@ export function HeroLandingPage() {
           );
         }}
       </For>
-    </>
+    </ContentWithToc>
   );
 }

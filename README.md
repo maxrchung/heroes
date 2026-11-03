@@ -2,10 +2,10 @@
 
 ## TODO
 
-- Too much emphasis on left
-- Deploy
+- Highlight TOC
 - Hero units (e.g. symbiote)
-- TOC?
+- Deploy
+- Image object position top
 - Search
 
 ## Dev

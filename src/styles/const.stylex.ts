@@ -4,6 +4,10 @@ export const borderRadius = stylex.defineConsts({
   4: "4px",
 });
 
+export const breakpoint = stylex.defineConsts({
+  desktop: "@media (min-width: 900px)",
+});
+
 export const color = stylex.defineConsts({
   tileBg: "#1a1c29",
   tileHoverBg: "#232638",
@@ -37,8 +41,8 @@ export const space = stylex.defineConsts({
 
 export const size = stylex.defineConsts({
   iconSize: "16px",
-  cardWidth: "576px",
-  pageWidth: "750px",
+  pageWidth: "1000px",
   thumbnailSize: "48px",
   tileWidth: "180px",
+  tocWidth: "200px",
 });

@@ -1,10 +1,12 @@
-import { For, Show } from "solid-js";
+import { createMemo, For, Show } from "solid-js";
 import { useParams } from "@solidjs/router";
 import * as stylex from "@stylexjs/stylex";
 import { HEROES_DATA } from "../data";
 import { Heading } from "../components/heading";
 import { Chevron } from "../components/chevron";
 import { Column } from "../components/column";
+import { ContentWithToc } from "../components/content-with-toc";
+import { Toc, type TocItem } from "../components/toc";
 import {
   borderRadius,
   color,
@@ -46,7 +48,6 @@ const styles = stylex.create({
     display: "flex",
     flexDirection: "column",
     gap: space[12],
-    maxWidth: size.cardWidth,
     width: "100%",
   },
   card: {
@@ -106,8 +107,24 @@ export function HeroDetailPage() {
   const params = useParams<{ slug: string }>();
   const hero = () => HEROES_DATA[params.slug];
 
+  const toc = createMemo<TocItem>(() => ({
+    id: "hero",
+    label: hero().name,
+    children: [
+      { id: "abilities", label: "Abilities" },
+      {
+        id: "talents",
+        label: "Talents",
+        children: Object.keys(hero().talents).map((tier) => ({
+          id: `level-${tier}`,
+          label: `Level ${tier}`,
+        })),
+      },
+    ],
+  }));
+
   return (
-    <>
+    <ContentWithToc toc={<Toc root={toc()} />}>
       <a sx={styles.backLink} href="/">
         <Chevron direction="left" />
         Heroes
@@ -127,14 +144,18 @@ export function HeroDetailPage() {
                   alt={hero().name}
                 />
 
-                <Heading level={1}>{hero().name}</Heading>
+                <Heading level={1} id="hero">
+                  {hero().name}
+                </Heading>
               </div>
 
               <p>{hero().description}</p>
             </Column>
 
             <Column gap={16}>
-              <Heading level={2}>Abilities</Heading>
+              <Heading level={2} id="abilities">
+                Abilities
+              </Heading>
 
               <div sx={styles.cardList}>
                 <For each={hero().abilities}>
@@ -180,13 +201,17 @@ export function HeroDetailPage() {
             </Column>
 
             <Column gap={16}>
-              <Heading level={2}>Talents</Heading>
+              <Heading level={2} id="talents">
+                Talents
+              </Heading>
 
               <Column gap={24}>
                 <For each={Object.entries(hero().talents)}>
                   {([tier, talents]) => (
                     <Column gap={16}>
-                      <Heading level={3}>Level {tier}</Heading>
+                      <Heading level={3} id={`level-${tier}`}>
+                        Level {tier}
+                      </Heading>
 
                       <div sx={styles.cardList}>
                         <For each={talents}>
@@ -231,6 +256,6 @@ export function HeroDetailPage() {
           </>
         )}
       </Show>
-    </>
+    </ContentWithToc>
   );
 }
