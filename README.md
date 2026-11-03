@@ -5,7 +5,6 @@
 - Highlight TOC
 - Hero units (e.g. symbiote)
 - Deploy
-- Image object position top
 - Search
 
 ## Dev

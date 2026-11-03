@@ -79,7 +79,8 @@ const styles = stylex.create({
     width: size.thumbnailSize,
     height: size.thumbnailSize,
     flex: "none",
-    objectFit: "cover",
+    objectFit: "contain",
+    objectPosition: "top",
     borderRadius: "100%",
   },
 });
