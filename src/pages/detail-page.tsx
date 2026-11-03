@@ -6,7 +6,8 @@ import { Heading } from "../components/heading";
 import { Chevron } from "../components/chevron";
 import { Column } from "../components/column";
 import { ContentWithToc } from "../components/content-with-toc";
-import { Toc, type TocItem } from "../components/toc";
+import { Toc } from "../components/toc";
+import type { TocItemProps } from "../components/toc/toc-item";
 import {
   borderRadius,
   color,
@@ -107,7 +108,7 @@ export function HeroDetailPage() {
   const params = useParams<{ slug: string }>();
   const hero = () => HEROES_DATA[params.slug];
 
-  const toc = createMemo<TocItem>(() => ({
+  const toc = createMemo<TocItemProps>(() => ({
     id: "hero",
     label: hero().name,
     children: [

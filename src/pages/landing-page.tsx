@@ -6,7 +6,8 @@ import { Heading } from "../components/heading";
 import { Chevron } from "../components/chevron";
 import { Column } from "../components/column";
 import { ContentWithToc } from "../components/content-with-toc";
-import { getTocId, Toc, type TocItem } from "../components/toc";
+import { getTocId, Toc } from "../components/toc";
+import type { TocItemProps } from "../components/toc/toc-item";
 import {
   borderRadius,
   color,
@@ -132,7 +133,7 @@ export function HeroLandingPage() {
     return [...groups].map(([label, heroes]) => ({ label, heroes }));
   });
 
-  const toc = createMemo<TocItem>(() => {
+  const toc = createMemo<TocItemProps>(() => {
     const toc = {
       id: "heroes",
       label: "Heroes",
