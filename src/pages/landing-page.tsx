@@ -150,7 +150,9 @@ export function HeroLandingPage() {
   return (
     <ContentWithToc toc={<Toc root={toc()} />}>
       <div sx={styles.headingRow}>
-        <Heading level={1}>Heroes</Heading>
+        <Heading level={1} id="heroes">
+          Heroes
+        </Heading>
 
         <div sx={styles.sortSelectContainer}>
           <select
