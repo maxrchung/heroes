@@ -1,4 +1,4 @@
-import { createMemo, For, Show } from "solid-js";
+import { createEffect, createMemo, For, onCleanup, Show } from "solid-js";
 import { useParams } from "@solidjs/router";
 import * as stylex from "@stylexjs/stylex";
 import { HEROES_DATA } from "../data";
@@ -110,6 +110,15 @@ const styles = stylex.create({
 export function HeroDetailPage() {
   const params = useParams<{ slug: string }>();
   const hero = () => HEROES_DATA[params.slug];
+
+  createEffect(() => {
+    const currentHero = hero();
+    document.title = currentHero ? `Heroes - ${currentHero.name}` : "Heroes";
+  });
+
+  onCleanup(() => {
+    document.title = "Heroes";
+  });
 
   const toc = createMemo<TocItemProps>(() => ({
     id: "hero",
