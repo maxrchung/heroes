@@ -20,6 +20,10 @@ const styles = stylex.create({
       textDecoration: "underline",
     },
   },
+  active: {
+    opacity: 1,
+    fontWeight: "bold",
+  },
   leftPadding: {
     paddingInlineStart: space[16],
   },
@@ -31,11 +35,21 @@ export type TocItemProps = {
   children?: TocItemProps[];
 };
 
-export function TocItem(props: TocItemProps) {
+type TocItemInternalProps = TocItemProps & {
+  activeId?: string;
+};
+
+export function TocItem(props: TocItemInternalProps) {
+  const isActive = () => props.activeId === props.id;
+
   return (
     <ul sx={styles.item}>
       <li>
-        <a sx={[styles.link]} href={`#${props.id}`}>
+        <a
+          sx={[styles.link, isActive() && styles.active]}
+          href={`#${props.id}`}
+          aria-current={isActive() ? "location" : undefined}
+        >
           {props.label}
         </a>
       </li>
@@ -49,6 +63,7 @@ export function TocItem(props: TocItemProps) {
                   id={child.id}
                   label={child.label}
                   children={child.children}
+                  activeId={props.activeId}
                 />
               )}
             </For>

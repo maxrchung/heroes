@@ -2,7 +2,6 @@
 
 ## TODO
 
-- Highlight TOC
 - Deploy
 - Search
 
