@@ -3,7 +3,6 @@
 ## TODO
 
 - Highlight TOC
-- Hero units (e.g. symbiote)
 - Deploy
 - Search
 
