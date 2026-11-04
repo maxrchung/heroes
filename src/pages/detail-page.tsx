@@ -29,6 +29,7 @@ const styles = stylex.create({
     backgroundColor: color.tileBg,
     color: "inherit",
     textDecoration: "none",
+    scrollMarginTop: space[24],
     ":hover": {
       backgroundColor: color.tileHoverBg,
     },
@@ -128,7 +129,7 @@ export function HeroDetailPage() {
 
   return (
     <ContentWithToc toc={<Toc root={toc()} />}>
-      <a sx={styles.backLink} href="/">
+      <a id="hero" sx={styles.backLink} href="/">
         <Chevron direction="left" />
         Heroes
       </a>
@@ -147,9 +148,7 @@ export function HeroDetailPage() {
                   alt={hero().name}
                 />
 
-                <Heading level={1} id="hero">
-                  {hero().name}
-                </Heading>
+                <Heading level={1}>{hero().name}</Heading>
               </div>
 
               <p>{hero().description}</p>
