@@ -48,6 +48,41 @@
         "icon": "/images/storm_ui_icon_abathur_mount.avif",
         "cooldown": "Cooldown: 30s",
         "description": "Quickly tunnel to a visible location."
+      },
+      {
+        "name": "Stab",
+        "hotkey": "Q",
+        "icon": "/images/storm_ui_icon_abathur_stab.avif",
+        "cooldown": "Cooldown: 3s",
+        "description": "Shoots a spike towards target area that deals 119 damage to the first enemy it contacts."
+      },
+      {
+        "name": "Spike Burst",
+        "hotkey": "W",
+        "icon": "/images/storm_ui_icon_abathur_spikeburst.avif",
+        "cooldown": "Cooldown: 6s",
+        "description": "Deals 120 damage to nearby enemies."
+      },
+      {
+        "name": "Carapace",
+        "hotkey": "E",
+        "icon": "/images/storm_ui_icon_abathur_carapace.avif",
+        "cooldown": "Cooldown: 6s",
+        "description": "Shields the assisted ally for 150. Allied Heroes are healed for 22 Health per second while the Shield is active. Lasts for 6 seconds."
+      },
+      {
+        "name": "Cancel Symbiote",
+        "hotkey": "R",
+        "icon": "/images/hud_btn_bg_ability_cancel.avif",
+        "cooldown": "Cooldown: 1.5s",
+        "description": "Cancels the Symbiote ability."
+      },
+      {
+        "name": "Deep Tunnel",
+        "hotkey": "Z",
+        "icon": "/images/storm_ui_icon_abathur_mount.avif",
+        "cooldown": "Cooldown: 80s",
+        "description": "Order your Evolved Monstrosity to quickly tunnel to a visible location"
       }
     ],
     "talents": {
@@ -429,6 +464,41 @@
         "icon": "/images/storm_ui_icon_alexstrasza_dragon_queen.avif",
         "cooldown": "Cooldown: 130s",
         "description": "After 1.25 seconds, transform into a dragon and gain 500 Health.\n\nWhile Dragonqueen is active, Alexstrasza's Abilities are empowered, and her Basic Attacks deal 143 damage and heal allied Heroes for 43 in an arc in front of her. Additionally, the duration of incoming Stuns, Roots, and Slows, is reduced by 50%.\n\nLasts 15 seconds."
+      },
+      {
+        "name": "Breath of Life",
+        "hotkey": "Q",
+        "icon": "/images/storm_ui_icon_alexstrasza_breath_of_life.avif",
+        "cooldown": "Cooldown: 3s",
+        "description": "Heal an allied Hero for 15% of Alexstrasza's current Health.\n\nBreath of Life is also empowered by Gift of Life Talents."
+      },
+      {
+        "name": "Preservation",
+        "hotkey": "W",
+        "icon": "/images/storm_ui_icon_alexstrasza_preservation.avif",
+        "cooldown": "Cooldown: 16s",
+        "description": "Plant a seed of healing that blooms after 3 seconds, healing nearby allied Heroes for 25% of their maximum Health.\n\nPreservation is also empowered by Abundance Talents."
+      },
+      {
+        "name": "Wing Buffet",
+        "hotkey": "E",
+        "icon": "/images/storm_ui_icon_alexstrasza_wing_buffet.avif",
+        "cooldown": "Cooldown: 4s",
+        "description": "Deal 150 damage to enemies in an area, knocking them back and Slowing them by 50% for 3 seconds."
+      },
+      {
+        "name": "Cleansing Flame",
+        "hotkey": "R",
+        "icon": "/images/storm_ui_icon_alexstrasza_cleansing_flame.avif",
+        "cooldown": "Cooldown: 100s",
+        "cost": "Mana: 100",
+        "description": "Take to the sky and drop 5 fireballs over 6 seconds at the position of the mouse cursor. Fireballs deal 135 damage to enemies and heal allied Heroes for 300 Health.\n\n2 seconds after dropping all fireballs, Alexstrasza lands at the position of the mouse cursor."
+      },
+      {
+        "name": "Dragonqueen",
+        "hotkey": "D",
+        "icon": "/images/storm_ui_icon_alexstrasza_dragon_queen.avif",
+        "description": "Alexstrasza has transformed into a powerful dragon aspect, gaining 500 Health, resistance to disabling effects, and empowered Basic Attacks and Abilities."
       }
     ],
     "talents": {
@@ -4293,6 +4363,46 @@
         "hotkey": "Z",
         "icon": "/images/storm_ui_icon_dva_mount.avif",
         "description": "D.Va's Mech can shoot while moving. While shooting or channeling an ability, the Mech's Movement Speed is quickly reduced by 25%."
+      },
+      {
+        "name": "Torpedo Dash",
+        "hotkey": "Q",
+        "icon": "/images/storm_ui_icon_dva_jetpackattack.avif",
+        "cooldown": "Cooldown: 10s",
+        "description": "Dash towards the target location, passing through enemies along the way."
+      },
+      {
+        "name": "Concussive Pulse",
+        "hotkey": "W",
+        "icon": "/images/storm_ui_icon_dva_concussivecharge.avif",
+        "cooldown": "Cooldown: 10s",
+        "description": "Deal 120 damage to enemies in a cone and knock them back."
+      },
+      {
+        "name": "Call Mech",
+        "hotkey": "E",
+        "icon": "/images/storm_ui_icon_dva_callmech.avif",
+        "cooldown": "Cooldown: 45s",
+        "description": "Call a new Mech and enter Mech Mode.\n\nBasic Attacks lower this cooldown by 0.5 seconds each."
+      },
+      {
+        "name": "Big Shot",
+        "hotkey": "R",
+        "icon": "/images/storm_ui_icon_dva_bigshot.avif",
+        "cooldown": "Cooldown: 6s",
+        "description": "Deal 150 damage to all enemies in a line. Heroes hit have their Movement Speed Slowed by 25% for 1.5 seconds. The cooldown of Call Mech is reduced by 5 seconds for each enemy Hero hit.\n\nRequires Pilot Mode."
+      },
+      {
+        "name": "Pilot Mode",
+        "hotkey": "D",
+        "icon": "/images/storm_ui_icon_dva_pilotmode.avif",
+        "description": "Basic Attacks reduce the cooldown of Call Mech by 0.5 seconds. As a Pilot, D.Va only awards 50% of a normal Hero's experience upon dying."
+      },
+      {
+        "name": "Self-Destruct",
+        "hotkey": "1",
+        "icon": "/images/storm_ui_icon_dva_selfdestruct.avif",
+        "description": "Eject from the Mech, setting it to self-destruct after 4 seconds. Deals 400 to 1100 damage in a large area, depending on distance from center. Deals 50% damage against Structures.\n\nGain 1% Charge for every 2 seconds spent Basic Attacking, and 25% Charge per 100% of Mech Health lost."
       }
     ],
     "talents": {
@@ -5035,6 +5145,26 @@
         "icon": "/images/storm_ui_icon_blaze_pyromania.avif",
         "cooldown": "Cooldown: 90s",
         "description": "Gain 40 Armor and deal 40 damage to nearby enemies every 0.5 seconds for 4 seconds.\n\nEach Hero hit by Flame Stream reduces Pyromania's cooldown by 4 seconds."
+      },
+      {
+        "name": "Flamethrower",
+        "hotkey": "Q",
+        "icon": "/images/storm_ui_icon_blaze_flame.avif",
+        "cooldown": "Cooldown: 1 second",
+        "description": "Deal 150 damage to enemies in a line."
+      },
+      {
+        "name": "Oil Spill",
+        "hotkey": "W",
+        "icon": "/images/storm_ui_icon_blaze_oil.avif",
+        "cooldown": "Cooldown: 6s",
+        "description": "Vector Targeting\nDispense an Oil Spill that Slows enemies and can be set on fire by Blaze."
+      },
+      {
+        "name": "Exit Bunker",
+        "hotkey": "D",
+        "icon": "/images/hud_btn_bg_ability_cancel.avif",
+        "description": "Exit Bunker."
       }
     ],
     "talents": {
@@ -8363,6 +8493,40 @@
         "hotkey": "4",
         "icon": "/images/storm_ui_ingame_heroselect_btn_lostvikings.avif",
         "description": "The Lost Vikings can be controlled individually or as a group. Each Viking has particular strengths."
+      },
+      {
+        "name": "Spin To Win!",
+        "hotkey": "Q",
+        "icon": "/images/storm_ui_icon_lostvikings_spintowin.avif",
+        "cooldown": "Cooldown: 10s",
+        "description": "Activate to have each Viking deal 85 damage to nearby enemies.  Deals 100% bonus damage to enemy Heroes."
+      },
+      {
+        "name": "Norse Force!",
+        "hotkey": "Q",
+        "icon": "/images/storm_ui_icon_lostvikings_norseforce.avif",
+        "cooldown": "Cooldown: 15s",
+        "description": "All Vikings gain a 140 to 308 point Shield, increasing in strength for each Viking alive. Lasts 4 seconds."
+      },
+      {
+        "name": "Jump!",
+        "hotkey": "W",
+        "icon": "/images/storm_ui_icon_lostvikings_jump.avif",
+        "cooldown": "Cooldown: 30s",
+        "description": "Makes all Vikings Invulnerable and able to pass over enemies for 1.5 seconds."
+      },
+      {
+        "name": "Nordic Attack Squad",
+        "hotkey": "W",
+        "icon": "/images/storm_ui_icon_talent_autoattack_searing.avif",
+        "cooldown": "Cooldown: 20s",
+        "description": "While Olaf, Baleog, and Erik are near each of the other two Vikings, their Basic Attacks deal bonus damage equal to 1.25% maximum Health to enemy Heroes."
+      },
+      {
+        "name": "Viking Bribery",
+        "hotkey": "E",
+        "icon": "/images/storm_ui_icon_talent_bribe.avif",
+        "description": "Enemy Minions or captured Mercenaries killed near The Lost Vikings grant stacks of Bribe. Use 40 stacks to bribe target Mercenary, instantly defeating them. Does not work on Elite Mercenaries. Maximum stacks available: 200."
       }
     ],
     "talents": {
@@ -9476,6 +9640,12 @@
         "hotkey": "D",
         "icon": "/images/storm_ui_icon_medic_caduceusreactor.avif",
         "description": "While channeling Healing Beam, Lt. Morales regenerates 2% of her maximum Health per second."
+      },
+      {
+        "name": "Depart",
+        "hotkey": "E",
+        "icon": "/images/storm_ui_medic_departbutton.avif",
+        "description": "Departs for the targeted location immediately."
       }
     ],
     "talents": {
@@ -11703,6 +11873,40 @@
         "icon": "/images/storm_ui_icon_ragnaros_moltencore.avif",
         "cooldown": "Cooldown: 180s",
         "description": "Channel on an allied or destroyed Fort or Keep to replace it with Ragnaros's ultimate form, temporarily gaining new Abilities, having 5000 Health that burns away over 23 seconds.  Ragnaros's ability ranges increase over the duration of Molten Core.\n\nRagnaros returns to his normal form but is Stunned for 1 second upon losing all Health in Molten Core."
+      },
+      {
+        "name": "Molten Swing",
+        "hotkey": "Q",
+        "icon": "/images/storm_ui_icon_ragnaros_moltenswing.avif",
+        "cooldown": "Cooldown: 9s",
+        "description": "Swing Sulfuras in a wide arc, dealing 250 damage and Stunning enemies for 1 second."
+      },
+      {
+        "name": "Meteor Shower",
+        "hotkey": "W",
+        "icon": "/images/storm_ui_icon_ragnaros_meteorshower.avif",
+        "cooldown": "Cooldown: 6s",
+        "description": "Vector Targeting\nSummon 3 meteors at the target point that fall in the target direction. Each meteor deals 200 damage and Slows enemies by 35% for 2 seconds."
+      },
+      {
+        "name": "Explosive Rune",
+        "hotkey": "E",
+        "icon": "/images/storm_ui_icon_ragnaros_explosiverune.avif",
+        "cooldown": "Cooldown: 2.5s",
+        "description": "Create a rune that erupts after 1.5 and sets enemies on fire, dealing 22 damage per second for 5 seconds."
+      },
+      {
+        "name": "Sulfuras Smash",
+        "hotkey": "R",
+        "icon": "/images/storm_ui_icon_ragnaros_sulfurassmash.avif",
+        "cooldown": "Cooldown: 60s",
+        "description": "Hurl Sulfuras at the target area, landing after 0.75 seconds, dealing 250 damage. Enemies in the center take 594 damage instead and are Stunned for 0.5 seconds.\n\nQuest: Hit 8 enemy Heroes in the center.\n\nMythic Reward: Sulfuras Smash gains an additional charge."
+      },
+      {
+        "name": "Return",
+        "hotkey": "D",
+        "icon": "/images/storm_ui_icon_ragnaros_return.avif",
+        "description": "Return to original form."
       }
     ],
     "talents": {
@@ -12261,6 +12465,12 @@
         "hotkey": "D",
         "icon": "/images/storm_ui_icon_rexxar_mishafixate.avif",
         "description": "Passive: Misha gains 15% move speed. \n\nCommand Misha to attack a specific enemy or move to a point and wait.\n\nTargeting Rexxar commands Misha to retreat to his position, gaining 30% move speed until she reaches Rexxar.\n\nTargeting Misha commands her to hold her current position."
+      },
+      {
+        "name": "Misha, Charge!",
+        "hotkey": "W",
+        "icon": "/images/storm_ui_icon_rexxar_mishacharge.avif",
+        "description": "Misha charges in a line, dealing 150 damage and stunning enemies for 1.25 seconds."
       }
     ],
     "talents": {

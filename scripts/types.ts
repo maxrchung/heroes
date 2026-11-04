@@ -5,7 +5,8 @@ export interface ImageTask {
   destPath: string;
 }
 
-interface HdpAbility {
+export interface HdpAbility {
+  linkId?: string;
   name?: string;
   icon?: string;
   abilityType?: string;
@@ -30,6 +31,12 @@ interface HdpHero {
   description?: string;
   abilities?: Record<string, HdpAbility[]>;
   talents?: Record<string, HdpTalent[]>;
+  heroUnits?: Record<string, HdpHeroUnit>;
+}
+
+interface HdpHeroUnit {
+  name?: string;
+  abilities?: Record<string, HdpAbility[]>;
 }
 
 export interface HdpData {

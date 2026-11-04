@@ -3,7 +3,7 @@ import path from "node:path";
 import sharp from "sharp";
 import type { Hero, Ability, Talent } from "../src/data/types";
 import { Role } from "../src/data/types";
-import type { HdpData, ImageTask } from "./types";
+import type { HdpAbility, HdpData, ImageTask } from "./types";
 
 const ROOT_DIR = process.cwd();
 const HDP_DATA_DIR = path.join(ROOT_DIR, "hdp", "data");
@@ -83,8 +83,13 @@ export async function runTransformation() {
     }
 
     const abilities: Ability[] = [];
-    if (hero.abilities) {
-      for (const [category, list] of Object.entries(hero.abilities)) {
+    // Track linkIds so abilities shared between the hero and its heroUnits
+    // aren't added twice (abilityId is too generic, e.g. ":PASSIVE:")
+    const abilityIds = new Set<string>();
+
+    const addAbilities = (source?: Record<string, HdpAbility[]>) => {
+      if (!source) return;
+      for (const [category, list] of Object.entries(source)) {
         if (category === "Hearth" || !Array.isArray(list) || list.length === 0)
           continue;
 
@@ -97,6 +102,12 @@ export async function runTransformation() {
         let activeCounter = 1;
 
         for (const ability of list) {
+          if (ability.linkId) {
+            if (abilityIds.has(ability.linkId)) continue;
+
+            abilityIds.add(ability.linkId);
+          }
+
           if (ability.icon) queueImage(HDP_ICONS_DIR, ability.icon);
 
           let hotkey = ability.abilityType;
@@ -119,6 +130,11 @@ export async function runTransformation() {
           });
         }
       }
+    };
+
+    addAbilities(hero.abilities);
+    for (const unit of Object.values(hero.heroUnits ?? {})) {
+      addAbilities(unit.abilities);
     }
 
     const talents: Record<string, Talent[]> = {};
