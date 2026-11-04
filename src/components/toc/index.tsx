@@ -43,16 +43,26 @@ function collectIds(item: TocItemProps): string[] {
 // offset; the bottom margin means a heading only counts in the upper part of
 // the screen.
 const OBSERVER_ROOT_MARGIN = "-24px 0px -60% 0px";
+const SELECT_SCROLL_TIMEOUT = 500;
 
 export function Toc(props: TocProps) {
-  const [activeId, setActiveId] = createSignal<string>();
+  const [activeId, setActiveId] = createSignal("");
+  let isSelectScrolling = false;
+  let timer: ReturnType<typeof setTimeout> | undefined;
+
+  const handleSelect = (id: string) => {
+    setActiveId(id);
+    isSelectScrolling = true;
+    clearTimeout(timer);
+    timer = setTimeout(() => {
+      isSelectScrolling = false;
+    }, SELECT_SCROLL_TIMEOUT);
+  };
 
   createEffect(() => {
     const elements = collectIds(props.root)
       .map((id) => document.getElementById(id))
       .filter((el): el is HTMLElement => el !== null);
-
-    console.log("elements", elements);
 
     const visible = new Set<string>();
 
@@ -62,18 +72,22 @@ export function Toc(props: TocProps) {
           if (entry.isIntersecting) visible.add(entry.target.id);
           else visible.delete(entry.target.id);
         }
+
+        if (isSelectScrolling) return;
+
         // Topmost visible heading in document order. If none are visible,
         // keep the previous one to avoid flicker between sections.
         const first = elements.find((el) => visible.has(el.id));
         if (first) setActiveId(first.id);
-
-        console.log(first);
       },
       { rootMargin: OBSERVER_ROOT_MARGIN },
     );
 
     elements.forEach((el) => observer.observe(el));
-    onCleanup(() => observer.disconnect());
+    onCleanup(() => {
+      observer.disconnect();
+      clearTimeout(timer);
+    });
   });
 
   return (
@@ -83,6 +97,7 @@ export function Toc(props: TocProps) {
         label={props.root.label}
         children={props.root.children}
         activeId={activeId()}
+        onSelect={handleSelect}
       />
     </nav>
   );

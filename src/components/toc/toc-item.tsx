@@ -36,7 +36,8 @@ export type TocItemProps = {
 };
 
 type TocItemInternalProps = TocItemProps & {
-  activeId?: string;
+  activeId: string;
+  onSelect: (id: string) => void;
 };
 
 export function TocItem(props: TocItemInternalProps) {
@@ -48,6 +49,7 @@ export function TocItem(props: TocItemInternalProps) {
         <a
           sx={[styles.link, isActive() && styles.active]}
           href={`#${props.id}`}
+          onClick={() => props.onSelect?.(props.id)}
           aria-current={isActive() ? "location" : undefined}
         >
           {props.label}
@@ -64,6 +66,7 @@ export function TocItem(props: TocItemInternalProps) {
                   label={child.label}
                   children={child.children}
                   activeId={props.activeId}
+                  onSelect={props.onSelect}
                 />
               )}
             </For>

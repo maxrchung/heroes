@@ -3,6 +3,7 @@
 ## TODO
 
 - Deploy
+- Navbar?
 - Search
 
 ## Dev
