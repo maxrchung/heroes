@@ -1,9 +1,19 @@
 # Heroes
 
+Heroes is a simple reference site for Heroes of the Storm heroes, abilities, and
+talents. The HOTS wikis are very sluggish for me and hard to navigate, so I
+wanted to make something slimmed down with the bare minimum I care about.
+
+This site has a landing page with all the heroes and a few sort options. The
+hero detail page has a brief description, followed by abilities and talents.
+
+Thanks to
+[HeroesDataParser](https://github.com/HeroesToolChest/HeroesDataParser) for
+parsing the data for the site.
+
 ## TODO
 
-- Deploy
-- Navbar?
+- Navbar
 - Search
 
 ## Dev
