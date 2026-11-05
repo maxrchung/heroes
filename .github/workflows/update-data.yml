@@ -2,8 +2,8 @@ name: Check for Hero Updates
 
 on:
   schedule:
-    # Runs at 06:00 UTC every day
-    - cron: "0 6 * * *"
+    # Runs daily at 03:25 UTC (~7:25 PM PDT / 8:25 PM PST)
+    - cron: "25 3 * * *"
   workflow_dispatch: # Allows manual trigger from GitHub UI anytime
 
 permissions:
