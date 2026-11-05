@@ -25,7 +25,7 @@ jobs:
         run: dotnet tool install --global HeroesDataParser
 
       - name: Fetch raw data
-        run: dotnet heroes-data-parser online -e hero:i -g 4 -o hdp
+        run: dotnet heroes-data-parser online -e hero:i -g 2 -o hdp
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
