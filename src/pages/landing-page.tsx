@@ -3,7 +3,7 @@ import * as stylex from "@stylexjs/stylex";
 import { HEROES_DATA } from "../data";
 import { Role, type Hero } from "../data/types";
 import { Heading } from "../components/heading";
-import { Chevron } from "../components/chevron";
+import { ChevronIcon } from "../components/icons/chevron-icon";
 import { Column } from "../components/column";
 import { ContentWithToc } from "../components/content-with-toc";
 import { getTocId, Toc } from "../components/toc";
@@ -174,7 +174,7 @@ export function HeroLandingPage() {
           </select>
 
           <div sx={styles.sortChevron}>
-            <Chevron direction="down" />
+            <ChevronIcon />
           </div>
         </div>
       </div>

@@ -15,7 +15,7 @@ const styles = stylex.create({
     backgroundColor: "transparent",
     color: "inherit",
     textDecoration: "none",
-    opacity: 0.7,
+    opacity: 0.75,
     ":hover": {
       textDecoration: "underline",
     },

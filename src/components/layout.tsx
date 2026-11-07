@@ -1,11 +1,13 @@
 import type { RouteSectionProps } from "@solidjs/router";
 import * as stylex from "@stylexjs/stylex";
 import { color, fontFamily, size, space } from "../styles/const.stylex";
+import { Navbar } from "./navbar";
 
 const styles = stylex.create({
   page: {
     minHeight: "100vh",
-    padding: space[24],
+    paddingInline: space[24],
+    paddingBottom: space[24],
     backgroundColor: color.pageBg,
     color: color.textPrimary,
     fontFamily: fontFamily.body,
@@ -17,13 +19,16 @@ const styles = stylex.create({
     width: "100%",
     maxWidth: size.pageWidth,
     marginInline: "auto",
+    paddingTop: space[16],
   },
 });
 
 export function Layout(props: RouteSectionProps) {
   return (
-    <main sx={styles.page}>
-      <div sx={styles.content}>{props.children}</div>
-    </main>
+    <div sx={styles.page}>
+      <Navbar />
+
+      <main sx={styles.content}>{props.children}</main>
+    </div>
   );
 }

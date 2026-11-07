@@ -1,17 +1,12 @@
 import type { JSX } from "solid-js";
 import * as stylex from "@stylexjs/stylex";
-import {
-  fontFamily,
-  fontSize,
-  fontWeight,
-  space,
-} from "../styles/const.stylex";
+import { fontFamily, fontSize, fontWeight, size } from "../styles/const.stylex";
 
 const styles = stylex.create({
   heading: {
     fontFamily: fontFamily.heading,
     fontWeight: fontWeight[400],
-    scrollMarginTop: space[24],
+    scrollMarginTop: size.scrollOffset,
   },
   1: { fontSize: fontSize[32] },
   2: { fontSize: fontSize[24] },

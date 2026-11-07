@@ -13,7 +13,6 @@ parsing the data for the site.
 
 ## TODO
 
-- Navbar
 - Search
 
 ## Dev

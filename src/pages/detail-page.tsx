@@ -3,7 +3,6 @@ import { useParams } from "@solidjs/router";
 import * as stylex from "@stylexjs/stylex";
 import { HEROES_DATA } from "../data";
 import { Heading } from "../components/heading";
-import { Chevron } from "../components/chevron";
 import { Column } from "../components/column";
 import { ContentWithToc } from "../components/content-with-toc";
 import { Toc } from "../components/toc";
@@ -17,23 +16,6 @@ import {
 } from "../styles/const.stylex";
 
 const styles = stylex.create({
-  backLink: {
-    display: "flex",
-    alignSelf: "start",
-    alignItems: "center",
-    gap: space[8],
-    paddingBlock: space[8],
-    paddingInlineStart: space[8],
-    paddingInlineEnd: space[12],
-    borderRadius: borderRadius[4],
-    backgroundColor: color.tileBg,
-    color: "inherit",
-    textDecoration: "none",
-    scrollMarginTop: space[24],
-    ":hover": {
-      backgroundColor: color.tileHoverBg,
-    },
-  },
   headingRow: {
     display: "flex",
     alignItems: "center",
@@ -138,11 +120,6 @@ export function HeroDetailPage() {
 
   return (
     <ContentWithToc toc={<Toc root={toc()} />}>
-      <a id="hero" sx={styles.backLink} href="/">
-        <Chevron direction="left" />
-        Heroes
-      </a>
-
       <Show
         when={hero()}
         fallback={<Heading level={1}>Hero not found</Heading>}
@@ -157,7 +134,9 @@ export function HeroDetailPage() {
                   alt={hero().name}
                 />
 
-                <Heading level={1}>{hero().name}</Heading>
+                <Heading level={1} id="hero">
+                  {hero().name}
+                </Heading>
               </div>
 
               <p>{hero().description}</p>

@@ -15,9 +15,9 @@ export function getTocId(label: string): string {
 const styles = stylex.create({
   toc: {
     position: "sticky",
-    top: space[24],
+    top: size.scrollOffset,
     alignSelf: "start",
-    maxHeight: `calc(100vh - ${space[24]} * 2)`,
+    maxHeight: `calc(100vh - ${size.scrollOffset} - ${space[24]})`,
     overflowY: "auto",
     display: {
       default: "none",
@@ -26,7 +26,7 @@ const styles = stylex.create({
     flexDirection: "column",
     gap: space[12],
     width: size.tocWidth,
-    paddingTop: space[16],
+    paddingTop: space[12],
     borderRadius: borderRadius[4],
   },
 });
@@ -42,7 +42,7 @@ function collectIds(item: TocItemProps): string[] {
 // The top margin should roughly match the heading scrollMarginTop / sticky
 // offset; the bottom margin means a heading only counts in the upper part of
 // the screen.
-const OBSERVER_ROOT_MARGIN = "-24px 0px -60% 0px";
+const OBSERVER_ROOT_MARGIN = `-${size.scrollOffset} 0px -60% 0px`;
 const SELECT_SCROLL_TIMEOUT = 500;
 
 export function Toc(props: TocProps) {

@@ -42,7 +42,12 @@ export const space = stylex.defineConsts({
 export const size = stylex.defineConsts({
   iconSize: "16px",
   pageWidth: "1000px",
+  scrollOffset: "80px", // Manually measured navbar
   thumbnailSize: "48px",
   tileWidth: "180px",
   tocWidth: "200px",
+});
+
+export const zIndex = stylex.defineConsts({
+  navbar: 10,
 });
