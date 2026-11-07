@@ -14,13 +14,17 @@
   }
 }
 
+html,
+body {
+  /* Prevent pull-to-refresh overscroll glitches on mobile browsers */
+  overscroll-behavior-y: none;
+}
+
 body {
   /* Increase line-height */
   line-height: 1.5;
   /* Improve text rendering */
   -webkit-font-smoothing: antialiased;
-  /* Prevent browser scroll anchoring adjustments on client-side SPA mount */
-  overflow-anchor: none;
 }
 
 /* Improve media defaults */

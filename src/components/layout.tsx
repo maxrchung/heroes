@@ -4,7 +4,7 @@ import { color, fontFamily, size, space } from "../styles/const.stylex";
 
 const styles = stylex.create({
   page: {
-    minHeight: "100dvh",
+    minHeight: "100vh",
     padding: space[24],
     backgroundColor: color.pageBg,
     color: color.textPrimary,
