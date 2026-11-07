@@ -25,11 +25,10 @@ const styles = stylex.create({
     alignItems: "center",
     justifyContent: "center",
     flex: "none",
-    color: color.textPrimary,
+    color: color.textSecondary,
     textDecoration: "none",
-    opacity: 0.75,
     ":hover": {
-      opacity: 1,
+      color: color.textPrimary,
     },
   },
 });

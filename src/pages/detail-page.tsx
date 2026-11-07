@@ -73,7 +73,7 @@ const styles = stylex.create({
     fontSize: fontSize[16],
   },
   hotkey: {
-    opacity: 0.75,
+    color: color.textSecondary,
   },
   cardMetadata: {
     display: "flex",
@@ -81,7 +81,7 @@ const styles = stylex.create({
     alignItems: "end",
     flex: "none",
     textAlign: "right",
-    opacity: 0.75,
+    color: color.textSecondary,
   },
   cardDescription: {
     whiteSpace: "pre-line",

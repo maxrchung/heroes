@@ -13,6 +13,7 @@ export const color = stylex.defineConsts({
   tileHoverBg: "#232638",
   pageBg: "#0d0e16",
   textPrimary: "#eeefff",
+  textSecondary: "#eeefffbf",
 });
 
 export const fontFamily = stylex.defineConsts({

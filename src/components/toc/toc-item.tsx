@@ -1,6 +1,6 @@
 import { For, Show } from "solid-js";
 import * as stylex from "@stylexjs/stylex";
-import { space } from "../../styles/const.stylex";
+import { color, space } from "../../styles/const.stylex";
 
 const styles = stylex.create({
   item: {
@@ -13,15 +13,15 @@ const styles = stylex.create({
   },
   link: {
     backgroundColor: "transparent",
-    color: "inherit",
+    color: color.textSecondary,
     textDecoration: "none",
-    opacity: 0.75,
+
     ":hover": {
       textDecoration: "underline",
     },
   },
   active: {
-    opacity: 1,
+    color: color.textPrimary,
     fontWeight: "bold",
   },
   leftPadding: {
