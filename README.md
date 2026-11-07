@@ -14,6 +14,9 @@ parsing the data for the site.
 ## TODO
 
 - Search
+- Toc in mobile navbar
+- Headings are links
+- Maybe more sorts?
 
 ## Dev
 

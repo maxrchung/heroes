@@ -1,7 +1,8 @@
 import * as stylex from "@stylexjs/stylex";
-import { color, size, space, zIndex } from "../styles/const.stylex";
+import { color, space, zIndex } from "../styles/const.stylex";
 import { GitHubIcon } from "./icons/github-icon";
-import { HeroesIcon } from "./icons/heroes-icon";
+import { HomeIcon } from "./icons/home-icon";
+import { SearchIcon } from "./icons/search-icon";
 
 const styles = stylex.create({
   header: {
@@ -14,17 +15,16 @@ const styles = stylex.create({
   nav: {
     display: "flex",
     alignItems: "center",
-    justifyContent: "start",
+    justifyContent: "space-between",
     gap: space[8],
-    width: "100%",
-    maxWidth: size.pageWidth,
-    margin: "auto",
   },
-  iconLink: {
+  links: {
     display: "flex",
     alignItems: "center",
-    justifyContent: "center",
-    flex: "none",
+    justifyContent: "start",
+    gap: space[8],
+  },
+  icon: {
     color: color.textSecondary,
     textDecoration: "none",
     ":hover": {
@@ -37,20 +37,27 @@ export function Navbar() {
   return (
     <header sx={styles.header}>
       <nav sx={styles.nav} aria-label="Primary">
-        <a sx={styles.iconLink} href="/" aria-label="Heroes">
-          <HeroesIcon />
+        <a sx={styles.icon} href="/" aria-label="Search">
+          <SearchIcon />
         </a>
 
-        <a
-          sx={styles.iconLink}
-          href="https://github.com/maxrchung/heroes"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="GitHub"
-        >
-          <GitHubIcon />
-        </a>
+        <div sx={styles.links}>
+          <a sx={styles.icon} href="/" aria-label="Home">
+            <HomeIcon />
+          </a>
+
+          <a
+            sx={styles.icon}
+            href="https://github.com/maxrchung/heroes"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub"
+          >
+            <GitHubIcon />
+          </a>
+        </div>
+
       </nav>
-    </header>
+    </header >
   );
 }

@@ -10,7 +10,7 @@ const styles = stylex.create({
   },
 });
 
-export function HeroesIcon() {
+export function SearchIcon() {
   return (
     <svg
       sx={styles.icon}
