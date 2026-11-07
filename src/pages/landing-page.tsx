@@ -1,4 +1,11 @@
-import { createMemo, createSignal, For } from "solid-js";
+import {
+  createEffect,
+  createMemo,
+  createSignal,
+  For,
+  onCleanup,
+  useContext,
+} from "solid-js";
 import * as stylex from "@stylexjs/stylex";
 import { HEROES_DATA } from "../data";
 import { Role, type Hero } from "../data/types";
@@ -8,6 +15,7 @@ import { Column } from "../components/column";
 import { ContentWithToc } from "../components/content-with-toc";
 import { getTocId, Toc } from "../components/toc";
 import type { TocItemProps } from "../components/toc/toc-item";
+import { TocContext } from "../toc-context";
 import {
   borderRadius,
   color,
@@ -88,6 +96,7 @@ const styles = stylex.create({
 export function HeroLandingPage() {
   const storageSortMode = localStorage.getItem(SORT_MODE_STORAGE_KEY);
   const [sort, setSort] = createSignal(storageSortMode ?? "name");
+  const tocCtx = useContext(TocContext);
 
   const groups = createMemo(() => {
     const sortedHeroes = [...heroes];
@@ -145,6 +154,14 @@ export function HeroLandingPage() {
     };
 
     return toc;
+  });
+
+  createEffect(() => {
+    tocCtx?.setToc(toc());
+  });
+
+  onCleanup(() => {
+    tocCtx?.setToc(null);
   });
 
   return (

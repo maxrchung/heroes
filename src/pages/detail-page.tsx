@@ -1,4 +1,11 @@
-import { createEffect, createMemo, For, onCleanup, Show } from "solid-js";
+import {
+  createEffect,
+  createMemo,
+  For,
+  onCleanup,
+  Show,
+  useContext,
+} from "solid-js";
 import { useParams } from "@solidjs/router";
 import * as stylex from "@stylexjs/stylex";
 import { HEROES_DATA } from "../data";
@@ -7,6 +14,7 @@ import { Column } from "../components/column";
 import { ContentWithToc } from "../components/content-with-toc";
 import { Toc } from "../components/toc";
 import type { TocItemProps } from "../components/toc/toc-item";
+import { TocContext } from "../toc-context";
 import {
   borderRadius,
   color,
@@ -92,6 +100,7 @@ const styles = stylex.create({
 export function HeroDetailPage() {
   const params = useParams<{ slug: string }>();
   const hero = () => HEROES_DATA[params.slug];
+  const tocCtx = useContext(TocContext);
 
   createEffect(() => {
     document.title = hero() ? `Heroes - ${hero().name}` : "Heroes";
@@ -102,7 +111,7 @@ export function HeroDetailPage() {
   });
 
   if (!hero()) {
-    return <Heading level={1}>Invalid Hero</Heading>
+    return <Heading level={1}>Invalid Hero</Heading>;
   }
 
   const toc = createMemo<TocItemProps>(() => ({
@@ -121,15 +130,23 @@ export function HeroDetailPage() {
     ],
   }));
 
+  createEffect(() => {
+    if (hero()) {
+      tocCtx?.setToc(toc());
+    } else {
+      tocCtx?.setToc(null);
+    }
+  });
+
+  onCleanup(() => {
+    tocCtx?.setToc(null);
+  });
+
   return (
     <ContentWithToc toc={<Toc root={toc()} />}>
       <Column gap={16}>
         <div sx={styles.headingRow}>
-          <img
-            sx={styles.portrait}
-            src={hero().portrait}
-            alt={hero().name}
-          />
+          <img sx={styles.portrait} src={hero().portrait} alt={hero().name} />
 
           <Heading level={1} id="hero">
             {hero().name}

@@ -3,6 +3,8 @@ import * as stylex from "@stylexjs/stylex";
 import {
   borderRadius,
   breakpoint,
+  color,
+  fontSize,
   size,
   space,
 } from "../../styles/const.stylex";
@@ -13,26 +15,45 @@ export function getTocId(label: string): string {
 }
 
 const styles = stylex.create({
-  toc: {
+  base: {
+    overflowY: "auto",
+    flexDirection: "column",
+    gap: space[12],
+    borderRadius: borderRadius[4],
+  },
+  sidebar: {
     position: "sticky",
     top: size.scrollOffset,
     alignSelf: "start",
     maxHeight: `calc(100vh - ${size.scrollOffset} - ${space[24]})`,
-    overflowY: "auto",
     display: {
       default: "none",
       [breakpoint.desktop]: "flex",
     },
-    flexDirection: "column",
-    gap: space[12],
     width: size.tocWidth,
     paddingTop: space[12],
-    borderRadius: borderRadius[4],
+  },
+  menu: {
+    position: "absolute",
+    top: `calc(100% + ${space[8]})`,
+    right: 0,
+    width: size.tocWidth,
+    maxHeight: `calc(100vh - ${size.scrollOffset} - ${space[24]})`,
+    display: "flex",
+    padding: space[16],
+    backgroundColor: color.tileBg,
+    fontSize: fontSize[16],
+  },
+  hidden: {
+    display: "none",
   },
 });
 
 export type TocProps = {
   root: TocItemProps;
+  variant?: "sidebar" | "menu";
+  open?: boolean;
+  onSelect?: (id: string) => void;
 };
 
 function collectIds(item: TocItemProps): string[] {
@@ -52,6 +73,7 @@ export function Toc(props: TocProps) {
 
   const handleSelect = (id: string) => {
     setActiveId(id);
+    props.onSelect?.(id);
     isSelectScrolling = true;
     clearTimeout(timer);
     timer = setTimeout(() => {
@@ -91,7 +113,14 @@ export function Toc(props: TocProps) {
   });
 
   return (
-    <nav sx={styles.toc} aria-label="Table of contents">
+    <nav
+      sx={[
+        styles.base,
+        props.variant === "menu" ? styles.menu : styles.sidebar,
+        props.variant === "menu" && props.open === false && styles.hidden,
+      ]}
+      aria-label="Table of contents"
+    >
       <TocItem
         id={props.root.id}
         label={props.root.label}
