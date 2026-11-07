@@ -1,6 +1,7 @@
 import * as stylex from "@stylexjs/stylex";
 import { color, space, zIndex } from "../styles/const.stylex";
 import { GitHubIcon } from "./icons/github-icon";
+import { TocIcon } from "./icons/toc-icon";
 import { SearchBar } from "./search-bar";
 
 const styles = stylex.create({
@@ -31,6 +32,16 @@ const styles = stylex.create({
       color: color.textPrimary,
     },
   },
+  button: {
+    padding: 0,
+    borderStyle: "none",
+    backgroundColor: "transparent",
+    color: color.textSecondary,
+    cursor: "pointer",
+    ":hover": {
+      color: color.textPrimary,
+    },
+  },
 });
 
 export function Navbar() {
@@ -50,6 +61,15 @@ export function Navbar() {
           >
             <GitHubIcon />
           </a>
+
+          <button
+            type="button"
+            sx={styles.button}
+            aria-label="Table of contents"
+            title="Table of contents"
+          >
+            <TocIcon />
+          </button>
         </div>
       </nav>
     </header>
