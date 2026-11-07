@@ -4,4 +4,5 @@ import { unplugin as stylex } from "@stylexjs/unplugin";
 
 export default defineConfig({
   plugins: [stylex.vite(), solid()],
+  server: { host: true }
 });
