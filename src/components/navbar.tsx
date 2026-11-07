@@ -2,7 +2,7 @@ import * as stylex from "@stylexjs/stylex";
 import { color, space, zIndex } from "../styles/const.stylex";
 import { GitHubIcon } from "./icons/github-icon";
 import { HomeIcon } from "./icons/home-icon";
-import { SearchIcon } from "./icons/search-icon";
+import { SearchBar } from "./search-bar";
 
 const styles = stylex.create({
   header: {
@@ -16,12 +16,13 @@ const styles = stylex.create({
     display: "flex",
     alignItems: "center",
     justifyContent: "space-between",
-    gap: space[8],
+    gap: space[16],
   },
   links: {
     display: "flex",
     alignItems: "center",
     justifyContent: "start",
+    flexShrink: 0,
     gap: space[8],
   },
   icon: {
@@ -37,9 +38,7 @@ export function Navbar() {
   return (
     <header sx={styles.header}>
       <nav sx={styles.nav} aria-label="Primary">
-        <a sx={styles.icon} href="/" aria-label="Search">
-          <SearchIcon />
-        </a>
+        <SearchBar />
 
         <div sx={styles.links}>
           <a sx={styles.icon} href="/" aria-label="Home">
@@ -56,8 +55,7 @@ export function Navbar() {
             <GitHubIcon />
           </a>
         </div>
-
       </nav>
-    </header >
+    </header>
   );
 }

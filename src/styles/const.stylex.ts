@@ -44,6 +44,7 @@ export const size = stylex.defineConsts({
   iconSize: "16px",
   pageWidth: "1000px",
   scrollOffset: "80px", // Manually measured navbar
+  searchWidth: "400px",
   thumbnailSize: "48px",
   tileWidth: "180px",
   tocWidth: "200px",
