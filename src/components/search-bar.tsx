@@ -117,12 +117,14 @@ const styles = stylex.create({
     width: "100%",
     maxWidth: size.searchWidth,
   },
-  button: {
+  link: {
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
     flexShrink: 0,
     backgroundColor: "transparent",
-    borderStyle: "none",
     color: color.textSecondary,
-    cursor: "pointer",
+    textDecoration: "none",
     ":hover": {
       color: color.textPrimary,
     },
@@ -262,14 +264,14 @@ export function SearchBar() {
 
   return (
     <div sx={styles.container}>
-      <button
-        type="button"
-        sx={[styles.button, isActive() && styles.active]}
-        aria-label="Search"
-        onClick={() => inputRef?.focus()}
+      <a
+        href="/"
+        sx={[styles.link, isActive() && styles.active]}
+        aria-label="Home"
+        title="Home"
       >
         <SearchIcon />
-      </button>
+      </a>
 
       <div sx={styles.inputWrapper}>
         <input

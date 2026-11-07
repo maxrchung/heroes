@@ -1,7 +1,6 @@
 import * as stylex from "@stylexjs/stylex";
 import { color, space, zIndex } from "../styles/const.stylex";
 import { GitHubIcon } from "./icons/github-icon";
-import { HomeIcon } from "./icons/home-icon";
 import { SearchBar } from "./search-bar";
 
 const styles = stylex.create({
@@ -18,7 +17,7 @@ const styles = stylex.create({
     justifyContent: "space-between",
     gap: space[16],
   },
-  links: {
+  actions: {
     display: "flex",
     alignItems: "center",
     justifyContent: "start",
@@ -40,17 +39,14 @@ export function Navbar() {
       <nav sx={styles.nav} aria-label="Primary">
         <SearchBar />
 
-        <div sx={styles.links}>
-          <a sx={styles.icon} href="/" aria-label="Home">
-            <HomeIcon />
-          </a>
-
+        <div sx={styles.actions}>
           <a
             sx={styles.icon}
             href="https://github.com/maxrchung/heroes"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="GitHub"
+            title="GitHub"
           >
             <GitHubIcon />
           </a>
