@@ -19,6 +19,8 @@ body {
   line-height: 1.5;
   /* Improve text rendering */
   -webkit-font-smoothing: antialiased;
+  /* Prevent browser scroll anchoring adjustments on client-side SPA mount */
+  overflow-anchor: none;
 }
 
 /* Improve media defaults */
