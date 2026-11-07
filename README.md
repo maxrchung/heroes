@@ -13,7 +13,7 @@ parsing the data for the site.
 
 ## TODO
 
-- Search
+- Fix no hero page, e.g. /abathurasdf
 - Toc in mobile navbar
 - Headings are links
 - Maybe more sorts?
