@@ -11,12 +11,6 @@ Thanks to
 [HeroesDataParser](https://github.com/HeroesToolChest/HeroesDataParser) for
 parsing the data for the site.
 
-## TODO
-
-- Headings are links
-- Toc in mobile navbar
-- Maybe more sorts?
-
 ## Dev
 
 1. Install latest .NET SDK. Or use a .NET SDK Docker image.

@@ -111,7 +111,9 @@ export function HeroDetailPage() {
   });
 
   if (!hero()) {
-    return <Heading level={1}>Invalid Hero</Heading>;
+    return (
+      <Heading level={1} id="invalid-hero">Invalid Hero</Heading>
+    );
   }
 
   const toc = createMemo<TocItemProps>(() => ({

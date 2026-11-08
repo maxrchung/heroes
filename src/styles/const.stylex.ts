@@ -33,6 +33,7 @@ export const fontWeight = stylex.defineConsts({
 });
 
 export const space = stylex.defineConsts({
+  4: "4px",
   8: "8px",
   12: "12px",
   16: "16px",
@@ -42,6 +43,7 @@ export const space = stylex.defineConsts({
 
 export const size = stylex.defineConsts({
   iconSize: "16px",
+  linkSize: "24px",
   pageWidth: "1000px",
   scrollOffset: "80px", // Manually measured navbar
   searchWidth: "400px",
