@@ -7,6 +7,15 @@ export enum Role {
   Support = "Support",
 }
 
+// Declaration order is the display order on the landing page
+export enum Franchise {
+  Warcraft = "Warcraft",
+  Starcraft = "Starcraft",
+  Diablo = "Diablo",
+  Overwatch = "Overwatch",
+  Nexus = "Nexus",
+}
+
 export interface Ability {
   name: string;
   hotkey?: string;
@@ -28,6 +37,7 @@ export interface Hero {
   slug: string;
   name: string;
   role: Role;
+  franchise: Franchise;
   releaseDate: string;
   portrait: string;
   description: string;

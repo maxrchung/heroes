@@ -1,4 +1,4 @@
-import type { Role } from "../src/data/types";
+import type { Franchise, Role } from "../src/data/types";
 
 export interface ImageTask {
   srcPath: string;
@@ -26,6 +26,7 @@ interface HdpTalent {
 interface HdpHero {
   name: string;
   expandedRole?: Role;
+  franchise: Franchise | "Classic";
   releaseDate?: string;
   portraits?: { target?: string };
   description?: string;

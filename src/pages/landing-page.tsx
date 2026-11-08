@@ -8,7 +8,7 @@ import {
 } from "solid-js";
 import * as stylex from "@stylexjs/stylex";
 import { HEROES_DATA } from "../data";
-import { Role, type Hero } from "../data/types";
+import { Franchise, Role, type Hero } from "../data/types";
 import { Heading } from "../components/heading";
 import { ChevronIcon } from "../components/icons/chevron-icon";
 import { Column } from "../components/column";
@@ -27,6 +27,7 @@ import {
 const SORT_MODE_STORAGE_KEY = "heroes-sort-mode";
 const heroes = Object.values(HEROES_DATA);
 const roleOrder = Object.values(Role);
+const franchiseOrder = Object.values(Franchise);
 
 const styles = stylex.create({
   headingRow: {
@@ -116,6 +117,14 @@ export function HeroLandingPage() {
             a.name.localeCompare(b.name),
         );
         break;
+      case "franchise":
+        sortedHeroes.sort(
+          (a, b) =>
+            franchiseOrder.indexOf(a.franchise) -
+            franchiseOrder.indexOf(b.franchise) ||
+            a.name.localeCompare(b.name),
+        );
+        break;
       case "name":
       default:
         sortedHeroes.sort((a, b) => a.name.localeCompare(b.name));
@@ -130,7 +139,9 @@ export function HeroLandingPage() {
           ? hero.releaseDate.slice(0, 4)
           : sort() === "role"
             ? hero.role
-            : hero.name.charAt(0).toLocaleUpperCase();
+            : sort() === "franchise"
+              ? hero.franchise
+              : hero.name.charAt(0).toLocaleUpperCase();
       const group = groups.get(label);
 
       if (group) {
@@ -185,9 +196,11 @@ export function HeroLandingPage() {
           >
             <option value="name">Name</option>
 
-            <option value="release">Release</option>
+            <option value="franchise">Franchise</option>
 
             <option value="role">Role</option>
+
+            <option value="release">Release</option>
           </select>
 
           <div sx={styles.sortChevron}>

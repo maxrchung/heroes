@@ -2,7 +2,7 @@ import fs from "node:fs";
 import path from "node:path";
 import sharp from "sharp";
 import type { Hero, Ability, Talent } from "../src/data/types";
-import { Role } from "../src/data/types";
+import { Franchise, Role } from "../src/data/types";
 import type { HdpAbility, HdpData, ImageTask } from "./types";
 
 const ROOT_DIR = process.cwd();
@@ -166,6 +166,8 @@ export async function runTransformation() {
       slug,
       name: hero.name,
       role,
+      franchise:
+        hero.franchise === "Classic" ? Franchise.Nexus : hero.franchise,
       releaseDate: hero.releaseDate || "2014-03-13",
       portrait,
       description: cleanText(hero.description),
