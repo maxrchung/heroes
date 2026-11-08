@@ -1,12 +1,14 @@
 import {
+  createEffect,
   createMemo,
   createSignal,
   For,
+  on,
   onCleanup,
   onMount,
   Show,
 } from "solid-js";
-import { useNavigate } from "@solidjs/router";
+import { useLocation, useNavigate } from "@solidjs/router";
 import * as stylex from "@stylexjs/stylex";
 import { HEROES_DATA } from "../data";
 import type { Hero } from "../data/types";
@@ -189,10 +191,23 @@ const styles = stylex.create({
 
 export function SearchBar() {
   const navigate = useNavigate();
+  const location = useLocation();
   const [query, setQuery] = createSignal("");
   const [isActive, setIsActive] = createSignal(false);
   const [activeIndex, setActiveIndex] = createSignal(0);
   let inputRef: HTMLInputElement | undefined;
+
+  // The search bar lives in the persistent layout, so reset it on navigation
+  createEffect(
+    on(
+      () => location.pathname,
+      () => {
+        setQuery("");
+        setActiveIndex(0);
+      },
+      { defer: true },
+    ),
+  );
 
   const results = createMemo<Hero[]>(() => {
     const q = normalize(query());
