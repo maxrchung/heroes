@@ -53,19 +53,17 @@ export function Heading(props: HeadingProps) {
 
   const content = () => (
     <a href={`#${props.id}`} sx={styles.link} onClick={handleClick}>
-      <span>{props.children}</span>
+      <span
+        onMouseEnter={() => setIsHovered(true)}
+        onMouseLeave={() => setIsHovered(false)}
+      >
+        {props.children}
+      </span>
       <Show when={isHovered()}>
         <LinkIcon />
       </Show>
     </a>
   );
-
-  const headingHandlers = {
-    onMouseEnter: () => setIsHovered(true),
-    onMouseLeave: () => setIsHovered(false),
-    onFocusIn: () => setIsHovered(true),
-    onFocusOut: () => setIsHovered(false),
-  };
 
   switch (props.level) {
     case 1:
@@ -73,7 +71,6 @@ export function Heading(props: HeadingProps) {
         <h1
           id={props.id}
           sx={[styles.heading, styles[props.level]]}
-          {...headingHandlers}
         >
           {content()}
         </h1>
@@ -83,7 +80,6 @@ export function Heading(props: HeadingProps) {
         <h2
           id={props.id}
           sx={[styles.heading, styles[props.level]]}
-          {...headingHandlers}
         >
           {content()}
         </h2>
@@ -93,7 +89,6 @@ export function Heading(props: HeadingProps) {
         <h3
           id={props.id}
           sx={[styles.heading, styles[props.level]]}
-          {...headingHandlers}
         >
           {content()}
         </h3>
