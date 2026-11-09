@@ -9,11 +9,21 @@ hero detail page has a brief description, followed by abilities and talents.
 
 Thanks to
 [HeroesDataParser](https://github.com/HeroesToolChest/HeroesDataParser) for
-parsing the data for the site.
+getting the data for the site.
+
+## Screenshots
+
+<img width="1920" height="1872" alt="image" src="https://github.com/user-attachments/assets/fe9899ad-a334-4b7d-87a4-0ce273eeb300" />
+
+<img width="1920" height="1872" alt="image" src="https://github.com/user-attachments/assets/253bb06e-26d2-40d3-a4e9-2b9c4fbafa4c" />
+
+<img width="654" height="1005" alt="image" src="https://github.com/user-attachments/assets/761deae9-de65-4546-a0bb-dab164372c6e" />
+
+<img width="654" height="1005" alt="image" src="https://github.com/user-attachments/assets/84ca9434-3a3a-487b-8a3b-ad468a9c9007" />
 
 ## Dev
 
-1. Install latest .NET SDK. Or use a .NET SDK Docker image.
+1. Install .NET SDK.
 
 2. Install HeroesDataParser (HDP).
 
