@@ -2898,18 +2898,18 @@
         {
           "name": "Once Again the First Time",
           "icon": "/images/storm_ui_icon_chromie_aethercannon.avif",
-          "description": "Quest: Hit 20 Heroes with Sand Blast from Chromie or her Echoes without dying.\n\nReward: Increase the maximum number of active Echoes to 2, and increase Echo damage to 50%."
+          "description": "Quest: Hit 20 Heroes with Sand Blast from Chromie or her Echoes without dying.\n\nReward: Increase the maximum number of active Echoes to 2, and increase Echo damage to 55%."
         },
         {
           "name": "Deep Breathing",
           "icon": "/images/storm_ui_icon_chromie_sandstrike.avif",
-          "description": "Quest: Every time Dragon's Breath hits a Hero increase its damage by 0.5%.\n\nReward: After hitting 20 Heroes, reduce the cooldown of Dragon's Breath by 4 seconds and its Mana cost from 65 to 40."
+          "description": "Quest: Every time Dragon's Breath hits a Hero increase its damage by 0.6%.\n\nReward: After hitting 20 Heroes, reduce the cooldown of Dragon's Breath by 4 seconds and its Mana cost from 65 to 40."
         },
         {
           "name": "Timewalker's Pursuit",
           "icon": "/images/storm_ui_icon_talent_clairvoyance.avif",
           "cooldown": "Cooldown: 25s",
-          "description": "Gain 15% Spell Power and reduce the arming time of Time Traps by 0.75 seconds. Activate to reveal the targeted area for 4 seconds. Enemies seen are revealed for 4 seconds."
+          "description": "Gain 12% Spell Power and reduce the arming time of Time Traps by 0.75 seconds. Activate to reveal the targeted area for 4 seconds. Enemies seen are revealed for 4 seconds."
         }
       ],
       "4": [
@@ -5990,7 +5990,7 @@
         {
           "name": "Incendiary Elixir",
           "icon": "/images/storm_ui_icon_greymane_qattack.avif",
-          "description": "Quest: Reduce the cooldown of Gilnean Cocktail by 2 seconds. Every time Greymane hits an enemy Hero with the explosion damage from Gilnean Cocktail, increase its explosion damage by 25, up to 375.\n\nReward: After hitting 15 Heroes, the cooldown is reduced by an additional 3 seconds."
+          "description": "Quest: Reduce the cooldown of Gilnean Cocktail by 2 seconds. Every time Greymane hits an enemy Hero with the explosion damage from Gilnean Cocktail, increase its explosion damage by 30, up to 450.\n\nReward: After hitting 15 Heroes, the cooldown is reduced by an additional 3 seconds."
         },
         {
           "name": "Wizened Duelist",
@@ -6057,7 +6057,7 @@
         {
           "name": "Gilnean Roulette",
           "icon": "/images/storm_ui_icon_greymane_snapshot.avif",
-          "description": "Cursed Bullet's damage is reduced to 30% of current health but its cooldown is reduced by 24 seconds."
+          "description": "Cursed Bullet's cooldown is reduced by 24 seconds."
         },
         {
           "name": "Hunter's Blunderbuss",
@@ -8754,7 +8754,7 @@
         "icon": "/images/storm_ui_icon_lucio_soundbarrier.avif",
         "cooldown": "Cooldown: 80s",
         "cost": "Mana: 100",
-        "description": "After 1 second, Lúcio and nearby allied Heroes gain a 1296 point Shield that rapidly decays over 6 seconds."
+        "description": "After 1 second, Lúcio and nearby allied Heroes gain a 1488 point Shield that rapidly decays over 6 seconds."
       },
       {
         "name": "High Five",
@@ -8783,7 +8783,7 @@
         {
           "name": "Party Mix",
           "icon": "/images/storm_ui_icon_lucio_crossfade_all.avif",
-          "description": "Quest: Play Lúcio's Crossfade tracks to nearby allies. Multiple allies provide additional time.\n\nReward: For every 1 Minute played, permanently increase Lúcio's maximum Mana by 10. \nReward: Once you have played for 8 minutes or more, permanently increase Crossfade's radius by 20%."
+          "description": "Quest: Play Lúcio's Crossfade tracks to nearby allies. Multiple allies provide additional time.\n\nReward: For every 1 Minute played, permanently increase Lúcio's maximum Mana by 10. \nReward: Once you have played for 8 minutes or more, permanently increase Crossfade's radius by 30%."
         },
         {
           "name": "Accelerando",
@@ -8793,7 +8793,7 @@
         {
           "name": "Smooth Moves",
           "icon": "/images/storm_ui_icon_lucio_wallride_a.avif",
-          "description": "While Wall Ride is active, Basic Attacks heal for 30% of the damage dealt and restore 0.5 Mana.\n\nPassive: Increase Wall Ride duration by 1 second."
+          "description": "While Wall Ride is active, Basic Attacks heal for 30% of the damage dealt and restore 0.5 Mana.\n\nPassive: Increase Wall Ride duration by 1 seconds."
         }
       ],
       "4": [
@@ -8837,7 +8837,7 @@
           "icon": "/images/storm_ui_icon_lucio_soundbarrier.avif",
           "cooldown": "Cooldown: 80s",
           "cost": "Mana: 100",
-          "description": "After 1 second, Lúcio and nearby allied Heroes gain a 1296 point Shield that rapidly decays over 6 seconds."
+          "description": "After 1 second, Lúcio and nearby allied Heroes gain a 1488 point Shield that rapidly decays over 6 seconds."
         },
         {
           "name": "High Five",
@@ -8861,7 +8861,7 @@
         {
           "name": "Slip",
           "icon": "/images/storm_ui_icon_lucio_wallride.avif",
-          "description": "While Wall Ride is active, passing near an enemy Hero increases its Movement Speed bonus to 40%, and grants 15 Armor, for 1 second."
+          "description": "While Wall Ride is active, passing near an enemy Hero increases its Movement Speed bonus to 40%, and grants 15 Armor, for 2 second."
         }
       ],
       "16": [
@@ -8901,7 +8901,7 @@
           "name": "Summer Anthem",
           "icon": "/images/storm_ui_icon_lucio_crossfade_a.avif",
           "cooldown": "Cooldown: 60s",
-          "description": "Activate for allies affected by Crossfade to become Unkillable for 1.5 seconds."
+          "description": "Activate for allies affected by Crossfade to become Unkillable for 2.5 seconds."
         }
       ]
     }
@@ -9840,13 +9840,13 @@
         "icon": "/images/storm_ui_icon_medivh_arcanemissile.avif",
         "cooldown": "Cooldown: 7s",
         "cost": "Mana: 50",
-        "description": "Launch a rift that deals 170 damage to enemies in its path. If an enemy Hero is hit, reduce its cooldown by 5 seconds and refund 50 Mana.\n\nQuest: Hit 40 enemy Heroes with Arcane Rift without dying.\n\nReward: Permanently increase the damage dealt by 75 and cooldown reduction for hitting a Hero by 1 second."
+        "description": "Launch a rift that deals 185 damage to enemies in its path. If an enemy Hero is hit, reduce its cooldown by 5 seconds and refund 50 Mana.\n\nQuest: Hit 40 enemy Heroes with Arcane Rift without dying.\n\nReward: Permanently increase the damage dealt by 75 and cooldown reduction for hitting a Hero by 1 second."
       },
       {
         "name": "Force of Will",
         "hotkey": "W",
         "icon": "/images/storm_ui_icon_medivh_forceofwill.avif",
-        "cooldown": "Cooldown: 9s",
+        "cooldown": "Cooldown: 8s",
         "cost": "Mana: 60",
         "description": "Protect an allied Hero from all damage for 1.5 seconds. Upon expiration, Force of Will heals the target for 20% of the damage it absorbed."
       },
@@ -9854,7 +9854,7 @@
         "name": "Portal",
         "hotkey": "E",
         "icon": "/images/storm_ui_icon_medivh_portal.avif",
-        "cooldown": "Cooldown: 16s",
+        "cooldown": "Cooldown: 20s",
         "cost": "Mana: 65",
         "description": "Create a set of portals between Medivh and the target location, allowing allies to teleport between both. The portals last 6 seconds."
       },
@@ -9893,19 +9893,19 @@
         {
           "name": "Winds of Celerity",
           "icon": "/images/storm_ui_icon_medivh_ravenform.avif",
-          "description": "Increases Raven Form's Movement Speed bonus by 100%."
+          "description": "Increases Raven Form's Movement Speed bonus by 100% and reduces the cast time by 0.25 seconds."
         },
         {
           "name": "Raven’s Intellect",
           "icon": "/images/storm_ui_icon_medivh_ravenform_b.avif",
-          "description": "Raven Form increases Medivh's Mana and Health Regeneration by 200%."
+          "description": "Raven Form increases Medivh's Mana and Health Regeneration by 400%."
         },
         {
           "name": "Portal Mastery",
           "icon": "/images/storm_ui_icon_medivh_portal.avif",
-          "cooldown": "Cooldown: 16s",
-          "cost": "Mana: 65",
-          "description": "Medivh can manually place both Portal locations and it no longer breaks Raven Form. \n\nActivate Medivh's Trait to cancel an unlinked Portal."
+          "cooldown": "Cooldown: 20s",
+          "cost": "Mana: 130",
+          "description": "+100% Portal Mana Cost\nMedivh can manually place both Portal locations.\n\nActivate Medivh's Trait to cancel an unlinked Portal."
         }
       ],
       "4": [
@@ -9917,12 +9917,12 @@
         {
           "name": "Raven Familiar",
           "icon": "/images/storm_ui_icon_medivh_portal_a.avif",
-          "description": "A Raven Familiar joins allies each time they use a Portal. The Raven will dive at the ally's next Basic Attack against a Hero within 5 seconds, dealing 114 damage and Slowing them by 20% for 2.5 seconds."
+          "description": "A Raven Familiar joins allies each time they use a Portal. The Raven will dive at the ally's next Basic Attack against a Hero within 5 seconds, dealing 98 damage and Slowing them by 15% for 2.5 seconds."
         },
         {
           "name": "Dust of Appearance",
           "icon": "/images/storm_ui_icon_medivh_dustofappearance.avif",
-          "cooldown": "Cooldown: 45s",
+          "cooldown": "Cooldown: 40s",
           "description": "Activate to greatly increase sight range for 5 seconds and reveal enemy Heroes in the area for 8 seconds. Does not cancel Raven Form.\n\nPassive: Increase Medivh's sight range while in Raven Form by 25%."
         }
       ],
@@ -10047,7 +10047,7 @@
         "icon": "/images/storm_ui_icon_mei_w_blizzard.avif",
         "cooldown": "Cooldown: 14s",
         "cost": "Mana: 70",
-        "description": "Command Snowball to create a Blizzard at the target location for 2 seconds. Enemies within the blizzard take 13 damage every 0.25 seconds and are Slowed by 7%, stacking up to 35%. When the Blizzard ends, enemies within its area take an additional 75 damage and are Stunned for 1.25 seconds."
+        "description": "Command Snowball to create a Blizzard at the target location for 1.88 seconds. Enemies within the blizzard take 13 damage every 0.25 seconds and are Slowed by 7%, stacking up to 35%. When the Blizzard ends, enemies within its area take an additional 80 damage and are Stunned for 1.25 seconds."
       },
       {
         "name": "Icing",
@@ -10061,7 +10061,7 @@
         "name": "Avalanche",
         "hotkey": "R",
         "icon": "/images/storm_ui_icon_mei_r1_avalanche.avif",
-        "cooldown": "Cooldown: 90s",
+        "cooldown": "Cooldown: 80s",
         "cost": "Mana: 80",
         "description": "After 0.5 seconds, roll a massive snowball that consumes enemy Heroes in its path. At the end of its path, the snowball crumbles, releasing the consumed Heroes, dealing 220 damage and Stunning them for 0.5 seconds per Hero consumed."
       },
@@ -10071,7 +10071,7 @@
         "icon": "/images/storm_ui_icon_mei_r2_icewall.avif",
         "cooldown": "Cooldown: 60s",
         "cost": "Mana: 50",
-        "description": "Vector Targeting\nAfter a 0.75 second delay, create an impassable wall that traps enemy Heroes hit for 2.5 seconds. When the wall expires, trapped Heroes are Slowed by 75%, decaying over 3 seconds."
+        "description": "Vector Targeting\nAfter a 0.6875 second delay, create an impassable wall that traps enemy Heroes hit for 2.5 seconds. When the wall expires, trapped Heroes are Slowed by 75%, decaying over 3 seconds."
       },
       {
         "name": "Cryo-Freeze",
@@ -10138,7 +10138,7 @@
         {
           "name": "Avalanche",
           "icon": "/images/storm_ui_icon_mei_r1_avalanche.avif",
-          "cooldown": "Cooldown: 90s",
+          "cooldown": "Cooldown: 80s",
           "cost": "Mana: 80",
           "description": "After 0.5 seconds, roll a massive snowball that consumes enemy Heroes in its path. At the end of its path, the snowball crumbles, releasing the consumed Heroes, dealing 220 damage and Stunning them for 0.5 seconds per Hero consumed."
         },
@@ -10147,7 +10147,7 @@
           "icon": "/images/storm_ui_icon_mei_r2_icewall.avif",
           "cooldown": "Cooldown: 60s",
           "cost": "Mana: 50",
-          "description": "Vector Targeting\nAfter a 0.75 second delay, create an impassable wall that traps enemy Heroes hit for 2.5 seconds. When the wall expires, trapped Heroes are Slowed by 75%, decaying over 3 seconds."
+          "description": "Vector Targeting\nAfter a 0.6875 second delay, create an impassable wall that traps enemy Heroes hit for 2.5 seconds. When the wall expires, trapped Heroes are Slowed by 75%, decaying over 3 seconds."
         }
       ],
       "13": [
@@ -10279,19 +10279,19 @@
         {
           "name": "Malicious Intent",
           "icon": "/images/storm_ui_icon_mephisto_shade.avif",
-          "description": "Shade of Mephisto grants 25% Spell Power while active and for 2.5 seconds after ending.\n\nIf Mephisto hits enemy Heroes at least 18 times with his Basic Abilities while Shade of Mephisto is active, then increase the duration of the Spell Power bonus to 10 seconds after it ends."
+          "description": "Shade of Mephisto grants 30% Spell Power while active and for 3 seconds after ending.\n\nIf Mephisto hits enemy Heroes at least 18 times with his Basic Abilities while Shade of Mephisto is active, then increase the duration of the Spell Power bonus to 10 seconds after it ends."
         }
       ],
       "4": [
         {
           "name": "Hateful Mending",
           "icon": "/images/storm_ui_icon_mephisto_skull.avif",
-          "description": "Skull Missile grants 10 Mana and heals Mephisto for 70% of the damage it deals to Heroes."
+          "description": "Skull Missile grants 15 Mana and heals Mephisto for 85% of the damage it deals to Heroes."
         },
         {
           "name": "Static Barrier",
           "icon": "/images/storm_ui_icon_mephisto_lightning.avif",
-          "description": "At the end of its duration, Lightning Nova grants Mephisto a Shield equal to 40% of the damage it dealt to Heroes. Lasts 5 seconds."
+          "description": "At the end of its duration, Lightning Nova grants Mephisto a Shield equal to 50% of the damage it dealt to Heroes. Lasts 5 seconds."
         },
         {
           "name": "Spite",
@@ -13280,7 +13280,7 @@
         "icon": "/images/storm_ui_icon_stukov_flailingswipe.avif",
         "cooldown": "Cooldown: 60s",
         "cost": "Mana: 60",
-        "description": "Swipe 3 times in front of Stukov over 1.75 seconds, dealing 48 damage to enemies hit and knocking them away. Each swipe is larger than the previous."
+        "description": "Swipe 3 times in front of Stukov over 1.75 seconds, dealing 62 damage to enemies hit and knocking them away. Each swipe is larger than the previous."
       },
       {
         "name": "Bio-Kill Switch",
@@ -13349,7 +13349,7 @@
           "icon": "/images/storm_ui_icon_stukov_flailingswipe.avif",
           "cooldown": "Cooldown: 60s",
           "cost": "Mana: 60",
-          "description": "Swipe 3 times in front of Stukov over 1.75 seconds, dealing 48 damage to enemies hit and knocking them away. Each swipe is larger than the previous."
+          "description": "Swipe 3 times in front of Stukov over 1.75 seconds, dealing 62 damage to enemies hit and knocking them away. Each swipe is larger than the previous."
         },
         {
           "name": "Massive Shove",
@@ -13855,7 +13855,7 @@
         {
           "name": "Echo of the Elements",
           "icon": "/images/storm_ui_icon_thrall_chainlightning.avif",
-          "description": "Quest: Kill Minions or Heroes within 2 seconds of hitting them with Chain Lightning.\n\nReward: After killing 20 enemies, reduce the Mana cost of Chain Lightning from 40 to 20.\n\nReward: After killing 50 enemies, Chain Lightning gains an extra charge.\n\nMythic Reward: After killing 125 enemies, Chain Lightning can now strike the same target multiple times, and also strikes 1 additional target per bounce."
+          "description": "Quest: Kill Minions or Heroes within 2 seconds of hitting them with Chain Lightning. Upon dying, lose 5 stacks. Gained rewards cannot be lost.\n\nReward: After killing 20 enemies, reduce the Mana cost of Chain Lightning from 40 to 20.\n\nReward: After killing 50 enemies, Chain Lightning gains an extra charge.\n\nMythic Reward: After killing 125 enemies, Chain Lightning can now strike the same target multiple times, and also strikes 1 additional target per bounce."
         },
         {
           "name": "Crash Lightning",
@@ -13934,7 +13934,7 @@
           "name": "Spirit Shield",
           "icon": "/images/storm_ui_icon_talent_spellshield.avif",
           "cooldown": "Cooldown: 45s",
-          "description": "Every 45 seconds, gain 70 Spell Armor against the next enemy Ability and subsequent Abilities for 4 seconds. Frostwolf Resilience reduces this cooldown by 10 seconds.\n\nCan be toggled to allow or prevent this talent from triggering automatically."
+          "description": "Every 45 seconds, gain 50 Spell Armor against the next enemy Ability and subsequent Abilities for 4 seconds. Frostwolf Resilience reduces this cooldown by 10 seconds.\n\nCan be toggled to allow or prevent this talent from triggering automatically."
         }
       ],
       "16": [
@@ -14005,7 +14005,7 @@
         "hotkey": "W",
         "icon": "/images/storm_ui_icon_gazlowe_dethlazor.avif",
         "cooldown": "Cooldown: 8s",
-        "description": "After 0.65 seconds, deal 175 damage to enemies in a line. Heal for 25% of the damage dealt, increased to 75% against enemy Heroes."
+        "description": "After 0.65 seconds, deal 175 damage to enemies in a line. Heal for 30% of the damage dealt, increased to 75% against enemy Heroes."
       },
       {
         "name": "Xplodium Charge",
@@ -14161,7 +14161,7 @@
         {
           "name": "Bomb Toss",
           "icon": "/images/storm_ui_icon_gazlowe_explodiumcharge.avif",
-          "description": "Xplodium Charge gains a 2nd charge with a 3 second cooldown between uses and launches 2 more bombs when it detonates."
+          "description": "Xplodium Charge cooldown is reduced by 3 seconds and launches 2 more bombs when it detonates."
         }
       ]
     }
@@ -16044,7 +16044,7 @@
         "icon": "/images/storm_ui_icon_xalatath_q_shadowmark.avif",
         "cooldown": "Cooldown: 7s",
         "cost": "Mana: 45",
-        "description": "Shoot a Void Orb that deals 60 damage to enemies hit, and an additional 120 damage to enemies in the center.\n\nIf an enemy Hero or Structure is hit by the center, they are marked for 4 seconds.\n\nTargets afflicted by Shadow Mark are Revealed and draw the Dark Heart and Void Minions towards them."
+        "description": "Shoot a Void Orb that deals 65 damage to enemies hit, and an additional 130 damage to enemies in the center.\n\nIf an enemy Hero or Structure is hit by the center, they are marked for 4 seconds.\n\nTargets afflicted by Shadow Mark are Revealed and draw the Dark Heart and Void Minions towards them."
       },
       {
         "name": "Dark Heart Ritual",
@@ -16052,7 +16052,7 @@
         "icon": "/images/storm_ui_icon_xalatath_e_darkheartritual.avif",
         "cooldown": "Cooldown: 15s",
         "cost": "Mana: 50",
-        "description": "Summon the Dark Heart, which pulses for 50 damage per second to nearby enemies and lasts 8 seconds.\n\nThe Dark Heart moves to Shadow Mark's impact location.\n\nThe Dark Heart will pursue targets afflicted by Shadow Mark and detonate on impact, dealing 245 damage to nearby enemies and 61 more damage to the Marked target."
+        "description": "Summon the Dark Heart, which pulses for 50 damage per second to nearby enemies and lasts 8 seconds.\n\nThe Dark Heart moves to Shadow Mark's impact location.\n\nThe Dark Heart will pursue targets afflicted by Shadow Mark and detonate on impact, dealing 260 damage to nearby enemies and 65 more damage to the Marked target."
       },
       {
         "name": "Void Step",
@@ -16060,7 +16060,7 @@
         "icon": "/images/storm_ui_icon_xalatath_w_voidstep.avif",
         "cooldown": "Cooldown: 15s",
         "cost": "Mana: 50",
-        "description": "Cast to teleport Xal'atath 3 times in a triangular pattern.\n\nEach time Xal'atath teleports, her Basic Attacks deal 10% more damage while the Ability is active.\n\nReactivate to end Void Step early and remain at your current location."
+        "description": "Cast to teleport Xal'atath 3 times in a triangular pattern.\n\nEach time Xal'atath teleports, her Basic Attacks deal 15% more damage while the Ability is active.\n\nReactivate to end Void Step early and remain at your current location."
       },
       {
         "name": "Void Eruption",
@@ -16068,7 +16068,7 @@
         "icon": "/images/storm_ui_icon_xalatath_r1_voideruption.avif",
         "cooldown": "Cooldown: 75s",
         "cost": "Mana: 80",
-        "description": "Channel a powerful Void Orb that grows over time until reaching maximum size after 2 seconds. Recast to launch the Orb early.\n\nEnemies that come into contact with the Orb take 90 damage and are Blinded for 1 second.\n\nWhen the Orb reaches the end of its path, it detonates in a large explosion, dealing 400 damage.\n\nCharging up this Ability increases its contact damage up to 166 and its explosion damage up to 700.\n\nContact damage is dealt every 0.25 seconds."
+        "description": "Channel a powerful Void Orb that grows over time until reaching maximum size after 2 seconds. Recast to launch the Orb early.\n\nEnemies that come into contact with the Orb take 81 damage and are Blinded for 1 second.\n\nWhen the Orb reaches the end of its path, it detonates in a large explosion, dealing 320 damage.\n\nCharging up this Ability increases its contact damage up to 146 and its explosion damage up to 672.\n\nContact damage is dealt every 0.25 seconds."
       },
       {
         "name": "Void Convergence",
@@ -16083,7 +16083,7 @@
         "hotkey": "D",
         "icon": "/images/storm_ui_icon_xalatath_trait.avif",
         "cost": "Mana: 35",
-        "description": "Every basic attack against heroes, and every 2 basic attacks against non-heroes generate charge. Once fully charged Xal'atath can activate Void Volley to unleash a barrage of 6 Void Orbs at a target location, each dealing 72 damage on impact.\n\nCharge fully decays if Xal’atath does not hit an enemy with a Basic Attack after 6 seconds.\n\nQuest: Hit enemy Heroes with Void Volley to grant 1 stack per hit and increases Void Volley's damage by 1%. Lose all stacks upon dying.\n\nReward (20 Stacks):\n   +2 Void Volley Range\n   Stack loss on death lowered to 6.\n\nReward (60 Stacks):\n   -1 Basic Attack required to charge Void Volley.\n\nMythic Reward (100 Stacks):\n   +50% Basic Attack and Void Volley Damage.\n   Void Volley projectiles Pierce all targets.\n\nStack loss will never cause the Hero to fall below a quest reward threshold."
+        "description": "Every basic attack against heroes, and every 2 basic attacks against non-heroes generate charge. Once fully charged Xal'atath can activate Void Volley to unleash a barrage of 6 Void Orbs at a target location, each dealing 72 damage on impact.\n\nQuest: Hit enemy Heroes with Void Volley to grant 1 stack per hit and increases Void Volley's damage by 0.75%. Lose all stacks upon dying.\n\nReward (20 Stacks):\n   +2 Void Volley Range\n   Stack loss on death lowered to 6.\n\nReward (60 Stacks):\n   -1 Basic Attack required to charge Void Volley.\n\nMythic Reward (100 Stacks):\n   +35% Basic Attack and Void Volley Damage.\n   Void Volley projectiles Pierce all targets.\n\nStack loss will never cause the Hero to fall below a quest reward threshold.\nCharge fully decays if Xal’atath does not hit an enemy with a Basic Attack after 6 seconds."
       }
     ],
     "talents": {
@@ -16096,19 +16096,19 @@
         {
           "name": "Anchored Core",
           "icon": "/images/storm_ui_icon_xalatath_e_darkheartritual.avif",
-          "description": "Dark Heart Ritual:\n+25% Radius\n+25% Duration\n\nDark Heart's damage bounces 2 times from the primary target to nearby enemies, dealing 25 damage."
+          "description": "+25% Dark Heart Ritual Radius\n\nDark Heart's damage bounces 2 times from the primary target to nearby enemies, dealing 25 damage."
         },
         {
           "name": "Cloak of Shadows",
           "icon": "/images/storm_ui_icon_xalatath_w_voidstep.avif",
-          "description": "Activating Void Step grants 50% Movement Speed and 25 Spell Armor for 2 seconds. This bonus refreshes each time Xal'atath teleports."
+          "description": "Activating Void Step grants 25 Spell Armor while teleporting and 50% Movement Speed for 2 seconds afterwards."
         }
       ],
       "4": [
         {
           "name": "Cold Feet",
           "icon": "/images/storm_ui_icon_xalatath_q_shadowmark.avif",
-          "description": "+1s Shadow Mark Duration\n\nHeroes afflicted by Shadow Mark have their Movement Speed reduced by 25%."
+          "description": "+2s Shadow Mark Duration\n\nHeroes afflicted by Shadow Mark have their Movement Speed reduced by 25%."
         },
         {
           "name": "Dark Barrier",
@@ -16125,7 +16125,7 @@
         {
           "name": "Toxic Mark",
           "icon": "/images/storm_ui_icon_xalatath_q_shadowmark.avif",
-          "description": "+1s Shadow Mark Duration\n\nHeroes affliced with Shadow Mark have their Armor reduced by 10 and take damage equal to 1% of their maximum Health every second."
+          "description": "Heroes affliced with Shadow Mark have their Armor reduced by 10 and take damage equal to 1% of their maximum Health every second."
         },
         {
           "name": "Silence of the Lamb",
@@ -16144,7 +16144,7 @@
           "icon": "/images/storm_ui_icon_xalatath_r1_voideruption.avif",
           "cooldown": "Cooldown: 75s",
           "cost": "Mana: 80",
-          "description": "Channel a powerful Void Orb that grows over time until reaching maximum size after 2 seconds. Recast to launch the Orb early.\n\nEnemies that come into contact with the Orb take 90 damage and are Blinded for 1 second.\n\nWhen the Orb reaches the end of its path, it detonates in a large explosion, dealing 400 damage.\n\nCharging up this Ability increases its contact damage up to 166 and its explosion damage up to 700.\n\nContact damage is dealt every 0.25 seconds."
+          "description": "Channel a powerful Void Orb that grows over time until reaching maximum size after 2 seconds. Recast to launch the Orb early.\n\nEnemies that come into contact with the Orb take 81 damage and are Blinded for 1 second.\n\nWhen the Orb reaches the end of its path, it detonates in a large explosion, dealing 320 damage.\n\nCharging up this Ability increases its contact damage up to 146 and its explosion damage up to 672.\n\nContact damage is dealt every 0.25 seconds."
         },
         {
           "name": "Void Convergence",
@@ -16175,24 +16175,24 @@
         {
           "name": "Marked Resilience",
           "icon": "/images/storm_ui_icon_xalatath_q_shadowmark.avif",
-          "description": "Basic Attacks against enemy Heroes afflicted by Shadow Mark grant a 160 point Shield that rapidly decays.\n\nShield starts decaying after 1 second, decays over 2 seconds."
+          "description": "Basic Attacks against enemy Heroes afflicted by Shadow Mark grant a 200 point Shield that rapidly decays.\n\nShield starts decaying after 1 second, decays over 2 seconds."
         },
         {
           "name": "Relentless Whispers",
           "icon": "/images/storm_ui_icon_xalatath_w_voidstep.avif",
-          "description": "While Void Step is active, Xal'atath's Basic Attack Speed is increased by 150%."
+          "description": "Increases the Basic Attack damage bonus per teleport by 75%."
         },
         {
           "name": "Fractured Reality",
           "icon": "/images/storm_ui_icon_xalatath_trait.avif",
-          "description": "+25% Void Volley Projectile Damage\n\nVoid Volley's projectiles leave behind a trail of fire for 3 seconds, constantly dealing 9 damage to enemies. Damage is increased the longer a target stands in the flames.\n\nDamage is dealt every 0.1875 seconds.\nDamage increases up to 300%.\nDamage increase from multiple fires stack."
+          "description": "+15% Void Volley Projectile Damage\n\nVoid Volley's projectiles leave behind a trail of fire for 3 seconds, constantly dealing 9 damage to enemies. Damage is increased the longer a target stands in the flames.\n\nDamage is dealt every 0.1875 seconds.\nDamage increases up to 300%.\nDamage increase from multiple fires stack."
         }
       ],
       "20": [
         {
           "name": "Harbinger's Consumption",
           "icon": "/images/storm_ui_icon_xalatath_r1_voideruption_b.avif",
-          "description": "Void Eruption splits into 3 orbiting Void Orbs. Each enemy Hero hit by their explosions reduces Void Eruption's cooldown by 14 seconds."
+          "description": "Void Eruption splits into 3 orbiting Void Orbs. Each enemy Hero hit by their explosions reduces Void Eruption's cooldown by 10 seconds."
         },
         {
           "name": "Rift Invasion",
@@ -16207,7 +16207,7 @@
         {
           "name": "Unstable Core",
           "icon": "/images/storm_ui_icon_xalatath_e_darkheartritual.avif",
-          "description": "When the Dark Heart expires or detonates on a target afflicted by Shadow Mark, it leaves behind a pool of void flames for 5 seconds. Enemies in the flames take 45 damage over time.\n\nThe flames deal damage every 1 second."
+          "description": "When the Dark Heart expires or detonates, it leaves behind a pool of void flames for 6 seconds, dealing up to 450 to enemies in the area.\n\nDeals 75 damage every 1 second."
         },
         {
           "name": "Paradox Loop",
@@ -16278,7 +16278,7 @@
         {
           "name": "Light of Karabor",
           "icon": "/images/storm_ui_icon_yrel_vindication.avif",
-          "description": "Increase Vindication's radius by 15%. Hitting an enemy Hero increases Vindication's healing by 40%. If more than one Hero is hit, the bonus is increased to 80%."
+          "description": "Increase Vindication's radius by 15%. Hitting an enemy Hero increases Vindication's healing by 35%. If more than one Hero is hit, the bonus is increased to 70%."
         },
         {
           "name": "Dauntless",
@@ -16323,7 +16323,7 @@
         {
           "name": "Divine Steed",
           "icon": "/images/storm_ui_icon_yrel_divine_steed.avif",
-          "description": "Mounting is instant and grants 60% Movement Speed that decays over 3 seconds."
+          "description": "Mounting is instant and grants 60% Movement Speed that decays over 4 seconds."
         }
       ],
       "10": [
